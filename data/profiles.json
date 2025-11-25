@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-25 23:54:16 JST",
+  "lastUpdated": "2025-11-25 23:56:42 JST",
   "profiles": [
     {
       "id": "001",
@@ -22,7 +22,7 @@
       "reverseSupport": true
     },
     {
-      "id": "002",
+      "id": "005",
       "registeredDate": "2025-11-25",
       "updatedDate": "2025-11-18",
       "avatarName": "森羅",
@@ -80,6 +80,26 @@
       "price": "",
       "forwardSupport": true,
       "reverseSupport": false
+    },
+    {
+      "id": "002",
+      "registeredDate": "2025-11-25",
+      "updatedDate": "2025-11-25",
+      "avatarName": "ベリル",
+      "avatarNameUrl": "https://yamirin.booth.pm/items/4930259",
+      "profileVersion": "1.0",
+      "avatarAuthor": "Nine Gates",
+      "avatarAuthorUrl": "https://yamirin.booth.pm/",
+      "profileAuthor": "Nine Gates",
+      "profileAuthorUrl": "https://yamirin.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://booth.pm/ja/items/7657840",
+      "imageUrl": "https://booth.pximg.net/11d082f4-13bc-482b-b48f-07e27703a8aa/i/4930259/74113ccb-a6f7-45e3-9df6-13db9ff9e916_base_resized.jpg",
+      "pricing": "アバター同梱、もちふぃった～同梱",
+      "price": "5500円,2500",
+      "forwardSupport": true,
+      "reverseSupport": true
     }
   ]
 }
