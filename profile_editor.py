@@ -266,7 +266,9 @@ class ProfileEditor:
             self.tree.delete(item)
 
         if self.data and "profiles" in self.data:
-            for profile in self.data["profiles"]:
+            # IDでソート
+            sorted_profiles = sorted(self.data["profiles"], key=lambda p: p.get("id", ""))
+            for profile in sorted_profiles:
                 self.tree.insert("", tk.END, values=(
                     profile.get("id", ""),
                     profile.get("avatarName", ""),
