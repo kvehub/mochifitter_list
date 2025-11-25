@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-25 17:31:43 JST",
+  "lastUpdated": "2025-11-25 23:20:11 JST",
   "profiles": [
     {
       "id": "001",
@@ -16,6 +16,8 @@
       "downloadMethod": "Booth",
       "downloadLocation": "https://booth.pm/ja/items/7657840",
       "imageUrl": "https://booth.pximg.net/ed52788c-0b3b-4e38-9ded-1e5797daf0ef/i/3681787/2409bb9f-24f3-42dd-8ad6-89a0656f2166_base_resized.jpg",
+      "pricing": "単体有料",
+      "price": "500円",
       "forwardSupport": true,
       "reverseSupport": true
     },
@@ -34,6 +36,8 @@
       "downloadMethod": "Booth",
       "downloadLocation": "https://kuromaru9.booth.pm/items/7613516",
       "imageUrl": "https://booth.pximg.net/40e6fb67-d32a-48f9-9820-e064ff7b8670/i/7613516/242fd891-5677-487a-b2bc-da2776454829_base_resized.jpg",
+      "pricing": "無料",
+      "price": "",
       "forwardSupport": true,
       "reverseSupport": true
     },
@@ -52,8 +56,30 @@
       "downloadMethod": "Booth",
       "downloadLocation": "https://booth.pm/ja/items/7657840",
       "imageUrl": "https://booth.pximg.net/8a7426aa-ba62-4ef0-9e7d-2c8ea96e7c9b/i/5058077/a18424fe-a56e-411a-9c47-27c56909593c_base_resized.jpg",
+      "pricing": "アバター同梱",
+      "price": "",
       "forwardSupport": true,
       "reverseSupport": true
+    },
+    {
+      "id": "004",
+      "registeredDate": "2025-11-25",
+      "updatedDate": "2025-11-25",
+      "avatarName": "Ciel - シエル -",
+      "avatarNameUrl": "https://armoirelepus.booth.pm/items/3368697",
+      "profileVersion": "1.0",
+      "avatarAuthor": "れぴのちゃん",
+      "avatarAuthorUrl": "https://armoirelepus.booth.pm/",
+      "profileAuthor": "れぴのちゃん",
+      "profileAuthorUrl": "https://armoirelepus.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://armoirelepus.booth.pm/items/7687000",
+      "imageUrl": "https://booth.pximg.net/d398d5cc-41ab-4a3a-b7fe-eec9a3d94a3b/i/7687000/7b28b186-134a-4413-9046-24e0cdea89c1_base_resized.jpg",
+      "pricing": "無料",
+      "price": "",
+      "forwardSupport": true,
+      "reverseSupport": false
     }
   ]
 }
