@@ -608,6 +608,9 @@ class ProfileEditor:
             jst_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S JST")
             self.data["lastUpdated"] = jst_time
 
+            # プロファイルをID順にソート
+            self.data["profiles"] = sorted(self.data["profiles"], key=lambda p: p.get("id", ""))
+
             with open(self.json_path, 'w', encoding='utf-8') as f:
                 json.dump(self.data, f, ensure_ascii=False, indent=2)
 
