@@ -80,9 +80,12 @@ npx http-server -p 8000
 ```
 
 **方法2: 手動で更新**
-`js/main.js` の以下の行を現在時刻（JST）に更新：
-```javascript
-const LAST_UPDATED = '2025-11-25 16:33:26 JST';
+`data/profiles.json` の`lastUpdated`フィールドを現在時刻（JST）に更新：
+```json
+{
+  "lastUpdated": "2025-11-25 16:52:43 JST",
+  "profiles": [...]
+}
 ```
 
 ### プロファイルデータの追加
