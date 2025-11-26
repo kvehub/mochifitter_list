@@ -107,6 +107,14 @@ h2 {
     padding-bottom: 10px;
 }
 
+/* 情報・登録要望ラッパー */
+.info-request-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
 /* 情報セクション */
 .info-section {
     background: var(--card-bg);
@@ -581,6 +589,10 @@ footer {
 
     header .subtitle {
         font-size: 1rem;
+    }
+
+    .info-request-wrapper {
+        grid-template-columns: 1fr;
     }
 
     .profiles-grid {
