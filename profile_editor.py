@@ -792,8 +792,6 @@ class ProfileEditor:
 
                 # 画像プレビューを更新
                 self.preview_image()
-
-                messagebox.showinfo("成功", "情報を取得しました")
             else:
                 messagebox.showerror("エラー", "情報の取得に失敗しました")
 
