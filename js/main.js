@@ -65,6 +65,38 @@ function setupEventListeners() {
             checkbox.addEventListener('change', applyFilters);
         }
     });
+
+    // 備考バッジのクリックイベント（イベントデリゲーション）
+    const profilesContainer = document.getElementById('profilesContainer');
+    if (profilesContainer) {
+        profilesContainer.addEventListener('click', (event) => {
+            // クリックされた要素が備考バッジかチェック
+            if (event.target.classList.contains('notes-badge')) {
+                event.preventDefault();
+                event.stopPropagation();
+                const profileId = event.target.dataset.profileId;
+                if (profileId) {
+                    openNotesModal(profileId);
+                }
+            }
+        });
+    }
+
+    // モーダル外クリックで閉じる
+    const modal = document.getElementById('notesModal');
+    if (modal) {
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                closeNotesModal();
+            }
+        });
+    }
+
+    // モーダル閉じるボタン
+    const modalClose = document.querySelector('.modal-close');
+    if (modalClose) {
+        modalClose.addEventListener('click', closeNotesModal);
+    }
 }
 
 // フィルタリング処理
@@ -149,7 +181,7 @@ function createProfileCard(profile) {
 
     // 備考バッジ（備考がある場合のみ表示）
     const notesBadge = profile.notes && profile.notes.trim() ?
-        `<span class="badge notes-badge" onclick="event.stopPropagation(); openNotesModal('${profile.id}')">備考</span>` : '';
+        `<span class="badge notes-badge" data-profile-id="${profile.id}">備考</span>` : '';
 
     // 画像のHTML（imageUrlがある場合のみ表示）
     const imageHtml = profile.imageUrl ?
