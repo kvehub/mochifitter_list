@@ -38,7 +38,9 @@
       "Bash(cargo build:*)",
       "Bash(pip install:*)",
       "Bash(git remote:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(python test_extractor.py:*)",
+      "Bash(del:*)"
     ],
     "deny": [],
     "ask": []
