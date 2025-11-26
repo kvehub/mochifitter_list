@@ -837,15 +837,11 @@ class ProfileEditor:
                 link = nickname_div.find('a', class_='nav')
                 if link:
                     avatar_author = link.get_text(strip=True)
-                    # hrefから作者URLを構築
-                    href = link.get('href', '')
-                    if href:
-                        # 相対URLを絶対URLに変換
-                        if href.startswith('/'):
-                            # パスからショップ名を抽出してBoothのURLを構築
-                            avatar_author_url = f"https://{href.strip('/')}.booth.pm/"
-                        else:
-                            avatar_author_url = href
+                    # 入力URLからショップのベースURLを抽出
+                    # 例: https://sephir.booth.pm/items/3929383 -> https://sephir.booth.pm/
+                    from urllib.parse import urlparse
+                    parsed = urlparse(url)
+                    avatar_author_url = f"{parsed.scheme}://{parsed.netloc}/"
 
             return {
                 "avatarName": avatar_name,

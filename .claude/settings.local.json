@@ -37,7 +37,8 @@
       "Bash(cargo test:*)",
       "Bash(cargo build:*)",
       "Bash(pip install:*)",
-      "Bash(git remote:*)"
+      "Bash(git remote:*)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []
