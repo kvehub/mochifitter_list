@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-27 03:31:07 JST",
+  "lastUpdated": "2025-11-27 03:33:35 JST",
   "profiles": [
     {
       "id": "001",
@@ -7160,6 +7160,27 @@
       "price": "",
       "forwardSupport": true,
       "reverseSupport": false,
+      "notes": ""
+    },
+    {
+      "id": "342",
+      "registeredDate": "2025-11-27",
+      "updatedDate": "2025-11-27",
+      "avatarName": "Lasyusha〈ラシューシャ〉",
+      "avatarNameUrl": "https://keenooshop.booth.pm/items/4825073",
+      "profileVersion": "1.0",
+      "avatarAuthor": "Keenoo",
+      "avatarAuthorUrl": "https://keenooshop.booth.pm/",
+      "profileAuthor": "Keenoo",
+      "profileAuthorUrl": "https://keenooshop.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://keenooshop.booth.pm/items/4825073",
+      "imageUrl": "https://booth.pximg.net/c/620x620/de9ac79a-d2ba-4cc5-a4c4-002da7a40795/i/4825073/46d77d10-f243-47a9-9784-65266da975a9_base_resized.jpg",
+      "pricing": "無料",
+      "price": "",
+      "forwardSupport": true,
+      "reverseSupport": true,
       "notes": ""
     }
   ]
