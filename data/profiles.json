@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-26 12:00:17 JST",
+  "lastUpdated": "2025-11-26 12:41:16 JST",
   "profiles": [
     {
       "id": "001",
@@ -1098,6 +1098,26 @@
       "imageUrl": "https://booth.pximg.net/dfe3e7b0-7e4b-4353-9083-8af76f96029c/i/7108322/8fb5aeb9-682e-47f2-95e2-254899965ec0_base_resized.jpg",
       "pricing": "無料",
       "price": "",
+      "forwardSupport": true,
+      "reverseSupport": false
+    },
+    {
+      "id": "056",
+      "registeredDate": "2025-11-26",
+      "updatedDate": "2025-11-26",
+      "avatarName": "焔花（ほのか）",
+      "avatarNameUrl": "https://easternwind.booth.pm/items/7496742",
+      "profileVersion": "1.0",
+      "avatarAuthor": "willplus",
+      "avatarAuthorUrl": "https://easternwind.booth.pm/",
+      "profileAuthor": "willplus",
+      "profileAuthorUrl": "https://easternwind.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://easternwind.booth.pm/items/7496742",
+      "imageUrl": "https://booth.pximg.net/00074997-896d-4ef0-b224-3e1fff8a97e6/i/7496742/9a7fa000-12fb-4f17-bedd-aa768ceaadc1_base_resized.jpg",
+      "pricing": "アバター同梱",
+      "price": "7000",
       "forwardSupport": true,
       "reverseSupport": false
     }
