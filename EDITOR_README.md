@@ -34,7 +34,7 @@ profiles.jsonを簡単に編集できるGUIツール
 **ライブラリのインストール:**
 
 ```bash
-pip install tkcalendar Pillow
+pip install tkcalendar Pillow requests
 ```
 
 **起動方法:**
