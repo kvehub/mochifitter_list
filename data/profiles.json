@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-27 01:49:17 JST",
+  "lastUpdated": "2025-11-27 01:52:40 JST",
   "profiles": [
     {
       "id": "001",
@@ -5670,6 +5670,27 @@
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
+    },
+    {
+      "id": "271",
+      "registeredDate": "2025-11-27",
+      "updatedDate": "2025-11-27",
+      "avatarName": "白雪天使",
+      "avatarNameUrl": "https://hiehieck.booth.pm/items/5438970",
+      "profileVersion": "1.0",
+      "avatarAuthor": "おみせです\n",
+      "avatarAuthorUrl": "https://hiehieck.booth.pm/",
+      "profileAuthor": "おみせです\n",
+      "profileAuthorUrl": "https://hiehieck.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://hiehieck.booth.pm/items/5438970",
+      "imageUrl": "https://booth.pximg.net/c/620x620/e1da7fe2-4e87-4ba0-85db-2a5eaedc6c78/i/5438970/66f04fd0-4b91-4013-9171-71feb8599d49_base_resized.jpg",
+      "pricing": "アバター同梱",
+      "price": "4500",
+      "forwardSupport": true,
+      "reverseSupport": false,
+      "notes": "11/30日まで7000→4500"
     }
   ]
 }
