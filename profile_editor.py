@@ -16,6 +16,7 @@ import urllib.request
 import subprocess
 import base64
 import requests
+import csv
 
 
 def get_app_dir():
@@ -134,6 +135,8 @@ class ProfileEditor:
         ttk.Button(toolbar, text="レコードを追加", command=self.add_profile).pack(side=tk.LEFT, padx=2)
         ttk.Button(toolbar, text="複製", command=self.duplicate_profile).pack(side=tk.LEFT, padx=2)
         ttk.Button(toolbar, text="削除", command=self.delete_profile).pack(side=tk.LEFT, padx=2)
+        ttk.Button(toolbar, text="CSVインポート", command=self.import_csv).pack(side=tk.LEFT, padx=2)
+        ttk.Button(toolbar, text="CSVエクスポート", command=self.export_csv).pack(side=tk.LEFT, padx=2)
         ttk.Button(toolbar, text="保存", command=self.save_data).pack(side=tk.LEFT, padx=2)
         ttk.Button(toolbar, text="再読み込み", command=self.load_data).pack(side=tk.LEFT, padx=2)
 
@@ -622,6 +625,158 @@ class ProfileEditor:
         self.current_selection = new_profile
         self.load_profile_to_form(new_profile)
         self.form_modified = False
+
+    def import_csv(self):
+        """CSVファイルからプロファイルをインポート"""
+        # CSVファイルを選択
+        csv_path = filedialog.askopenfilename(
+            title="CSVファイルを選択",
+            filetypes=[("CSV files", "*.csv"), ("All files", "*.*")]
+        )
+
+        if not csv_path:
+            return
+
+        try:
+            imported_count = 0
+            updated_count = 0
+            error_count = 0
+            error_messages = []
+
+            with open(csv_path, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+
+                for row_num, row in enumerate(reader, start=2):  # ヘッダーが1行目なので2から
+                    try:
+                        # IDの処理
+                        csv_id = row.get('id', '').strip()
+
+                        if csv_id:
+                            # IDが指定されている場合、既存レコードを検索
+                            existing_profile = None
+                            for profile in self.data["profiles"]:
+                                if profile.get("id") == csv_id:
+                                    existing_profile = profile
+                                    break
+
+                            if existing_profile:
+                                # 既存レコードを更新
+                                profile_data = existing_profile
+                                updated_count += 1
+                                # 更新日のみ今日の日付に
+                                profile_data["updatedDate"] = datetime.now().strftime("%Y-%m-%d")
+                            else:
+                                # 指定されたIDで新規追加
+                                profile_data = {"id": csv_id}
+                                self.data["profiles"].append(profile_data)
+                                imported_count += 1
+                                # 新規の場合は登録日・更新日を今日に
+                                profile_data["registeredDate"] = datetime.now().strftime("%Y-%m-%d")
+                                profile_data["updatedDate"] = datetime.now().strftime("%Y-%m-%d")
+                        else:
+                            # IDが空の場合、自動採番で新規追加
+                            new_id = self.find_next_available_id()
+                            profile_data = {"id": new_id}
+                            self.data["profiles"].append(profile_data)
+                            imported_count += 1
+                            # 新規の場合は登録日・更新日を今日に
+                            profile_data["registeredDate"] = datetime.now().strftime("%Y-%m-%d")
+                            profile_data["updatedDate"] = datetime.now().strftime("%Y-%m-%d")
+
+                        # 各フィールドを設定
+                        for field_name in ["avatarName", "avatarNameUrl", "profileVersion",
+                                          "avatarAuthor", "avatarAuthorUrl", "profileAuthor",
+                                          "profileAuthorUrl", "downloadMethod", "downloadLocation",
+                                          "imageUrl", "pricing", "price"]:
+                            if field_name in row:
+                                profile_data[field_name] = row[field_name].strip()
+
+                        # 日付フィールド（CSVに値があればそれを使用、なければ既存値を維持）
+                        if not csv_id or not existing_profile:
+                            # 新規追加の場合は上で設定済み
+                            pass
+                        else:
+                            # 更新の場合、CSVに日付があればそれを使用
+                            if "registeredDate" in row and row["registeredDate"].strip():
+                                profile_data["registeredDate"] = row["registeredDate"].strip()
+                            if "updatedDate" in row and row["updatedDate"].strip():
+                                profile_data["updatedDate"] = row["updatedDate"].strip()
+
+                        # Boolean型フィールド
+                        for field_name in ["official", "forwardSupport", "reverseSupport"]:
+                            if field_name in row:
+                                value = row[field_name].strip().lower()
+                                profile_data[field_name] = value in ["true", "1", "yes", "TRUE", "True"]
+
+                    except Exception as e:
+                        error_count += 1
+                        error_messages.append(f"行{row_num}: {str(e)[:50]}")
+
+            # インポート完了メッセージ
+            self.refresh_tree()
+
+            message = f"インポート完了\n\n"
+            message += f"新規追加: {imported_count}件\n"
+            message += f"更新: {updated_count}件\n"
+            if error_count > 0:
+                message += f"エラー: {error_count}件\n\n"
+                message += "エラー詳細:\n" + "\n".join(error_messages[:5])
+                if len(error_messages) > 5:
+                    message += f"\n... 他 {len(error_messages) - 5}件"
+
+            messagebox.showinfo("インポート完了", message)
+
+        except Exception as e:
+            messagebox.showerror("エラー", f"CSVファイルの読み込みに失敗しました:\n{str(e)}")
+
+    def export_csv(self):
+        """プロファイルをCSVファイルにエクスポート"""
+        if not self.data or not self.data.get("profiles"):
+            messagebox.showwarning("警告", "エクスポートするデータがありません")
+            return
+
+        # 保存先を選択
+        csv_path = filedialog.asksaveasfilename(
+            title="CSVファイルを保存",
+            defaultextension=".csv",
+            filetypes=[("CSV files", "*.csv"), ("All files", "*.*")],
+            initialfile="profiles.csv"
+        )
+
+        if not csv_path:
+            return
+
+        try:
+            # フィールド名を定義（全項目）
+            fieldnames = [
+                "id", "registeredDate", "updatedDate",
+                "avatarName", "avatarNameUrl", "profileVersion",
+                "avatarAuthor", "avatarAuthorUrl",
+                "profileAuthor", "profileAuthorUrl",
+                "official", "downloadMethod", "downloadLocation",
+                "imageUrl", "pricing", "price",
+                "forwardSupport", "reverseSupport"
+            ]
+
+            with open(csv_path, 'w', encoding='utf-8', newline='') as f:
+                writer = csv.DictWriter(f, fieldnames=fieldnames)
+                writer.writeheader()
+
+                for profile in self.data["profiles"]:
+                    # Boolean型を文字列に変換
+                    row_data = {}
+                    for field in fieldnames:
+                        value = profile.get(field, "")
+                        if isinstance(value, bool):
+                            row_data[field] = str(value)
+                        else:
+                            row_data[field] = value
+                    writer.writerow(row_data)
+
+            messagebox.showinfo("完了", f"{len(self.data['profiles'])}件のプロファイルをエクスポートしました\n\n{csv_path}")
+
+        except Exception as e:
+            messagebox.showerror("エラー", f"CSVファイルの保存に失敗しました:\n{str(e)}")
 
     def delete_profile(self):
         """選択中のプロファイルを削除"""
