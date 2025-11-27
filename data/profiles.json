@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-27 16:05:08 JST",
+  "lastUpdated": "2025-11-27 16:15:02 JST",
   "profiles": [
     {
       "id": "001",
@@ -7308,6 +7308,27 @@
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
+    },
+    {
+      "id": "349",
+      "registeredDate": "2025-11-27",
+      "updatedDate": "2025-11-27",
+      "avatarName": "くろちゃん(分霊)Refine",
+      "avatarNameUrl": "https://allalonekuro.fanbox.cc/posts/1063098",
+      "profileVersion": "1.0",
+      "avatarAuthor": "くろちゃんのおじさん",
+      "avatarAuthorUrl": "https://allalonekuro.fanbox.cc/",
+      "profileAuthor": "クロフラ@狐の小物屋",
+      "profileAuthorUrl": "https://kurofura.booth.pm/",
+      "official": false,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://kurofura.booth.pm/items/7667407",
+      "imageUrl": "https://pixiv.pximg.net/c/1200x630_90_a2_g5/fanbox/public/images/post/1063098/cover/UNkj562gUUio9kI4M6XZ2Iio.jpeg",
+      "pricing": "無料",
+      "price": "",
+      "forwardSupport": true,
+      "reverseSupport": false,
+      "notes": "Fanbox限定配布アバター"
     }
   ]
 }
