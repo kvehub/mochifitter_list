@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-27 20:45:29 JST",
+  "lastUpdated": "2025-11-27 21:13:18 JST",
   "profiles": [
     {
       "id": "001",
@@ -7413,6 +7413,58 @@
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": "発売は12/1～"
+    },
+    {
+      "id": "354",
+      "registeredDate": "2025-11-27",
+      "updatedDate": "2025-11-27",
+      "avatarName": "小夜 Koyoi",
+      "avatarNameUrl": "https://alua7.booth.pm/items/5826600",
+      "profileVersion": "1.0",
+      "avatarAuthor": "alua7 Shop",
+      "avatarAuthorUrl": "https://alua7.booth.pm/",
+      "profileAuthor": "alua7 Shop",
+      "profileAuthorUrl": "https://alua7.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://alua7.booth.pm/items/5826600",
+      "imageUrl": "https://booth.pximg.net/c/620x620/060c8062-129d-4eac-b9c4-86a70bf74643/i/5826600/09075b0d-5a8c-4163-ba54-65d3c9868c53_base_resized.jpg",
+      "pricing": "無料",
+      "price": "",
+      "avatarPrice": "2500",
+      "onSale": true,
+      "saleStartDate": "",
+      "saleEndDate": "2026-01-18",
+      "salePrice": "2000",
+      "forwardSupport": true,
+      "reverseSupport": false,
+      "notes": ""
+    },
+    {
+      "id": "355",
+      "registeredDate": "2025-11-27",
+      "updatedDate": "2025-11-27",
+      "avatarName": "Nysネイス",
+      "avatarNameUrl": "https://alua7.booth.pm/items/3978893\n",
+      "profileVersion": "1.0",
+      "avatarAuthor": "alua7 Shop",
+      "avatarAuthorUrl": "https://alua7.booth.pm/",
+      "profileAuthor": "alua7 Shop",
+      "profileAuthorUrl": "https://alua7.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://alua7.booth.pm/items/3978893\n",
+      "imageUrl": "https://booth.pximg.net/c/620x620/060c8062-129d-4eac-b9c4-86a70bf74643/i/3978893/c99e903a-1ca5-44f5-94ef-aea556e13698_base_resized.jpg",
+      "pricing": "無料",
+      "price": "",
+      "avatarPrice": "2500",
+      "onSale": true,
+      "saleStartDate": "",
+      "saleEndDate": "2026-01-18",
+      "salePrice": "2000",
+      "forwardSupport": true,
+      "reverseSupport": false,
+      "notes": ""
     }
   ]
 }
