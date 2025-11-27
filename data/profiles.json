@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-27 15:21:03 JST",
+  "lastUpdated": "2025-11-27 15:24:19 JST",
   "profiles": [
     {
       "id": "001",
@@ -7224,6 +7224,27 @@
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": "販売休止中"
+    },
+    {
+      "id": "345",
+      "registeredDate": "2025-11-27",
+      "updatedDate": "2025-11-27",
+      "avatarName": "Reflet -ルフレ-",
+      "avatarNameUrl": "https://bbkktn.booth.pm/items/4400771",
+      "profileVersion": "1.0",
+      "avatarAuthor": "びきたん",
+      "avatarAuthorUrl": "https://bbkktn.booth.pm/",
+      "profileAuthor": "L3ia",
+      "profileAuthorUrl": "https://l3ia.booth.pm/",
+      "official": false,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://l3ia.booth.pm/items/7694796",
+      "imageUrl": "https://booth.pximg.net/e4a23b04-95ae-4e1b-a746-072a48f8a8b1/i/4400771/0ad4b30b-86f8-4c11-8654-08f94ecb64bb_base_resized.jpg",
+      "pricing": "無料",
+      "price": "",
+      "forwardSupport": true,
+      "reverseSupport": false,
+      "notes": "びきたんさん公認"
     }
   ]
 }
