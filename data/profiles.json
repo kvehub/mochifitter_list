@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-27 16:45:22 JST",
+  "lastUpdated": "2025-11-27 17:32:59 JST",
   "profiles": [
     {
       "id": "001",
@@ -7349,6 +7349,27 @@
       "price": "500",
       "forwardSupport": true,
       "reverseSupport": true,
+      "notes": ""
+    },
+    {
+      "id": "351",
+      "registeredDate": "2025-11-27",
+      "updatedDate": "2025-11-27",
+      "avatarName": "ミーシェ",
+      "avatarNameUrl": "https://ponderogen.booth.pm/items/1256087",
+      "profileVersion": "1.0",
+      "avatarAuthor": "ぽんでろ",
+      "avatarAuthorUrl": "https://ponderogen.booth.pm/",
+      "profileAuthor": "POPPO",
+      "profileAuthorUrl": "https://poppo-shop.booth.pm/",
+      "official": false,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://poppo-shop.booth.pm/items/7697575",
+      "imageUrl": "https://booth.pximg.net/ed52788c-0b3b-4e38-9ded-1e5797daf0ef/i/1256087/31156a98-56b4-4c63-93e5-ea4df9b35ac9_base_resized.jpg",
+      "pricing": "無料",
+      "price": "",
+      "forwardSupport": true,
+      "reverseSupport": false,
       "notes": ""
     }
   ]
