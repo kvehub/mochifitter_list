@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-27 03:34:27 JST",
+  "lastUpdated": "2025-11-27 15:17:39 JST",
   "profiles": [
     {
       "id": "001",
@@ -7182,6 +7182,48 @@
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
+    },
+    {
+      "id": "343",
+      "registeredDate": "2025-11-27",
+      "updatedDate": "2025-11-27",
+      "avatarName": "翠蓮",
+      "avatarNameUrl": "https://mio3works.booth.pm/items/1812495",
+      "profileVersion": "1.0",
+      "avatarAuthor": "mio",
+      "avatarAuthorUrl": "https://mio3works.booth.pm/",
+      "profileAuthor": "mio",
+      "profileAuthorUrl": "https://mio3works.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://mio3works.booth.pm/items/1812495",
+      "imageUrl": "https://booth.pximg.net/9dd190c0-6ce8-4b74-9a14-bd48da37473d/i/1812495/0454624c-bf9e-45b1-8b03-7786d7bdb769_base_resized.jpg",
+      "pricing": "アバター同梱",
+      "price": "5000",
+      "forwardSupport": true,
+      "reverseSupport": false,
+      "notes": "販売中止"
+    },
+    {
+      "id": "344",
+      "registeredDate": "2025-11-27",
+      "updatedDate": "2025-11-27",
+      "avatarName": "一介天使",
+      "avatarNameUrl": "https://mio3works.booth.pm/items/1896193",
+      "profileVersion": "1.0",
+      "avatarAuthor": "mio",
+      "avatarAuthorUrl": "https://mio3works.booth.pm/",
+      "profileAuthor": "mio",
+      "profileAuthorUrl": "https://mio3works.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://mio3works.booth.pm/items/1896193",
+      "imageUrl": "https://booth.pximg.net/9dd190c0-6ce8-4b74-9a14-bd48da37473d/i/1896193/d68aebaa-f833-48c8-ae5d-fddaae274744_base_resized.jpg",
+      "pricing": "アバター同梱",
+      "price": "5000",
+      "forwardSupport": true,
+      "reverseSupport": false,
+      "notes": "販売中止"
     }
   ]
 }
