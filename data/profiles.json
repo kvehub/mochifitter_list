@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-27 21:13:18 JST",
+  "lastUpdated": "2025-11-27 21:15:36 JST",
   "profiles": [
     {
       "id": "001",
@@ -7462,6 +7462,32 @@
       "saleStartDate": "",
       "saleEndDate": "2026-01-18",
       "salePrice": "2000",
+      "forwardSupport": true,
+      "reverseSupport": false,
+      "notes": ""
+    },
+    {
+      "id": "356",
+      "registeredDate": "2025-11-27",
+      "updatedDate": "2025-11-27",
+      "avatarName": "連翹Rengyo",
+      "avatarNameUrl": "https://anacharis.booth.pm/items/4056628\n",
+      "profileVersion": "1.0",
+      "avatarAuthor": "オオカナダモ",
+      "avatarAuthorUrl": "https://anacharis.booth.pm/",
+      "profileAuthor": "オオカナダモ",
+      "profileAuthorUrl": "https://anacharis.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://anacharis.booth.pm/items/4056628\n",
+      "imageUrl": "https://booth.pximg.net/c/620x620/674fc427-6fbb-4335-8520-23bc1069d4f5/i/4056628/2ba6b45b-c90f-42bb-ab55-5fce4edd0bb3_base_resized.jpg",
+      "pricing": "無料",
+      "price": "0",
+      "avatarPrice": "4500",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
