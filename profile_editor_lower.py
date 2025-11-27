@@ -17,7 +17,6 @@ import subprocess
 import base64
 import requests
 import csv
-from bs4 import BeautifulSoup
 
 
 def get_app_dir():
@@ -209,14 +208,10 @@ class ProfileEditor:
             ("プロファイル作者URL", "profileAuthorUrl", True),
         ]
 
-        # アバターURL（取得ボタン付き）
+        # アバターURL
         ttk.Label(scrollable_frame, text="アバターURL").grid(row=row, column=0, sticky=tk.W, pady=2)
-        avatar_url_frame = ttk.Frame(scrollable_frame)
-        avatar_url_frame.grid(row=row, column=1, sticky=(tk.W, tk.E), pady=2, padx=(5, 0))
-        self.fields["avatarNameUrl"] = PlaceholderEntry(avatar_url_frame, placeholder="https://", width=40)
-        self.fields["avatarNameUrl"].pack(side=tk.LEFT, fill=tk.X, expand=True)
-        ttk.Button(avatar_url_frame, text="取得", width=6,
-                   command=self.fetch_from_url).pack(side=tk.LEFT, padx=2)
+        self.fields["avatarNameUrl"] = PlaceholderEntry(scrollable_frame, placeholder="https://", width=50)
+        self.fields["avatarNameUrl"].grid(row=row, column=1, sticky=(tk.W, tk.E), pady=2, padx=(5, 0))
         row += 1
 
         for label_text, field_name, is_url in normal_fields:
@@ -753,105 +748,7 @@ class ProfileEditor:
         except Exception as e:
             messagebox.showerror("エラー", f"CSVファイルの読み込みに失敗しました:\n{str(e)}")
 
-    def fetch_from_url(self):
-        """URLから情報を取得してフォームに自動入力"""
-        # アバターURLを取得
-        url = self.fields["avatarNameUrl"].get_value()
 
-        if not url:
-            messagebox.showwarning("警告", "アバターURLを入力してください")
-            return
-
-        # Booth判定
-        if "booth.pm" not in url:
-            messagebox.showerror("エラー", "現在はBoothのURLのみ対応しています")
-            return
-
-        try:
-            # スクレイピング実行
-            data = self.scrape_booth(url)
-
-            if data:
-                # フォームに自動入力
-                self.fields["avatarName"].delete(0, tk.END)
-                self.fields["avatarName"].insert(0, data.get("avatarName", ""))
-
-                self.fields["avatarAuthor"].delete(0, tk.END)
-                self.fields["avatarAuthor"].insert(0, data.get("avatarAuthor", ""))
-
-                self.fields["avatarAuthorUrl"].set_value(data.get("avatarAuthorUrl", ""))
-
-                self.fields["imageUrl"].set_value(data.get("imageUrl", ""))
-
-                # 公式トグルがONの場合、プロファイル作者情報を自動設定
-                if self.fields["official"].get():
-                    self.fields["profileAuthor"].delete(0, tk.END)
-                    self.fields["profileAuthor"].insert(0, data.get("avatarAuthor", ""))
-
-                    self.fields["profileAuthorUrl"].set_value(data.get("avatarAuthorUrl", ""))
-
-                # 画像プレビューを更新
-                self.preview_image()
-            else:
-                messagebox.showerror("エラー", "情報の取得に失敗しました")
-
-        except Exception as e:
-            messagebox.showerror("エラー", f"取得中にエラーが発生しました:\n{str(e)}")
-
-    def scrape_booth(self, url):
-        """BoothページからHTMLをパース"""
-        try:
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-            }
-
-            response = requests.get(url, headers=headers, timeout=10)
-            response.raise_for_status()
-
-            soup = BeautifulSoup(response.content, 'html.parser')
-
-            # アバター名を取得（titleタグから）
-            title_tag = soup.find('title')
-            avatar_name = ""
-            if title_tag:
-                title_text = title_tag.string
-                # " - BOOTH" を削除
-                avatar_name = title_text.replace(" - BOOTH", "").strip()
-                # ショップ名も削除（最後の " - " 以降を削除）
-                parts = avatar_name.rsplit(" - ", 1)
-                if len(parts) > 1:
-                    avatar_name = parts[0].strip()
-
-            # OGタグから画像URLを取得
-            og_image = soup.find('meta', property='og:image')
-            image_url = og_image['content'] if og_image else ""
-
-            # home-link-container__nicknameから作者名を取得
-            nickname_div = soup.find('div', class_='home-link-container__nickname')
-            avatar_author = ""
-            avatar_author_url = ""
-
-            if nickname_div:
-                link = nickname_div.find('a', class_='nav')
-                if link:
-                    avatar_author = link.get_text(strip=True)
-                    # 入力URLからショップのベースURLを抽出
-                    # 例: https://sephir.booth.pm/items/3929383 -> https://sephir.booth.pm/
-                    from urllib.parse import urlparse
-                    parsed = urlparse(url)
-                    avatar_author_url = f"{parsed.scheme}://{parsed.netloc}/"
-
-            return {
-                "avatarName": avatar_name,
-                "avatarAuthor": avatar_author,
-                "avatarAuthorUrl": avatar_author_url,
-                "imageUrl": image_url
-            }
-
-        except requests.RequestException as e:
-            raise Exception(f"ページの取得に失敗しました: {str(e)}")
-        except Exception as e:
-            raise Exception(f"解析エラー: {str(e)}")
 
     def export_csv(self):
         """プロファイルをCSVファイルにエクスポート"""
