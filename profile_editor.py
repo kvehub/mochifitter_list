@@ -76,7 +76,7 @@ class ProfileEditor:
     def __init__(self, root):
         self.root = root
         self.root.title("もちふぃった～ プロファイルエディタ")
-        self.root.geometry("1400x800")
+        self.root.geometry("1400x900")
 
         self.app_dir = get_app_dir()
         self.json_path = os.path.join(self.app_dir, "data", "profiles.json")
@@ -85,10 +85,13 @@ class ProfileEditor:
         self.image_preview_label = None
         self.form_modified = False  # フォームが編集されたかどうか
         self.sort_column = "id"  # デフォルトのソート列
-        self.sort_reverse = False  # ソート順
+        self.sort_reverse = True  # ソート順（True=降順、ID001が下に）
+        self.status_labels = {}  # ステータス表示ラベル
 
         self.setup_ui()
         self.load_data()
+        # 初期状態ではフィールドを無効化
+        self.disable_form_fields()
 
     def setup_ui(self):
         """UIのセットアップ"""
@@ -199,6 +202,20 @@ class ProfileEditor:
                    command=lambda: self.open_calendar("updatedDate")).pack(side=tk.LEFT)
         row += 1
 
+        # チェックボックスフィールド
+        checkbox_frame = ttk.Frame(scrollable_frame)
+        checkbox_frame.grid(row=row, column=0, columnspan=2, sticky=tk.W, pady=10)
+
+        self.fields["official"] = tk.BooleanVar()
+        ttk.Checkbutton(checkbox_frame, text="公式", variable=self.fields["official"]).pack(side=tk.LEFT, padx=5)
+
+        self.fields["forwardSupport"] = tk.BooleanVar()
+        ttk.Checkbutton(checkbox_frame, text="順方向対応", variable=self.fields["forwardSupport"]).pack(side=tk.LEFT, padx=5)
+
+        self.fields["reverseSupport"] = tk.BooleanVar()
+        ttk.Checkbutton(checkbox_frame, text="逆方向対応", variable=self.fields["reverseSupport"]).pack(side=tk.LEFT, padx=5)
+        row += 1
+
         # その他の通常フィールド
         normal_fields = [
             ("アバター名", "avatarName", False),
@@ -238,10 +255,14 @@ class ProfileEditor:
                    command=lambda: self.set_download_method("Booth")).pack(side=tk.LEFT, padx=2)
         row += 1
 
-        # 残りのフィールド
+        # 配布場所URL（取得ボタン付き）
         ttk.Label(scrollable_frame, text="配布場所URL").grid(row=row, column=0, sticky=tk.W, pady=2)
-        self.fields["downloadLocation"] = PlaceholderEntry(scrollable_frame, placeholder="https://", width=50)
-        self.fields["downloadLocation"].grid(row=row, column=1, sticky=(tk.W, tk.E), pady=2, padx=(5, 0))
+        download_url_frame = ttk.Frame(scrollable_frame)
+        download_url_frame.grid(row=row, column=1, sticky=(tk.W, tk.E), pady=2, padx=(5, 0))
+        self.fields["downloadLocation"] = PlaceholderEntry(download_url_frame, placeholder="https://", width=40)
+        self.fields["downloadLocation"].pack(side=tk.LEFT, fill=tk.X, expand=True)
+        ttk.Button(download_url_frame, text="取得", width=6,
+                   command=self.fetch_from_download_url).pack(side=tk.LEFT, padx=2)
         row += 1
 
         ttk.Label(scrollable_frame, text="画像URL").grid(row=row, column=0, sticky=tk.W, pady=2)
@@ -269,13 +290,60 @@ class ProfileEditor:
                    command=lambda: self.set_pricing("アバター同梱")).pack(side=tk.LEFT, padx=2)
         row += 1
 
-        # 価格
-        ttk.Label(scrollable_frame, text="価格").grid(row=row, column=0, sticky=tk.W, pady=2)
+        # プロファイル価格
+        ttk.Label(scrollable_frame, text="プロファイル価格").grid(row=row, column=0, sticky=tk.W, pady=2)
         price_frame = ttk.Frame(scrollable_frame)
         price_frame.grid(row=row, column=1, sticky=(tk.W, tk.E), pady=2, padx=(5, 0))
         self.fields["price"] = ttk.Entry(price_frame, width=50)
         self.fields["price"].pack(side=tk.LEFT, fill=tk.X, expand=True)
         ttk.Label(price_frame, text="※数字のみ(例: 500)", font=("", 8), foreground="gray").pack(side=tk.LEFT, padx=(5, 0))
+        row += 1
+
+        # アバター価格
+        ttk.Label(scrollable_frame, text="アバター価格").grid(row=row, column=0, sticky=tk.W, pady=2)
+        avatar_price_frame = ttk.Frame(scrollable_frame)
+        avatar_price_frame.grid(row=row, column=1, sticky=(tk.W, tk.E), pady=2, padx=(5, 0))
+        self.fields["avatarPrice"] = ttk.Entry(avatar_price_frame, width=50)
+        self.fields["avatarPrice"].pack(side=tk.LEFT, fill=tk.X, expand=True)
+        ttk.Label(avatar_price_frame, text="※数字のみ(例: 3000)", font=("", 8), foreground="gray").pack(side=tk.LEFT, padx=(5, 0))
+        row += 1
+
+        # セールチェックボックス
+        ttk.Label(scrollable_frame, text="セール").grid(row=row, column=0, sticky=tk.W, pady=2)
+        sale_check_frame = ttk.Frame(scrollable_frame)
+        sale_check_frame.grid(row=row, column=1, sticky=tk.W, pady=2, padx=(5, 0))
+        self.fields["onSale"] = tk.BooleanVar()
+        ttk.Checkbutton(sale_check_frame, text="セール中", variable=self.fields["onSale"],
+                       command=self.toggle_sale_fields).pack(side=tk.LEFT)
+        row += 1
+
+        # セール開始日
+        ttk.Label(scrollable_frame, text="セール開始日").grid(row=row, column=0, sticky=tk.W, pady=2)
+        sale_start_frame = ttk.Frame(scrollable_frame)
+        sale_start_frame.grid(row=row, column=1, sticky=(tk.W, tk.E), pady=2, padx=(5, 0))
+        self.fields["saleStartDate"] = ttk.Entry(sale_start_frame, width=40)
+        self.fields["saleStartDate"].pack(side=tk.LEFT, fill=tk.X, expand=True)
+        ttk.Button(sale_start_frame, text="📅", width=3,
+                   command=lambda: self.open_calendar("saleStartDate")).pack(side=tk.LEFT, padx=2)
+        row += 1
+
+        # セール終了日
+        ttk.Label(scrollable_frame, text="セール終了日").grid(row=row, column=0, sticky=tk.W, pady=2)
+        sale_end_frame = ttk.Frame(scrollable_frame)
+        sale_end_frame.grid(row=row, column=1, sticky=(tk.W, tk.E), pady=2, padx=(5, 0))
+        self.fields["saleEndDate"] = ttk.Entry(sale_end_frame, width=40)
+        self.fields["saleEndDate"].pack(side=tk.LEFT, fill=tk.X, expand=True)
+        ttk.Button(sale_end_frame, text="📅", width=3,
+                   command=lambda: self.open_calendar("saleEndDate")).pack(side=tk.LEFT, padx=2)
+        row += 1
+
+        # セール価格
+        ttk.Label(scrollable_frame, text="セール価格").grid(row=row, column=0, sticky=tk.W, pady=2)
+        sale_price_frame = ttk.Frame(scrollable_frame)
+        sale_price_frame.grid(row=row, column=1, sticky=(tk.W, tk.E), pady=2, padx=(5, 0))
+        self.fields["salePrice"] = ttk.Entry(sale_price_frame, width=50)
+        self.fields["salePrice"].pack(side=tk.LEFT, fill=tk.X, expand=True)
+        ttk.Label(sale_price_frame, text="※数字のみ(例: 2000)", font=("", 8), foreground="gray").pack(side=tk.LEFT, padx=(5, 0))
         row += 1
 
         # 備考（複数行入力可能）
@@ -289,20 +357,15 @@ class ProfileEditor:
         self.fields["notes"].configure(yscrollcommand=notes_scrollbar.set)
         row += 1
 
-        # チェックボックスフィールド
-        checkbox_frame = ttk.Frame(scrollable_frame)
-        checkbox_frame.grid(row=row, column=0, columnspan=2, sticky=tk.W, pady=10)
-
-        self.fields["official"] = tk.BooleanVar()
-        ttk.Checkbutton(checkbox_frame, text="公式", variable=self.fields["official"]).pack(side=tk.LEFT, padx=5)
-
-        self.fields["forwardSupport"] = tk.BooleanVar()
-        ttk.Checkbutton(checkbox_frame, text="順方向対応", variable=self.fields["forwardSupport"]).pack(side=tk.LEFT, padx=5)
-
-        self.fields["reverseSupport"] = tk.BooleanVar()
-        ttk.Checkbutton(checkbox_frame, text="逆方向対応", variable=self.fields["reverseSupport"]).pack(side=tk.LEFT, padx=5)
-
         scrollable_frame.columnconfigure(1, weight=1)
+
+        # 入力状況表示
+        row += 1
+        validation_frame = ttk.LabelFrame(scrollable_frame, text="入力状況", padding="10")
+        validation_frame.grid(row=row, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=10)
+
+        self.validation_label = tk.Label(validation_frame, text="", fg="red", justify=tk.LEFT, anchor=tk.W)
+        self.validation_label.pack(fill=tk.BOTH, expand=True)
 
         # 適用ボタン
         ttk.Button(scrollable_frame, text="変更を適用", command=self.apply_changes).grid(row=row+1, column=0, columnspan=2, pady=10)
@@ -322,10 +385,114 @@ class ProfileEditor:
                                             foreground="gray", anchor="center", justify="center")
         self.image_preview_label.pack(expand=True, fill=tk.BOTH, padx=10, pady=10)
 
+    def add_status_to_frame(self, frame, field_name, always_gray=False):
+        """フレームにステータスインジケーターを追加"""
+        status_label = tk.Label(frame, text="●", fg="gray", width=2)
+        status_label.pack(side=tk.LEFT, padx=(0, 5))
+
+        self.status_labels[field_name] = {
+            "label": status_label,
+            "always_gray": always_gray
+        }
+
+        return status_label
+
+    def update_status_color(self, field_name):
+        """ステータス色を更新"""
+        if field_name not in self.status_labels:
+            return
+
+        status_info = self.status_labels[field_name]
+
+        # 常にグレーのフィールド
+        if status_info["always_gray"]:
+            status_info["label"].config(fg="gray")
+            return
+
+        # フィールドの値を取得
+        widget = self.fields.get(field_name)
+        if not widget:
+            return
+
+        # 値の有無を確認
+        has_value = False
+        if isinstance(widget, tk.BooleanVar):
+            # チェックボックスは常にグレー
+            status_info["label"].config(fg="gray")
+            return
+        elif isinstance(widget, tk.Text):
+            has_value = bool(widget.get("1.0", tk.END).strip())
+        elif isinstance(widget, PlaceholderEntry):
+            has_value = bool(widget.get_value())
+        elif isinstance(widget, ttk.Entry):
+            # 無効化されているか確認
+            if str(widget.cget("state")) == "disabled":
+                status_info["label"].config(fg="gray")
+                return
+            has_value = bool(widget.get().strip())
+
+        # 色を設定
+        status_info["label"].config(fg="green" if has_value else "red")
+
+    def update_all_status_colors(self):
+        """全ステータス色を更新"""
+        for field_name in self.status_labels.keys():
+            self.update_status_color(field_name)
+
+    def update_validation_status(self):
+        """入力状況を更新"""
+        # チェック対象フィールド（必須項目）
+        required_fields = {
+            "id": "ID",
+            "avatarName": "アバター名",
+            "avatarNameUrl": "アバターURL",
+            "profileVersion": "プロファイルバージョン",
+            "avatarAuthor": "アバター作者",
+            "avatarAuthorUrl": "アバター作者URL",
+            "profileAuthor": "プロファイル作者",
+            "profileAuthorUrl": "プロファイル作者URL",
+            "downloadMethod": "配布方法",
+            "downloadLocation": "配布場所URL",
+            "imageUrl": "画像URL",
+            "pricing": "価格区分",
+            "price": "プロファイル価格",
+            "avatarPrice": "アバター価格",
+        }
+
+        missing_fields = []
+
+        for field_name, display_name in required_fields.items():
+            widget = self.fields.get(field_name)
+            if not widget:
+                continue
+
+            has_value = False
+
+            if isinstance(widget, tk.Text):
+                has_value = bool(widget.get("1.0", tk.END).strip())
+            elif isinstance(widget, PlaceholderEntry):
+                has_value = bool(widget.get_value())
+            elif isinstance(widget, ttk.Entry):
+                # 無効化されている場合はスキップ
+                if str(widget.cget("state")) == "disabled":
+                    continue
+                has_value = bool(widget.get().strip())
+
+            if not has_value:
+                missing_fields.append(f"× {display_name}")
+
+        # 表示更新
+        if missing_fields:
+            self.validation_label.config(text="\n".join(missing_fields), fg="red")
+        else:
+            self.validation_label.config(text="✓ 全て入力済み", fg="green")
+
     def bind_field_changes(self):
         """全フィールドの変更を検知するバインドを設定"""
         def mark_modified(event=None):
             self.form_modified = True
+            # 入力状況を更新
+            self.update_validation_status()
 
         # Entryフィールドにバインド
         for field_name, widget in self.fields.items():
@@ -441,9 +608,12 @@ class ProfileEditor:
 
     def load_profile_to_form(self, profile):
         """プロファイルデータをフォームに読み込み"""
+        # フィールドを有効化
+        self.enable_form_fields()
+
         # テキストフィールド
         for field_name, widget in self.fields.items():
-            if field_name in ["official", "forwardSupport", "reverseSupport"]:
+            if field_name in ["official", "forwardSupport", "reverseSupport", "onSale"]:
                 widget.set(profile.get(field_name, False))
             elif isinstance(widget, tk.Text):
                 widget.delete("1.0", tk.END)
@@ -454,21 +624,84 @@ class ProfileEditor:
                 widget.delete(0, tk.END)
                 widget.insert(0, profile.get(field_name, ""))
 
+        # セールフィールドの状態を更新
+        self.toggle_sale_fields()
+
+        # 入力状況を更新
+        self.update_validation_status()
+
+        # 画像プレビューを更新
+        self.preview_image()
+
     def set_today(self, field_name):
         """今日の日付を設定"""
         today = datetime.now().strftime("%Y-%m-%d")
         self.fields[field_name].delete(0, tk.END)
         self.fields[field_name].insert(0, today)
 
+        # 入力状況を更新
+        self.update_validation_status()
+
     def set_download_method(self, method):
         """配布方法を設定"""
         self.fields["downloadMethod"].delete(0, tk.END)
         self.fields["downloadMethod"].insert(0, method)
 
+        # 入力状況を更新
+        self.update_validation_status()
+
     def set_pricing(self, pricing):
         """価格区分を設定"""
         self.fields["pricing"].delete(0, tk.END)
         self.fields["pricing"].insert(0, pricing)
+
+        # 「無料」の場合はプロファイル価格に0を自動入力
+        if pricing == "無料":
+            self.fields["price"].delete(0, tk.END)
+            self.fields["price"].insert(0, "0")
+        # 「アバター同梱」の場合はプロファイル価格に-を自動入力し、アバターURLを配布場所URLにコピー
+        elif pricing == "アバター同梱":
+            self.fields["price"].delete(0, tk.END)
+            self.fields["price"].insert(0, "-")
+            # アバターURLを配布場所URLにコピー
+            avatar_url = self.fields["avatarNameUrl"].get_value()
+            if avatar_url:
+                self.fields["downloadLocation"].set_value(avatar_url)
+
+        # 入力状況を更新
+        self.update_validation_status()
+
+    def toggle_sale_fields(self):
+        """セール中チェックボックスの状態に応じてセール関連フィールドを有効/無効化"""
+        is_on_sale = self.fields["onSale"].get()
+        state = "normal" if is_on_sale else "disabled"
+
+        # セール関連フィールドの状態を変更
+        self.fields["saleStartDate"].config(state=state)
+        self.fields["saleEndDate"].config(state=state)
+        self.fields["salePrice"].config(state=state)
+
+    def enable_form_fields(self):
+        """全フォームフィールドを有効化"""
+        for field_name, widget in self.fields.items():
+            if field_name in ["official", "forwardSupport", "reverseSupport", "onSale"]:
+                # チェックボックスは常に有効
+                continue
+            elif isinstance(widget, tk.Text):
+                widget.config(state="normal")
+            elif isinstance(widget, (ttk.Entry, PlaceholderEntry)):
+                widget.config(state="normal")
+
+    def disable_form_fields(self):
+        """全フォームフィールドを無効化"""
+        for field_name, widget in self.fields.items():
+            if field_name in ["official", "forwardSupport", "reverseSupport", "onSale"]:
+                # チェックボックスは常に無効化
+                continue
+            elif isinstance(widget, tk.Text):
+                widget.config(state="disabled")
+            elif isinstance(widget, (ttk.Entry, PlaceholderEntry)):
+                widget.config(state="disabled")
 
     def preview_image(self):
         """画像URLからプレビューを表示"""
@@ -531,6 +764,9 @@ class ProfileEditor:
             self.fields[field_name].insert(0, formatted_date)
             cal_window.destroy()
 
+            # 入力状況を更新
+            self.update_validation_status()
+
         ttk.Button(cal_window, text="選択", command=select_date).pack(pady=10)
 
     def apply_changes(self):
@@ -554,7 +790,7 @@ class ProfileEditor:
                 else:
                     # 空欄の場合は自動採番
                     self.current_selection[field_name] = self.find_next_available_id()
-            elif field_name in ["official", "forwardSupport", "reverseSupport"]:
+            elif field_name in ["official", "forwardSupport", "reverseSupport", "onSale"]:
                 self.current_selection[field_name] = widget.get()
             elif isinstance(widget, tk.Text):
                 self.current_selection[field_name] = widget.get("1.0", tk.END).strip()
@@ -605,6 +841,11 @@ class ProfileEditor:
             "imageUrl": "",
             "pricing": "",
             "price": "",
+            "avatarPrice": "",
+            "onSale": False,
+            "saleStartDate": "",
+            "saleEndDate": "",
+            "salePrice": "",
             "forwardSupport": False,
             "reverseSupport": False,
             "notes": ""
@@ -792,6 +1033,42 @@ class ProfileEditor:
 
                 # 画像プレビューを更新
                 self.preview_image()
+
+                # 入力状況を更新
+                self.update_validation_status()
+            else:
+                messagebox.showerror("エラー", "情報の取得に失敗しました")
+
+        except Exception as e:
+            messagebox.showerror("エラー", f"取得中にエラーが発生しました:\n{str(e)}")
+
+    def fetch_from_download_url(self):
+        """配布場所URLから情報を取得してプロファイル作者情報を自動入力"""
+        # 配布場所URLを取得
+        url = self.fields["downloadLocation"].get_value()
+
+        if not url:
+            messagebox.showwarning("警告", "配布場所URLを入力してください")
+            return
+
+        # Booth判定
+        if "booth.pm" not in url:
+            messagebox.showerror("エラー", "現在はBoothのURLのみ対応しています")
+            return
+
+        try:
+            # スクレイピング実行
+            data = self.scrape_booth(url)
+
+            if data:
+                # プロファイル作者情報を自動入力
+                self.fields["profileAuthor"].delete(0, tk.END)
+                self.fields["profileAuthor"].insert(0, data.get("avatarAuthor", ""))
+
+                self.fields["profileAuthorUrl"].set_value(data.get("avatarAuthorUrl", ""))
+
+                # 入力状況を更新
+                self.update_validation_status()
             else:
                 messagebox.showerror("エラー", "情報の取得に失敗しました")
 
@@ -822,12 +1099,24 @@ class ProfileEditor:
                 if len(parts) > 1:
                     avatar_name = parts[0].strip()
 
-                # 「オリジナル3Dモデル」を削除
+                # 不要な文字列を削除
                 import re
                 avatar_name = avatar_name.replace("オリジナル3Dモデル", "").strip()
+                avatar_name = avatar_name.replace("3Dモデル", "").strip()
+                avatar_name = avatar_name.replace("オリジナル", "").strip()
+                avatar_name = avatar_name.replace("3D", "").strip()
+                avatar_name = avatar_name.replace("3Ｄ", "").strip()
+                avatar_name = avatar_name.replace("３Ｄ", "").strip()
+                avatar_name = avatar_name.replace("モデル", "").strip()
+                avatar_name = avatar_name.replace("VRChat", "").strip()
+                avatar_name = avatar_name.replace("アバター", "").strip()
+                avatar_name = avatar_name.replace("想定", "").strip()
 
                 # ver~~ を削除（大文字小文字区別なし）
                 avatar_name = re.sub(r'\s*ver\s*[^\s\(\)\[\]【】]*', '', avatar_name, flags=re.IGNORECASE).strip()
+
+                # #以降の1単語を削除（例: #Marycia3D）
+                avatar_name = re.sub(r'\s*#\S+', '', avatar_name).strip()
 
                 # カッコと引用符を削除（全角・半角）
                 avatar_name = re.sub(r'[\(\)\[\]【】「」『』""\'\'"]', '', avatar_name).strip()
@@ -839,20 +1128,26 @@ class ProfileEditor:
             og_image = soup.find('meta', property='og:image')
             image_url = og_image['content'] if og_image else ""
 
+            # 入力URLからショップのベースURLを抽出
+            # 例: https://alua7.booth.pm/items/3978893 -> https://alua7.booth.pm/
+            from urllib.parse import urlparse
+            parsed = urlparse(url)
+            avatar_author_url = f"{parsed.scheme}://{parsed.netloc}/"
+
             # home-link-container__nicknameから作者名を取得
             nickname_div = soup.find('div', class_='home-link-container__nickname')
             avatar_author = ""
-            avatar_author_url = ""
 
             if nickname_div:
                 link = nickname_div.find('a', class_='nav')
                 if link:
                     avatar_author = link.get_text(strip=True)
-                    # 入力URLからショップのベースURLを抽出
-                    # 例: https://sephir.booth.pm/items/3929383 -> https://sephir.booth.pm/
-                    from urllib.parse import urlparse
-                    parsed = urlparse(url)
-                    avatar_author_url = f"{parsed.scheme}://{parsed.netloc}/"
+
+            # 取得できなかった場合はshop-nameから取得
+            if not avatar_author:
+                shop_name_span = soup.find('span', class_='shop-name-label')
+                if shop_name_span:
+                    avatar_author = shop_name_span.get_text(strip=True)
 
             return {
                 "avatarName": avatar_name,
