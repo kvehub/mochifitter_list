@@ -33,11 +33,12 @@ flowchart TD
 
     Investigate --> CheckURL{目視判定}
     CheckURL -->|1.非登録対象<br/>衣装/テクスチャ等| Block[ブロック登録<br/>Block_URLs.txt]
-    CheckURL -->|2.非公式<br/>変換プロファイル| Unofficial[レコード追加]
+    CheckURL -->|2.非公式<br/>変換プロファイル| UnofficialSearch[対応アバター手動検索・調査<br/>どのアバター用か特定]
     CheckURL -->|3.公式<br/>アバターURL| Official[レコード追加]
 
     Block --> Investigate
 
+    UnofficialSearch --> Unofficial[レコード追加]
     Unofficial --> UnofficialInput[アバターURLペースト<br/>取得ボタン押下]
     UnofficialInput --> UnofficialAuto[自動入力:<br/>アバター名/作者/作者URL/画像URL]
     UnofficialAuto --> UnofficialCheck[順方向/逆方向チェック]
