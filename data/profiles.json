@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-28 09:26:55 JST",
+  "lastUpdated": "2025-11-28 09:31:15 JST",
   "profiles": [
     {
       "id": "001",
@@ -2814,10 +2814,15 @@
       "downloadLocation": "https://happalog.booth.pm/items/7065134",
       "imageUrl": "https://booth.pximg.net/c/620x620/373204c6-e566-459f-ad9f-7c4ee8daa3f3/i/7065134/2679177f-4c5a-45e9-81bf-c45081d2b11a_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
-      "forwardSupport": false,
+      "price": "0",
+      "forwardSupport": true,
       "reverseSupport": false,
-      "notes": "アバター同梱"
+      "notes": "",
+      "avatarPrice": "0",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": ""
     },
     {
       "id": "134",
