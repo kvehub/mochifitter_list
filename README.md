@@ -25,7 +25,7 @@ VRChat用アバターの「もちふぃったー」対応プロファイル情�
 
 ```mermaid
 flowchart TD
-    Start([事前準備]) --> Setup[profile_editor.py起動<br/>レコード追加をクリック]
+    Start([事前準備]) --> Setup[profile_editor.py起動]
     Setup --> Search[BOOTHでキーワード検索<br/>もちふぃった～ mochifitter等]
     Search --> Extract[booth_url_extractor.py実行<br/>→ booth_urls.txt]
     Extract --> Diff[diff_checker.py実行<br/>→ unregistered_avatars.txt]
@@ -33,11 +33,11 @@ flowchart TD
 
     Investigate --> CheckURL{URL判定}
     CheckURL -->|非登録対象| Block[ブロック登録<br/>Block_URLs.txt]
-    CheckURL -->|アバターURL| Input[プロファイル入力]
+    CheckURL -->|アバターURL| AddRecord[レコード追加をクリック]
 
     Block --> Investigate
 
-    Input --> Paste1[アバターURLペースト]
+    AddRecord --> Paste1[アバターURLペースト]
     Paste1 --> CheckPage[ページ確認<br/>□公式/非公式<br/>□順方向/逆方向]
 
     CheckPage --> Official{公式?}
