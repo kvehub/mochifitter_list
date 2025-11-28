@@ -41,7 +41,9 @@
       "Bash(cat:*)",
       "Bash(python test_extractor.py:*)",
       "Bash(del:*)",
-      "Bash(python -m http.server:*)"
+      "Bash(python -m http.server:*)",
+      "Bash(python profile_editor.py:*)",
+      "Bash(python:*)"
     ],
     "deny": [],
     "ask": []

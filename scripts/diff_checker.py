@@ -110,9 +110,10 @@ def load_block_urls(file_path):
 
 
 def main():
-    booth_file = "booth_urls.txt"
-    profiles_file = "data/profiles.json"
-    block_file = "Block_URLs.txt"
+    booth_file = "../booth_urls.txt"
+    profiles_file = "../data/profiles.json"
+    block_file = "../data/Block_URLs.txt"
+    avatar_file = "../data/Avatar_URLs.txt"
 
     print("差分チェック中...")
     print("=" * 80)
@@ -127,12 +128,16 @@ def main():
     # Block_URLs.txtから除外する商品IDを取得
     block_ids = load_block_urls(block_file)
 
+    # Avatar_URLs.txtから除外する商品IDを取得
+    avatar_ids = load_block_urls(avatar_file)
+
     print(f"\nbooth_urls.txt の商品数: {len(booth_ids)}")
     print(f"profiles.json の登録済み商品数（アバターURL + 配布場所URL）: {len(profile_ids)}")
     print(f"Block_URLs.txt のブロック数: {len(block_ids)}")
+    print(f"Avatar_URLs.txt のブロック数: {len(avatar_ids)}")
 
-    # 差分を計算（booth_urls.txtにあって、profiles.jsonにもBlock_URLs.txtにもない）
-    diff_ids = booth_ids - profile_ids - block_ids
+    # 差分を計算（booth_urls.txtにあって、profiles.jsonにもBlock_URLs.txtにもAvatar_URLs.txtにもない）
+    diff_ids = booth_ids - profile_ids - block_ids - avatar_ids
 
     if diff_ids:
         print(f"\n未登録のアバター数: {len(diff_ids)}")

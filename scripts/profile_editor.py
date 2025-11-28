@@ -26,8 +26,8 @@ def get_app_dir():
         # PyInstallerで実行ファイル化されている場合
         return os.path.dirname(sys.executable)
     else:
-        # 通常のPythonスクリプトとして実行されている場合
-        return os.path.dirname(os.path.abspath(__file__))
+        # 通常のPythonスクリプトとして実行されている場合（scriptsフォルダ内から1つ上）
+        return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 class PlaceholderEntry(ttk.Entry):
@@ -90,7 +90,7 @@ class ProfileEditor:
 
         # URL調査用
         self.current_investigation_url = ""
-        self.block_urls_path = os.path.join(self.app_dir, "Block_URLs.txt")
+        self.block_urls_path = os.path.join(self.app_dir, "data", "Block_URLs.txt")
 
         self.setup_ui()
         self.load_data()
@@ -226,6 +226,7 @@ class ProfileEditor:
             ("プロファイルバージョン", "profileVersion", False),
             ("アバター作者", "avatarAuthor", False),
             ("アバター作者URL", "avatarAuthorUrl", True),
+            ("共通素体", "bodyBase", False),
             ("プロファイル作者", "profileAuthor", False),
             ("プロファイル作者URL", "profileAuthorUrl", True),
         ]
@@ -384,17 +385,21 @@ class ProfileEditor:
         # 配布場所URLフィールドに配布方法自動判定をバインド
         self.fields["downloadLocation"].bind("<FocusOut>", lambda e: self.auto_detect_download_method())
 
-        # 右上: プレビューエリア
-        preview_panel = ttk.LabelFrame(main_frame, text="画像プレビュー", padding="10")
-        preview_panel.grid(row=0, column=2, sticky=(tk.W, tk.E, tk.N, tk.S))
+        # 右側: コンテナフレーム（プレビュー + URL調査を縦配置）
+        right_container = ttk.Frame(main_frame)
+        right_container.grid(row=0, column=2, rowspan=2, sticky=(tk.W, tk.E, tk.N, tk.S), padx=(5, 0))
+
+        # 画像プレビューエリア（上部）
+        preview_panel = ttk.LabelFrame(right_container, text="画像プレビュー", padding="10")
+        preview_panel.pack(side=tk.TOP, fill=tk.BOTH, expand=True, pady=(0, 5))
 
         self.image_preview_label = ttk.Label(preview_panel, text="画像URLを入力すると\n自動でプレビュー表示",
                                             foreground="gray", anchor="center", justify="center")
         self.image_preview_label.pack(expand=True, fill=tk.BOTH, padx=10, pady=10)
 
-        # 右下: URL調査パネル
-        url_investigation_panel = ttk.LabelFrame(main_frame, text="URL調査", padding="10")
-        url_investigation_panel.grid(row=1, column=2, sticky=(tk.W, tk.E, tk.N, tk.S))
+        # URL調査パネル（下部）
+        url_investigation_panel = ttk.LabelFrame(right_container, text="URL調査", padding="10")
+        url_investigation_panel.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
 
         self.setup_url_investigation_panel(url_investigation_panel)
 
@@ -755,8 +760,8 @@ class ProfileEditor:
             # 画像を読み込み
             image = Image.open(io.BytesIO(image_data))
 
-            # アスペクト比を保ちながらリサイズ（最大300x300）
-            max_size = (300, 300)
+            # アスペクト比を保ちながらリサイズ（最大250x250）
+            max_size = (250, 250)
             image.thumbnail(max_size, Image.Resampling.LANCZOS)
 
             # Tkinter用の画像に変換
@@ -874,6 +879,7 @@ class ProfileEditor:
             "profileVersion": "1.0",
             "avatarAuthor": "",
             "avatarAuthorUrl": "",
+            "bodyBase": "",
             "profileAuthor": "",
             "profileAuthorUrl": "",
             "official": False,
@@ -991,7 +997,7 @@ class ProfileEditor:
 
                         # 各フィールドを設定
                         for field_name in ["avatarName", "avatarNameUrl", "profileVersion",
-                                          "avatarAuthor", "avatarAuthorUrl", "profileAuthor",
+                                          "avatarAuthor", "avatarAuthorUrl", "bodyBase", "profileAuthor",
                                           "profileAuthorUrl", "downloadMethod", "downloadLocation",
                                           "imageUrl", "pricing", "price", "notes"]:
                             if field_name in row:
@@ -1224,7 +1230,7 @@ class ProfileEditor:
             fieldnames = [
                 "id", "registeredDate", "updatedDate",
                 "avatarName", "avatarNameUrl", "profileVersion",
-                "avatarAuthor", "avatarAuthorUrl",
+                "avatarAuthor", "avatarAuthorUrl", "bodyBase",
                 "profileAuthor", "profileAuthorUrl",
                 "official", "downloadMethod", "downloadLocation",
                 "imageUrl", "pricing", "price",
@@ -1420,6 +1426,8 @@ class ProfileEditor:
         ttk.Button(button_frame, text="次へ", command=self.investigation_next_url).pack(side=tk.LEFT, padx=(0, 5))
         ttk.Button(button_frame, text="登録", command=self.investigation_register_url).pack(side=tk.LEFT, padx=5)
         ttk.Button(button_frame, text="ブロック", command=self.investigation_block_url).pack(side=tk.LEFT, padx=5)
+        ttk.Button(button_frame, text="アバター保存", command=self.investigation_save_avatar_url).pack(side=tk.LEFT, padx=5)
+        ttk.Button(button_frame, text="アバター読取", command=self.investigation_load_avatar_urls).pack(side=tk.LEFT, padx=5)
 
         # URL一覧入力エリア
         ttk.Label(panel, text="URL一覧:").pack(anchor=tk.W, pady=(0, 5))
@@ -1459,6 +1467,12 @@ class ProfileEditor:
         self.url_list_text.delete("1.0", tk.END)
         if remaining_urls:
             self.url_list_text.insert("1.0", '\n'.join(remaining_urls))
+        else:
+            # 次のURLがない場合、現在調査中のURLもクリア
+            self.current_investigation_url = ""
+            self.current_url_entry.config(state="normal")
+            self.current_url_entry.delete(0, tk.END)
+            self.current_url_entry.config(state="readonly")
 
     def investigation_register_url(self):
         """現在のURLで新規レコードを作成（URL調査パネル）"""
@@ -1479,12 +1493,81 @@ class ProfileEditor:
         if not self.current_investigation_url:
             return
 
+        # Avatar_URLs.txt にURLがあれば削除
+        avatar_urls_path = os.path.join(self.app_dir, "data", "Avatar_URLs.txt")
+        if os.path.exists(avatar_urls_path):
+            with open(avatar_urls_path, 'r', encoding='utf-8') as f:
+                avatar_urls = f.readlines()
+
+            # 現在のURLを除外
+            avatar_urls = [url for url in avatar_urls if url.strip() != self.current_investigation_url]
+
+            # Avatar_URLs.txt を更新
+            with open(avatar_urls_path, 'w', encoding='utf-8') as f:
+                f.writelines(avatar_urls)
+
         # Block_URLs.txt に追加
         with open(self.block_urls_path, 'a', encoding='utf-8') as f:
             f.write(self.current_investigation_url + '\n')
 
         # 次のURLへ
         self.investigation_next_url()
+
+    def investigation_save_avatar_url(self):
+        """現在のURLをAvatar_URLs.txtに保存して次へ（URL調査パネル）"""
+        if not self.current_investigation_url:
+            return
+
+        # Block_URLs.txt にURLがあれば削除
+        if os.path.exists(self.block_urls_path):
+            with open(self.block_urls_path, 'r', encoding='utf-8') as f:
+                block_urls = f.readlines()
+
+            # 現在のURLを除外
+            block_urls = [url for url in block_urls if url.strip() != self.current_investigation_url]
+
+            # Block_URLs.txt を更新
+            with open(self.block_urls_path, 'w', encoding='utf-8') as f:
+                f.writelines(block_urls)
+
+        # Avatar_URLs.txt のパスを定義
+        avatar_urls_path = os.path.join(self.app_dir, "data", "Avatar_URLs.txt")
+
+        # Avatar_URLs.txt に追加
+        with open(avatar_urls_path, 'a', encoding='utf-8') as f:
+            f.write(self.current_investigation_url + '\n')
+
+        # 次のURLへ
+        self.investigation_next_url()
+
+    def investigation_load_avatar_urls(self):
+        """Avatar_URLs.txtの内容をURL一覧に読み込む（URL調査パネル）"""
+        avatar_urls_path = os.path.join(self.app_dir, "data", "Avatar_URLs.txt")
+
+        # ファイルが存在しない場合は何もしない
+        if not os.path.exists(avatar_urls_path):
+            messagebox.showwarning("警告", "Avatar_URLs.txt が見つかりません")
+            return
+
+        # ファイルを読み込み
+        with open(avatar_urls_path, 'r', encoding='utf-8') as f:
+            avatar_urls = f.read().strip()
+
+        if not avatar_urls:
+            messagebox.showinfo("情報", "Avatar_URLs.txt は空です")
+            return
+
+        # 現在のURL一覧を取得
+        current_content = self.url_list_text.get("1.0", tk.END).strip()
+
+        # 追加または上書き
+        if current_content:
+            # 既存データがある場合は最下部に追加
+            self.url_list_text.insert(tk.END, '\n' + avatar_urls)
+        else:
+            # 空の場合は上書き
+            self.url_list_text.delete("1.0", tk.END)
+            self.url_list_text.insert("1.0", avatar_urls)
 
 
 def main():
