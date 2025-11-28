@@ -38,20 +38,26 @@ def load_booth_urls(file_path):
 
 
 def load_profiles_urls(file_path):
-    """profiles.jsonからアバターURL（avatarNameUrl）と配布場所URL（downloadLocation）の商品IDのセットを取得"""
+    """profiles.jsonからURL商品IDのセットを取得
+    公式: avatarNameUrl と downloadLocation の両方
+    非公式: downloadLocation のみ
+    """
     item_ids = set()
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
 
         for profile in data.get('profiles', []):
-            # avatarNameUrl から商品IDを抽出
-            avatar_url = profile.get('avatarNameUrl', '')
-            item_id = extract_item_id_from_url(avatar_url)
-            if item_id:
-                item_ids.add(item_id)
+            is_official = profile.get('official', False)
 
-            # downloadLocation から商品IDを抽出
+            # 公式の場合のみ avatarNameUrl をチェック
+            if is_official:
+                avatar_url = profile.get('avatarNameUrl', '')
+                item_id = extract_item_id_from_url(avatar_url)
+                if item_id:
+                    item_ids.add(item_id)
+
+            # downloadLocation は常にチェック
             download_url = profile.get('downloadLocation', '')
             item_id = extract_item_id_from_url(download_url)
             if item_id:

@@ -1,176 +1,90 @@
 # もちふぃったープロファイル一覧
 
-VRChat用3Dアバター向けの衣装自動調整ツール「もちふぃったー」のプロファイル情報をまとめた静的Webサイトです。
+VRChat用アバターの「もちふぃったー」対応プロファイル情報をまとめた静的Webサイトと管理ツール群。
 
-## 概要
+## 内容
 
-もちふぃったーは、VRChat用の3Dアバター向けの衣装を自動で合わせるためのツールです。
-このサイトでは、対応アバターのプロファイル情報を一覧で確認できます。
+### Webページ
 
-### もちふぃったーとは？
+- **index.html** - メインの一覧ページ（検索・フィルター機能付き）
+- **lite.html** - 軽量版一覧ページ
 
-- **順方向**: Templateから別のアバターへ自動で合わせる
-- **逆方向**: アバター用衣装をTemplateに自動で合わせる
+### 管理ツール
 
-アバター向けの衣装を、もちふぃったーTemplateに合わせることで、他のアバターにも着せることができます。
+- **profile_editor.py** - プロファイル編集GUI（フル機能版、BeautifulSoup4依存）
+- **profile_editor_lower.py** - プロファイル編集GUI（軽量版、依存少）
+- **booth_url_extractor.py** - Booth URLを抽出
+- **diff_checker.py** - プロファイルの差分チェック
+- **url_investigation.py** - URL調査ツール
 
-## 機能
+### データ
 
-- ✅ プロファイル一覧表示
-- ✅ アバター名・作者名での検索機能
-- ✅ 公式/非公式フィルター
-- ✅ 順方向/逆方向対応フィルター
-- ✅ レスポンシブデザイン（PC/タブレット/スマホ対応）
-- ✅ 登録要望フォームリンク
+- **data/profiles.json** - プロファイル情報（アバター名、作者、配布場所など）
 
-## プロジェクト構成
+## 登録作業フロー
 
+```mermaid
+flowchart TD
+    Start([事前準備]) --> Setup[profile_editor.py起動<br/>レコード追加をクリック]
+    Setup --> Search[BOOTHでキーワード検索<br/>もちふぃった～ mochifitter等]
+    Search --> Extract[booth_url_extractor.py実行<br/>→ booth_urls.txt]
+    Extract --> Diff[diff_checker.py実行<br/>→ unregistered_avatars.txt]
+    Diff --> Investigate[url_investigation.pyで次へ<br/>URLを開く]
+
+    Investigate --> CheckURL{URL判定}
+    CheckURL -->|非登録対象| Block[ブロック登録<br/>Block_URLs.txt]
+    CheckURL -->|アバターURL| Input[プロファイル入力]
+
+    Block --> Investigate
+
+    Input --> Paste1[アバターURLペースト]
+    Paste1 --> CheckPage[ページ確認<br/>□公式/非公式<br/>□順方向/逆方向]
+
+    CheckPage --> Official{公式?}
+
+    Official -->|Yes| GetOfficial[公式チェックON<br/>取得ボタン押下]
+    GetOfficial --> AutoOfficial[自動入力:<br/>アバター名/作者/作者URL<br/>プロファイル作者/作者URL<br/>画像URL]
+    AutoOfficial --> VerifyOfficial[入力内容を目視確認]
+    VerifyOfficial --> Price
+
+    Official -->|No| GetUnofficial[取得ボタン押下]
+    GetUnofficial --> AutoUnofficial[自動入力:<br/>アバター名/作者/作者URL<br/>画像URL]
+    AutoUnofficial --> DistCheck{配布場所}
+
+    DistCheck -->|Booth| PasteBooth[配布場所URLペースト<br/>取得ボタン押下]
+    PasteBooth --> AutoBooth[自動入力:<br/>プロファイル作者<br/>プロファイル作者URL]
+    AutoBooth --> Price
+
+    DistCheck -->|Booth以外| PasteOther[配布場所URLペースト<br/>手動入力:<br/>プロファイル作者<br/>プロファイル作者URL]
+    PasteOther --> Price
+
+    Price[価格情報入力]
+    Price --> PriceType{価格区分}
+    PriceType -->|無料| Free[価格 → 0]
+    PriceType -->|単体有料| Paid[価格手動入力]
+    PriceType -->|アバター同梱| Bundle[価格 → -<br/>配布場所=アバターURL]
+
+    Free --> AvatarPrice
+    Paid --> AvatarPrice
+    Bundle --> AvatarPrice
+
+    AvatarPrice[アバター価格入力]
+    AvatarPrice --> Sale{セール?}
+    Sale -->|Yes| SaleInfo[セール中チェックON<br/>開始日/終了日/セール価格]
+    Sale -->|No| Notes
+    SaleInfo --> Notes
+
+    Notes[備考入力<br/>任意]
+    Notes --> Validate[入力状況パネルで<br/>必須項目チェック]
+    Validate --> Apply[変更を適用]
+    Apply --> Save[保存]
+    Save --> Push[GitHubプッシュ]
+
+    Push --> Next{次のURL}
+    Next -->|あり| Investigate
+    Next -->|なし| End([完了])
 ```
-mochifitter_list/
-├── index.html              # メインページ
-├── data/
-│   └── profiles.json       # プロファイルデータ
-├── css/
-│   └── style.css          # スタイルシート
-├── js/
-│   └── main.js            # JavaScriptロジック
-└── README.md              # このファイル
-```
-
-## セットアップ
-
-### ローカルでの表示
-
-1. リポジトリをクローン
-```bash
-git clone <repository-url>
-cd mochifitter_list
-```
-
-2. ローカルサーバーを起動（推奨）
-
-Python 3を使う場合:
-```bash
-python -m http.server 8000
-```
-
-Node.jsのhttp-serverを使う場合:
-```bash
-npx http-server -p 8000
-```
-
-3. ブラウザで http://localhost:8000 を開く
-
-### GitHub Pagesでのホスティング
-
-1. GitHubリポジトリの Settings > Pages に移動
-2. Source で「Deploy from a branch」を選択
-3. Branch で `main` (または `master`) ブランチを選択
-4. 保存して数分待つと公開されます
-
-## データの追加・編集方法
-
-### 最終更新日時の更新
-
-`data/profiles.json` を編集する際、`lastUpdated`フィールドも現在時刻（JST）に更新してください：
-
-```json
-{
-  "lastUpdated": "2025-11-25 17:00:00 JST",
-  "profiles": [...]
-}
-```
-
-### プロファイルデータの追加
-
-`data/profiles.json` ファイルを編集して、新しいプロファイルを追加できます。
-
-```json
-{
-  "profiles": [
-    {
-      "id": "001",
-      "registeredDate": "2025-11-25",
-      "updatedDate": "2025-11-20",
-      "avatarName": "アバター名",
-      "profileVersion": "1.0.0",
-      "avatarAuthor": "アバター作者",
-      "profileAuthor": "プロファイル作者",
-      "official": true,
-      "downloadMethod": "Booth",
-      "downloadLocation": "https://example.com",
-      "forwardSupport": true,
-      "reverseSupport": true
-    }
-  ]
-}
-```
-
-### データ項目の説明
-
-| 項目 | 説明 | 例 |
-|------|------|-----|
-| `id` | 一意のID | "001" |
-| `registeredDate` | DB登録日 | "2025-11-25" |
-| `updatedDate` | プロファイル更新日 | "2025-11-20" |
-| `avatarName` | アバター名 | "桔梗" |
-| `profileVersion` | プロファイルバージョン | "1.0.0" |
-| `avatarAuthor` | アバター作者 | "ポンデロニウム研究所" |
-| `profileAuthor` | プロファイル作者 | "サンプル作者" |
-| `official` | 公式/非公式 | true / false |
-| `downloadMethod` | DL方法 | "Booth", "GitHub" など |
-| `downloadLocation` | DL場所URL | "https://..." |
-| `forwardSupport` | 順方向対応 | true / false |
-| `reverseSupport` | 逆方向対応 | true / false |
-
-## Googleフォームの設定
-
-登録要望フォームのURLを設定するには、`js/main.js` の以下の部分を編集してください：
-
-```javascript
-// Googleフォームリンクの設定
-const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform';
-```
-
-実際のGoogleフォームURLに置き換えてください。
-
-## カスタマイズ
-
-### デザインの変更
-
-`css/style.css` のCSS変数を変更することで、簡単にカラーテーマを変更できます：
-
-```css
-:root {
-    --primary-color: #6366f1;
-    --secondary-color: #10b981;
-    --bg-color: #f8fafc;
-    /* ... */
-}
-```
-
-### 機能の追加
-
-`js/main.js` を編集して、新しい機能を追加できます。
 
 ## ライセンス
 
-このプロジェクトはMITライセンスの下で公開されています。
-
-## 貢献
-
-プロファイルの追加や修正は、以下の方法で行えます：
-
-1. Googleフォームから登録要望を送信
-2. GitHubでIssueを作成
-3. Pull Requestを送信
-
-## 注意事項
-
-- 静的サイトのため、データベース機能はありません
-- データは `data/profiles.json` で管理されます
-- プロファイルの追加・更新には手動でのJSON編集が必要です
-
-## サポート
-
-問題が発生した場合は、GitHubのIssueで報告してください。
+MIT License
