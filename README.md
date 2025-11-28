@@ -77,12 +77,13 @@ flowchart TD
     Notes[備考入力<br/>任意]
     Notes --> Validate[入力状況パネルで<br/>必須項目チェック]
     Validate --> Apply[変更を適用]
-    Apply --> Save[保存]
-    Save --> Push[GitHubプッシュ]
 
-    Push --> Next{次のURL}
+    Apply --> Next{次のURL}
     Next -->|あり| Investigate
-    Next -->|なし| End([完了])
+    Next -->|なし| Save[保存]
+
+    Save --> Push[GitHubプッシュ]
+    Push --> End([完了])
 ```
 
 ## ライセンス
