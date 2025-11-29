@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-30 01:57:29 JST",
+  "lastUpdated": "2025-11-30 01:59:50 JST",
   "profiles": [
     {
       "id": "001",
@@ -219,7 +219,7 @@
       "bodyBase": "まるぼでぃ",
       "profileAuthor": "kuromaru9",
       "profileAuthorUrl": "https://kuromaru9.booth.pm/",
-      "official": false,
+      "official": true,
       "downloadMethod": "Booth",
       "downloadLocation": "https://kuromaru9.booth.pm/items/7552195",
       "imageUrl": "https://booth.pximg.net/c5f5c24d-2662-43bc-98be-454d8623bccb/i/4398963/a8503d79-e694-4316-9a83-572059dbbe62_base_resized.jpg",
@@ -246,7 +246,7 @@
       "bodyBase": "まるぼでぃ",
       "profileAuthor": "kuromaru9",
       "profileAuthorUrl": "https://kuromaru9.booth.pm/",
-      "official": false,
+      "official": true,
       "downloadMethod": "Booth",
       "downloadLocation": "https://kuromaru9.booth.pm/items/7552195",
       "imageUrl": "https://booth.pximg.net/38d12e48-b117-4086-a5c7-b02cd8f9c952/i/4390073/0bb0d1dd-4f64-4493-bf17-31abbfd113e9_base_resized.jpg",
@@ -273,7 +273,7 @@
       "bodyBase": "まるぼでぃ",
       "profileAuthor": "kuromaru9",
       "profileAuthorUrl": "https://kuromaru9.booth.pm/",
-      "official": false,
+      "official": true,
       "downloadMethod": "Booth",
       "downloadLocation": "https://kuromaru9.booth.pm/items/7552195",
       "imageUrl": "https://booth.pximg.net/e3843aaf-9232-4a4c-9d6e-e0a09646f417/i/4376366/566a769d-c448-446a-aaae-b337195968ef_base_resized.jpg",
@@ -10519,7 +10519,7 @@
     {
       "id": "451",
       "registeredDate": "2025-11-27",
-      "updatedDate": "2025-11-29",
+      "updatedDate": "2025-11-30",
       "avatarName": "恋恋 -Liàn Liàn-",
       "avatarNameUrl": "https://usahogoya.booth.pm/items/7678824",
       "profileVersion": "1.0",
@@ -10540,7 +10540,7 @@
       "saleEndDate": "",
       "salePrice": "",
       "forwardSupport": true,
-      "reverseSupport": false,
+      "reverseSupport": true,
       "notes": "2025/12/06 00:00～販売開始"
     },
     {
