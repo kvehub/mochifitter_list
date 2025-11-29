@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-29 00:33:36 JST",
+  "lastUpdated": "2025-11-29 23:58:26 JST",
   "profiles": [
     {
       "id": "001",
@@ -11112,6 +11112,33 @@
       "salePrice": "",
       "forwardSupport": true,
       "reverseSupport": false,
+      "notes": ""
+    },
+    {
+      "id": "475",
+      "registeredDate": "2025-11-29",
+      "updatedDate": "2025-11-29",
+      "avatarName": "狐薄 -こはく-",
+      "avatarNameUrl": "https://nyahuuu.booth.pm/items/2616595",
+      "profileVersion": "1.0",
+      "avatarAuthor": "香坂もち",
+      "avatarAuthorUrl": "https://nyahuuu.booth.pm/",
+      "bodyBase": "まるぼでぃ",
+      "profileAuthor": "kuromaru9",
+      "profileAuthorUrl": "https://kuromaru9.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://kuromaru9.booth.pm/items/7552195",
+      "imageUrl": "https://booth.pximg.net/c/620x620/a8591f3a-a029-42e5-a769-a738c143f354/i/2616595/c6b7d80c-62db-4dfe-90e8-dd1ec5e70cbf_base_resized.jpg",
+      "pricing": "無料",
+      "price": "0",
+      "avatarPrice": "8000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": true,
+      "reverseSupport": true,
       "notes": ""
     }
   ]
