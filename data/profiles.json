@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-30 02:24:51 JST",
+  "lastUpdated": "2025-11-30 02:26:17 JST",
   "profiles": [
     {
       "id": "001",
@@ -4010,7 +4010,7 @@
     {
       "id": "179",
       "registeredDate": "2025-11-26",
-      "updatedDate": "2025-11-26",
+      "updatedDate": "2025-11-30",
       "avatarName": "水瀬",
       "avatarNameUrl": "https://mio3works.booth.pm/items/4013951",
       "profileVersion": "1.0",
@@ -4024,10 +4024,15 @@
       "downloadLocation": "https://cityfactory.booth.pm/items/7688458",
       "imageUrl": "https://booth.pximg.net/9dd190c0-6ce8-4b74-9a14-bd48da37473d/i/4013951/d4ae19e0-67b5-4ea5-bfba-2775b272fa11_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": false,
       "reverseSupport": true,
-      "notes": "順変換、シェイプキー未対応"
+      "notes": "順変換、シェイプキー未対応",
+      "avatarPrice": "6000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": ""
     },
     {
       "id": "180",
@@ -4917,7 +4922,7 @@
     {
       "id": "220",
       "registeredDate": "2025-11-27",
-      "updatedDate": "2025-11-27",
+      "updatedDate": "2025-11-30",
       "avatarName": "水瀬",
       "avatarNameUrl": "https://mio3works.booth.pm/items/4013951",
       "profileVersion": "1.0",
@@ -4931,10 +4936,15 @@
       "downloadLocation": "https://inuring0.booth.pm/items/7681770",
       "imageUrl": "https://booth.pximg.net/9dd190c0-6ce8-4b74-9a14-bd48da37473d/i/4013951/d4ae19e0-67b5-4ea5-bfba-2775b272fa11_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": "公式対応予定"
+      "notes": "公式対応予定",
+      "avatarPrice": "6000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": ""
     },
     {
       "id": "221",
@@ -7658,7 +7668,7 @@
     {
       "id": "343",
       "registeredDate": "2025-11-27",
-      "updatedDate": "2025-11-27",
+      "updatedDate": "2025-11-30",
       "avatarName": "翠蓮",
       "avatarNameUrl": "https://mio3works.booth.pm/items/1812495",
       "profileVersion": "1.0",
@@ -7672,15 +7682,20 @@
       "downloadLocation": "https://mio3works.booth.pm/items/1812495",
       "imageUrl": "https://booth.pximg.net/9dd190c0-6ce8-4b74-9a14-bd48da37473d/i/1812495/0454624c-bf9e-45b1-8b03-7786d7bdb769_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": "販売休止中"
+      "notes": "販売休止中",
+      "avatarPrice": "5000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": ""
     },
     {
       "id": "344",
       "registeredDate": "2025-11-27",
-      "updatedDate": "2025-11-27",
+      "updatedDate": "2025-11-30",
       "avatarName": "一介天使",
       "avatarNameUrl": "https://mio3works.booth.pm/items/1896193",
       "profileVersion": "1.0",
@@ -7694,10 +7709,15 @@
       "downloadLocation": "https://mio3works.booth.pm/items/1896193",
       "imageUrl": "https://booth.pximg.net/9dd190c0-6ce8-4b74-9a14-bd48da37473d/i/1896193/d68aebaa-f833-48c8-ae5d-fddaae274744_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": "販売休止中"
+      "notes": "販売休止中",
+      "avatarPrice": "5000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": ""
     },
     {
       "id": "345",
@@ -8791,7 +8811,7 @@
     {
       "id": "387",
       "registeredDate": "2025-11-27",
-      "updatedDate": "2025-11-27",
+      "updatedDate": "2025-11-30",
       "avatarName": "水瀬",
       "avatarNameUrl": "https://mio3works.booth.pm/items/4013951",
       "profileVersion": "1.0",
@@ -8806,7 +8826,7 @@
       "imageUrl": "https://booth.pximg.net/9dd190c0-6ce8-4b74-9a14-bd48da37473d/i/4013951/d4ae19e0-67b5-4ea5-bfba-2775b272fa11_base_resized.jpg",
       "pricing": "単体有料",
       "price": "300",
-      "avatarPrice": "5000",
+      "avatarPrice": "6000",
       "onSale": false,
       "saleStartDate": "",
       "saleEndDate": "",
