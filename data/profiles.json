@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-01 00:03:19 JST",
+  "lastUpdated": "2025-12-01 00:09:01 JST",
   "profiles": [
     {
       "id": "001",
@@ -153,7 +153,7 @@
       "downloadLocation": "https://kuromaru9.booth.pm/items/7613516",
       "imageUrl": "https://booth.pximg.net/a238249a-3754-4828-9be4-c031f8e3662d/i/4993931/b44c1ccb-5e99-4ba2-9a82-6d60e152b0d6_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -310,7 +310,7 @@
       "downloadLocation": "https://kuromaru9.booth.pm/items/7552195",
       "imageUrl": "https://booth.pximg.net/40e6fb67-d32a-48f9-9820-e064ff7b8670/i/5860593/3ca1d94b-a816-4cc4-83f8-beea243f799c_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -332,7 +332,7 @@
       "downloadLocation": "https://kuromaru9.booth.pm/items/3828632",
       "imageUrl": "https://booth.pximg.net/40e6fb67-d32a-48f9-9820-e064ff7b8670/i/3828632/77568536-fcea-4ea0-b94f-c6ea29529174_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -354,7 +354,7 @@
       "downloadLocation": "https://kuromaru9.booth.pm/items/2411814",
       "imageUrl": "https://booth.pximg.net/40e6fb67-d32a-48f9-9820-e064ff7b8670/i/2411814/3ec05bbf-456b-43c2-8029-8c2b6f24c975_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -376,7 +376,7 @@
       "downloadLocation": "https://booth.pm/ja/items/5827815",
       "imageUrl": "https://booth.pximg.net/8dd1ea6b-1c31-4d82-bfec-cbc05177d146/i/5827815/cc5a9581-ecc5-4a30-9596-ac144de3d1f5_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -420,7 +420,7 @@
       "downloadLocation": "https://booth.pm/ja/items/3939858",
       "imageUrl": "https://booth.pximg.net/8e4c6e25-746f-4ea7-b9a8-51d10ed80b3b/i/3939858/f80a2721-ccbd-465f-991a-8bfa2bb7fff8_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -442,7 +442,7 @@
       "downloadLocation": "https://booth.pm/ja/items/5565569",
       "imageUrl": "https://booth.pximg.net/8e4c6e25-746f-4ea7-b9a8-51d10ed80b3b/i/5565569/d877fb7f-fcf0-4e69-801d-21d128788fd2_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -464,7 +464,7 @@
       "downloadLocation": "https://yueou.booth.pm/items/4670579",
       "imageUrl": "https://booth.pximg.net/8e4c6e25-746f-4ea7-b9a8-51d10ed80b3b/i/4670579/9cdcfb0b-8c3b-4d67-abfe-d84a1c86c028_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -486,7 +486,7 @@
       "downloadLocation": "https://yueou.booth.pm/items/7427949",
       "imageUrl": "https://booth.pximg.net/8e4c6e25-746f-4ea7-b9a8-51d10ed80b3b/i/7427949/ae9df132-6f3d-49aa-8a16-144baceed074_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -508,10 +508,11 @@
       "downloadLocation": "https://booth.pm/ja/items/6481122",
       "imageUrl": "https://booth.pximg.net/ca2a06f5-5579-4ad5-a95c-580a09fd8250/i/6481122/dbdfb569-d903-431d-b782-4d3f2d7a354b_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5500"
     },
     {
       "id": "022",
@@ -530,10 +531,11 @@
       "downloadLocation": "https://booth.pm/ja/items/4962068",
       "imageUrl": "https://booth.pximg.net/ca2a06f5-5579-4ad5-a95c-580a09fd8250/i/4962068/4080cdf0-ad3f-4162-90a0-a343849ac348_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "023",
@@ -552,10 +554,11 @@
       "downloadLocation": "https://athv.booth.pm/items/7334826",
       "imageUrl": "https://booth.pximg.net/ca2a06f5-5579-4ad5-a95c-580a09fd8250/i/7334826/0e391e9d-70f7-4640-a96a-db4a1e67d4f0_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "024",
@@ -574,10 +577,11 @@
       "downloadLocation": "https://athv.booth.pm/items/5779320",
       "imageUrl": "https://booth.pximg.net/ca2a06f5-5579-4ad5-a95c-580a09fd8250/i/5779320/26af1b85-da0b-46b8-96ee-865b651cd578_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5500"
     },
     {
       "id": "025",
@@ -596,10 +600,11 @@
       "downloadLocation": "https://athv.booth.pm/items/5328310",
       "imageUrl": "https://booth.pximg.net/ca2a06f5-5579-4ad5-a95c-580a09fd8250/i/5328310/77f13bc3-bf40-4d62-beb2-a730cad7e422_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "026",
@@ -618,10 +623,11 @@
       "downloadLocation": "https://athv.booth.pm/items/4503850",
       "imageUrl": "https://booth.pximg.net/ca2a06f5-5579-4ad5-a95c-580a09fd8250/i/4503850/4b8e33b5-2798-45ff-ae5e-ea87fa4f2610_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "027",
@@ -640,10 +646,11 @@
       "downloadLocation": "https://athv.booth.pm/items/3808012",
       "imageUrl": "https://booth.pximg.net/ca2a06f5-5579-4ad5-a95c-580a09fd8250/i/3808012/fd4e48f7-5fbe-4101-afb6-1ecea0db5813_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "028",
@@ -662,10 +669,11 @@
       "downloadLocation": "https://athv.booth.pm/items/3605652",
       "imageUrl": "https://booth.pximg.net/ca2a06f5-5579-4ad5-a95c-580a09fd8250/i/3605652/a1c9619f-2e00-49b7-82a3-d01719293290_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "029",
@@ -684,10 +692,11 @@
       "downloadLocation": "https://booth.pm/ja/items/7363489",
       "imageUrl": "https://booth.pximg.net/ef40f496-b7db-4dc9-9e06-1127a645a568/i/7363489/1db8b9b9-4990-4a2e-9956-efda7166bcb9_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "030",
@@ -706,7 +715,7 @@
       "downloadLocation": "https://booth.pm/ja/items/5789025",
       "imageUrl": "https://booth.pximg.net/ec9d8797-e97d-4d27-8629-8d3982b7b981/i/5789025/6cac8089-ca4c-45b4-bca1-efdac4bb0def_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -728,7 +737,7 @@
       "downloadLocation": "https://ikshop.booth.pm/items/6834358",
       "imageUrl": "https://booth.pximg.net/ec9d8797-e97d-4d27-8629-8d3982b7b981/i/6834358/9c0f0e3e-1049-4719-945b-5217adf70841_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -750,7 +759,7 @@
       "downloadLocation": "https://ikshop.booth.pm/items/5147424",
       "imageUrl": "https://booth.pximg.net/ec9d8797-e97d-4d27-8629-8d3982b7b981/i/5147424/5832bb4e-057a-42bb-bf55-10a39d816409_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -772,7 +781,7 @@
       "downloadLocation": "https://booth.pm/ja/items/5255692",
       "imageUrl": "https://booth.pximg.net/c7d4472e-e799-4b3a-8937-1662143ddd1f/i/5255692/a4e0aeeb-1ebd-4f31-bc64-970b43dee819_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -794,7 +803,7 @@
       "downloadLocation": "フレア -Flare-",
       "imageUrl": "https://booth.pximg.net/c7d4472e-e799-4b3a-8937-1662143ddd1f/i/4768506/5bf70321-391b-4e9e-a460-7fff70f94d92_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -816,7 +825,7 @@
       "downloadLocation": "https://docs.google.com/spreadsheets/d/17bsf4xFF6C51m8R0U9fevwTuJNau5Q64OxFuoQZLZ24/edit?gid=0#gid=0",
       "imageUrl": "https://booth.pximg.net/3923a6a5-7600-4cc2-9240-d92591e77ceb/i/5405062/6f2add43-76c0-419f-90c1-3cad2fc49a3a_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -838,7 +847,7 @@
       "downloadLocation": "https://docs.google.com/spreadsheets/d/17bsf4xFF6C51m8R0U9fevwTuJNau5Q64OxFuoQZLZ24/edit?gid=0#gid=0",
       "imageUrl": "https://booth.pximg.net/3923a6a5-7600-4cc2-9240-d92591e77ceb/i/3923094/fe5cc48d-30bc-4c1c-8853-ba3f966e42ea_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -860,7 +869,7 @@
       "downloadLocation": "https://docs.google.com/spreadsheets/d/17bsf4xFF6C51m8R0U9fevwTuJNau5Q64OxFuoQZLZ24/edit?gid=0#gid=0",
       "imageUrl": "https://booth.pximg.net/3923a6a5-7600-4cc2-9240-d92591e77ceb/i/2313554/de610191-8310-4243-9e04-10ae743bc3ac_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -882,7 +891,7 @@
       "downloadLocation": "https://docs.google.com/spreadsheets/d/17bsf4xFF6C51m8R0U9fevwTuJNau5Q64OxFuoQZLZ24/edit?gid=0#gid=0",
       "imageUrl": "https://booth.pximg.net/3923a6a5-7600-4cc2-9240-d92591e77ceb/i/1490378/fdca8afe-3c8d-4a13-baaf-f01fc3b79768_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -904,7 +913,7 @@
       "downloadLocation": "https://docs.google.com/spreadsheets/d/17bsf4xFF6C51m8R0U9fevwTuJNau5Q64OxFuoQZLZ24/edit?gid=0#gid=0",
       "imageUrl": "https://booth.pximg.net/3923a6a5-7600-4cc2-9240-d92591e77ceb/i/3155828/522afbc5-f476-4f1e-9c37-fd74a8bd3a52_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": "https://skd-noratama.booth.pm/items/3118209"
@@ -926,7 +935,7 @@
       "downloadLocation": "https://docs.google.com/spreadsheets/d/17bsf4xFF6C51m8R0U9fevwTuJNau5Q64OxFuoQZLZ24/edit?gid=0#gid=0",
       "imageUrl": "https://booth.pximg.net/3923a6a5-7600-4cc2-9240-d92591e77ceb/i/3378181/82fc0107-389b-4a19-9390-7d7d82b33278_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -948,7 +957,7 @@
       "downloadLocation": "https://docs.google.com/spreadsheets/d/17bsf4xFF6C51m8R0U9fevwTuJNau5Q64OxFuoQZLZ24/edit?gid=0#gid=0",
       "imageUrl": "https://booth.pximg.net/3923a6a5-7600-4cc2-9240-d92591e77ceb/i/2955823/40d38123-f0ce-4b86-9c0f-c5510f1e6720_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -970,7 +979,7 @@
       "downloadLocation": "https://docs.google.com/spreadsheets/d/17bsf4xFF6C51m8R0U9fevwTuJNau5Q64OxFuoQZLZ24/edit?gid=0#gid=0",
       "imageUrl": "https://booth.pximg.net/3923a6a5-7600-4cc2-9240-d92591e77ceb/i/2225377/9a7280bc-870b-4fa8-b4ac-1a9321ab0485_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -992,7 +1001,7 @@
       "downloadLocation": "https://docs.google.com/spreadsheets/d/17bsf4xFF6C51m8R0U9fevwTuJNau5Q64OxFuoQZLZ24/edit?gid=0#gid=0",
       "imageUrl": "https://booth.pximg.net/3923a6a5-7600-4cc2-9240-d92591e77ceb/i/3657561/b6ed6c72-58b1-4ac1-ae61-40800cc5a404_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -1014,7 +1023,7 @@
       "downloadLocation": "https://drive.google.com/drive/folders/1n--dNq1xkZO4VLRTFL69NjYxgQxW8xnT?usp=drive_link",
       "imageUrl": "https://booth.pximg.net/dfe3e7b0-7e4b-4353-9083-8af76f96029c/i/6311566/d1c7a772-ac94-42d9-8204-f8a301ecc6a3_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -1036,7 +1045,7 @@
       "downloadLocation": "https://drive.google.com/drive/folders/1n--dNq1xkZO4VLRTFL69NjYxgQxW8xnT?usp=drive_link",
       "imageUrl": "https://booth.pximg.net/dfe3e7b0-7e4b-4353-9083-8af76f96029c/i/1808374/90de90f0-9d36-40b3-acc4-69135947e224_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -1058,7 +1067,7 @@
       "downloadLocation": "https://drive.google.com/drive/folders/1n--dNq1xkZO4VLRTFL69NjYxgQxW8xnT?usp=drive_link",
       "imageUrl": "https://booth.pximg.net/dfe3e7b0-7e4b-4353-9083-8af76f96029c/i/2140459/4e908cd4-59dc-4a2a-b980-2b317e8d2e71_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -1080,7 +1089,7 @@
       "downloadLocation": "https://drive.google.com/drive/folders/1n--dNq1xkZO4VLRTFL69NjYxgQxW8xnT?usp=drive_link",
       "imageUrl": "https://booth.pximg.net/dfe3e7b0-7e4b-4353-9083-8af76f96029c/i/2417889/2aea4747-414f-4005-9e5d-ec6c011e08f6_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -1102,7 +1111,7 @@
       "downloadLocation": "https://drive.google.com/drive/folders/1n--dNq1xkZO4VLRTFL69NjYxgQxW8xnT?usp=drive_link",
       "imageUrl": "https://booth.pximg.net/dfe3e7b0-7e4b-4353-9083-8af76f96029c/i/3092723/59a05d61-d0f0-45d2-aa60-c1ba2213ffb9_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -1124,7 +1133,7 @@
       "downloadLocation": "https://drive.google.com/drive/folders/1n--dNq1xkZO4VLRTFL69NjYxgQxW8xnT?usp=drive_link",
       "imageUrl": "https://booth.pximg.net/dfe3e7b0-7e4b-4353-9083-8af76f96029c/i/3413206/3601812e-b8c1-4e8e-9672-0dfbd36c5861_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -1146,7 +1155,7 @@
       "downloadLocation": "https://drive.google.com/drive/folders/1n--dNq1xkZO4VLRTFL69NjYxgQxW8xnT?usp=drive_link",
       "imageUrl": "https://booth.pximg.net/dfe3e7b0-7e4b-4353-9083-8af76f96029c/i/4074925/de9bf842-5e93-423b-a416-59973f302e7a_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -1168,7 +1177,7 @@
       "downloadLocation": "https://drive.google.com/drive/folders/1n--dNq1xkZO4VLRTFL69NjYxgQxW8xnT?usp=drive_link",
       "imageUrl": "https://booth.pximg.net/dfe3e7b0-7e4b-4353-9083-8af76f96029c/i/4360868/7a8623c1-038e-48ff-a75d-efdfa3af76af_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -1190,7 +1199,7 @@
       "downloadLocation": "https://drive.google.com/drive/folders/1n--dNq1xkZO4VLRTFL69NjYxgQxW8xnT?usp=drive_link",
       "imageUrl": "https://booth.pximg.net/dfe3e7b0-7e4b-4353-9083-8af76f96029c/i/4897562/9c04a5ba-c76f-4a54-83b4-a96a5b613b43_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -1212,7 +1221,7 @@
       "downloadLocation": "https://drive.google.com/drive/folders/1n--dNq1xkZO4VLRTFL69NjYxgQxW8xnT?usp=drive_link",
       "imageUrl": "https://booth.pximg.net/c/620x620/dfe3e7b0-7e4b-4353-9083-8af76f96029c/i/5268564/7ae0bd02-86a3-4f0c-b8f0-5333e1d2e743_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -1234,7 +1243,7 @@
       "downloadLocation": "https://drive.google.com/drive/folders/1n--dNq1xkZO4VLRTFL69NjYxgQxW8xnT?usp=drive_link",
       "imageUrl": "https://booth.pximg.net/dfe3e7b0-7e4b-4353-9083-8af76f96029c/i/5859318/2f955add-c312-4729-9eef-ebaf7627879e_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -1256,7 +1265,7 @@
       "downloadLocation": "https://drive.google.com/drive/folders/1n--dNq1xkZO4VLRTFL69NjYxgQxW8xnT?usp=drive_link",
       "imageUrl": "https://booth.pximg.net/dfe3e7b0-7e4b-4353-9083-8af76f96029c/i/7108322/8fb5aeb9-682e-47f2-95e2-254899965ec0_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -1277,11 +1286,12 @@
       "downloadLocation": "https://easternwind.booth.pm/items/7496742",
       "imageUrl": "https://booth.pximg.net/00074997-896d-4ef0-b224-3e1fff8a97e6/i/7496742/9a7fa000-12fb-4f17-bedd-aa768ceaadc1_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "7000",
+      "price": "-",
       "official": true,
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "7000"
     },
     {
       "id": "057",
@@ -1409,7 +1419,7 @@
       "downloadLocation": "https://avakin.booth.pm/items/7558678",
       "imageUrl": "https://booth.pximg.net/a4301a27-df49-4716-ad56-06de1593e9bd/i/7558678/de6592f5-caa1-46e8-bb3f-4ab68745efe7_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "official": true,
       "forwardSupport": true,
       "reverseSupport": false,
@@ -1431,7 +1441,7 @@
       "downloadLocation": "https://avakin.booth.pm/items/6858738",
       "imageUrl": "https://booth.pximg.net/a4301a27-df49-4716-ad56-06de1593e9bd/i/6858738/841263bf-fafc-4dc9-a42c-024c133cc7e8_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "official": true,
       "forwardSupport": true,
       "reverseSupport": false,
@@ -1453,7 +1463,7 @@
       "downloadLocation": "https://avakin.booth.pm/items/6119302",
       "imageUrl": "https://booth.pximg.net/a4301a27-df49-4716-ad56-06de1593e9bd/i/6119302/70ab3e56-c434-48e7-903c-e87dad0beb1e_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "official": true,
       "forwardSupport": true,
       "reverseSupport": false,
@@ -1475,7 +1485,7 @@
       "downloadLocation": "https://avakin.booth.pm/items/5839326",
       "imageUrl": "https://booth.pximg.net/a4301a27-df49-4716-ad56-06de1593e9bd/i/5839326/c3a57f05-6530-44ca-8e42-ce65e4294daa_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "official": true,
       "forwardSupport": true,
       "reverseSupport": false,
@@ -1497,7 +1507,7 @@
       "downloadLocation": "https://avakin.booth.pm/items/6406377",
       "imageUrl": "https://booth.pximg.net/a4301a27-df49-4716-ad56-06de1593e9bd/i/6406377/ceedfdf8-f4f5-44bf-a4be-554ca769827d_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "official": true,
       "forwardSupport": true,
       "reverseSupport": false,
@@ -1519,7 +1529,7 @@
       "downloadLocation": "https://avakin.booth.pm/items/6218001",
       "imageUrl": "https://booth.pximg.net/a4301a27-df49-4716-ad56-06de1593e9bd/i/6218001/efa07176-ce8d-45f9-aaa5-9a4c02bbd337_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "official": true,
       "forwardSupport": true,
       "reverseSupport": false,
@@ -1541,7 +1551,7 @@
       "downloadLocation": "https://avakin.booth.pm/items/6333504",
       "imageUrl": "https://booth.pximg.net/a4301a27-df49-4716-ad56-06de1593e9bd/i/6333504/0e758ef5-1a46-49bb-af43-edb17a788353_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "official": true,
       "forwardSupport": true,
       "reverseSupport": false,
@@ -1887,7 +1897,7 @@
       "downloadLocation": "https://flastore.booth.pm/items/7611477",
       "imageUrl": "https://booth.pximg.net/78876c21-58df-40b1-84cb-e0c718545efb/i/4930486/22b69e3b-06e2-4ca3-8013-cbe1042674e9_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "notes": "",
       "official": false,
       "forwardSupport": true,
@@ -1909,7 +1919,7 @@
       "downloadLocation": "https://tinmeshi.booth.pm/items/7664825",
       "imageUrl": "https://booth.pximg.net/07370588-d4f2-4924-bc55-84a958cff292/i/4919799/4f51f35f-5852-400a-8cfe-f6696c79c711_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "notes": "順変換対応だが、順変換用fbxはアバター同梱",
       "official": true,
       "forwardSupport": true,
@@ -1931,7 +1941,7 @@
       "downloadLocation": "https://tinmeshi.booth.pm/items/7664825",
       "imageUrl": "https://booth.pximg.net/07370588-d4f2-4924-bc55-84a958cff292/i/5321673/890caf0f-48f4-4960-96ab-695ad7d21473_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "notes": "順変換対応だが、順変換用fbxはアバター同梱",
       "official": true,
       "forwardSupport": true,
@@ -1953,7 +1963,7 @@
       "downloadLocation": "https://tinmeshi.booth.pm/items/7664825",
       "imageUrl": "https://booth.pximg.net/07370588-d4f2-4924-bc55-84a958cff292/i/5498540/b69563c1-d6a6-4029-af0c-c515734d3e23_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "notes": "順変換対応だが、順変換用fbxはアバター同梱",
       "official": true,
       "forwardSupport": true,
@@ -1975,7 +1985,7 @@
       "downloadLocation": "https://tinmeshi.booth.pm/items/7664825",
       "imageUrl": "https://booth.pximg.net/07370588-d4f2-4924-bc55-84a958cff292/i/6106392/bd9cb478-8e7f-4230-a8d1-aaf6a77f2e8d_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "notes": "順変換対応だが、順変換用fbxはアバター同梱",
       "official": true,
       "forwardSupport": true,
@@ -1997,7 +2007,7 @@
       "downloadLocation": "https://tinmeshi.booth.pm/items/7664825",
       "imageUrl": "https://booth.pximg.net/07370588-d4f2-4924-bc55-84a958cff292/i/6282388/2504d240-2785-40d0-aca3-c24df03183ce_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "notes": "順変換対応だが、順変換用fbxはアバター同梱",
       "official": true,
       "forwardSupport": true,
@@ -2019,7 +2029,7 @@
       "downloadLocation": "https://tinmeshi.booth.pm/items/7664825",
       "imageUrl": "https://booth.pximg.net/07370588-d4f2-4924-bc55-84a958cff292/i/6717995/e7e8e713-fd14-41a7-8661-146f1d427daf_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "notes": "順変換対応だが、順変換用fbxはアバター同梱",
       "official": true,
       "forwardSupport": true,
@@ -2041,7 +2051,7 @@
       "downloadLocation": "https://tinmeshi.booth.pm/items/7664825",
       "imageUrl": "https://booth.pximg.net/07370588-d4f2-4924-bc55-84a958cff292/i/6958479/1c05f8f4-1e67-4824-8a54-bf24765683f0_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "notes": "順変換対応だが、順変換用fbxはアバター同梱",
       "official": true,
       "forwardSupport": true,
@@ -2091,7 +2101,7 @@
       "downloadLocation": "https://t8dbcau.booth.pm/items/6735012",
       "imageUrl": "https://booth.pximg.net/991dc833-2773-4465-8804-43025c56c16b/i/6735012/d6e21997-af63-4c7f-94a2-a9668404a674_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -2113,7 +2123,7 @@
       "downloadLocation": "https://t8dbcau.booth.pm/items/7579814",
       "imageUrl": "https://booth.pximg.net/991dc833-2773-4465-8804-43025c56c16b/i/7579814/1b8eb2eb-9f4d-4fc0-93e4-bd6995149af4_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -2135,7 +2145,7 @@
       "downloadLocation": "https://t8dbcau.booth.pm/items/6846003",
       "imageUrl": "https://booth.pximg.net/991dc833-2773-4465-8804-43025c56c16b/i/6846003/78fc3ea6-79de-4c3f-aff1-54c5431dce90_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -2179,7 +2189,7 @@
       "downloadLocation": "https://t8dbcau.booth.pm/items/4982223",
       "imageUrl": "https://booth.pximg.net/991dc833-2773-4465-8804-43025c56c16b/i/4982223/e5f2d06e-5ecc-4be7-bab8-28e1d3b91bb6_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -2201,7 +2211,7 @@
       "downloadLocation": "https://booth.pm/ja/items/7660397",
       "imageUrl": "https://booth.pximg.net/4e310f1e-6793-4f4d-9b74-211f133eac51/i/6292193/80ae2ec6-42c0-45b3-9c39-f73e43069feb_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -2514,7 +2524,7 @@
       "downloadLocation": "https://qaty.booth.pm/items/6143770",
       "imageUrl": "https://booth.pximg.net/5f6402dd-f6b1-4103-93e7-d6b0c9bb807c/i/6143770/55088378-a7dd-4e36-bdcf-93aefc069568_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -2536,7 +2546,7 @@
       "downloadLocation": "https://lat-innoce.booth.pm/items/6214004",
       "imageUrl": "https://booth.pximg.net/af3e0f0e-13f8-436b-b90b-e3a2ed57ca12/i/6214004/dd3cee5c-c52b-4bf4-b2ef-7fa3c15fae47_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -2558,7 +2568,7 @@
       "downloadLocation": "https://teicifer9999.booth.pm/items/7631172",
       "imageUrl": "https://booth.pximg.net/4fef6d30-5a9e-4a4c-a16d-a5bd6897fee1/i/4870402/33adf4b5-f98c-4896-bd6f-7ae2fc5a41c2_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -2580,10 +2590,11 @@
       "downloadLocation": "https://fukanja.booth.pm/",
       "imageUrl": "https://booth.pximg.net/0e31f476-c519-4d2f-aa06-a8755b3188f6/i/4300022/eb4efb64-dfe2-42ce-b79d-f443a91bc91a_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "4000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": true,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "4000"
     },
     {
       "id": "113",
@@ -2602,10 +2613,11 @@
       "downloadLocation": "https://fukanja.booth.pm/items/6334763",
       "imageUrl": "https://booth.pximg.net/0e31f476-c519-4d2f-aa06-a8755b3188f6/i/6334763/05f5962d-13c7-44d0-9c8e-49c4d0a01ebe_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": true,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "114",
@@ -2624,7 +2636,7 @@
       "downloadLocation": "https://96kuroiwa.booth.pm/items/7527463",
       "imageUrl": "https://booth.pximg.net/8dcc9549-9031-4ae5-8ba3-704fa78367db/i/7527463/41633d7f-36c5-4542-8add-ab90b51ca04b_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -2646,7 +2658,7 @@
       "downloadLocation": "https://96kuroiwa.booth.pm/items/4666323",
       "imageUrl": "https://booth.pximg.net/8dcc9549-9031-4ae5-8ba3-704fa78367db/i/4666323/5ab232b8-cf44-48a0-ba53-7c2631755fc8_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -2668,10 +2680,11 @@
       "downloadLocation": "https://matsuriba.booth.pm/items/5463843",
       "imageUrl": "https://booth.pximg.net/b027402c-bd51-4af0-8fbc-01c0d148489a/i/5463843/8884982d-e07d-4686-8168-5916052b3e67_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "117",
@@ -2690,10 +2703,11 @@
       "downloadLocation": "https://matsuriba.booth.pm/items/4040235",
       "imageUrl": "https://booth.pximg.net/b027402c-bd51-4af0-8fbc-01c0d148489a/i/4040235/f220a5c2-8c4b-47c4-ac38-931eb0c43b1b_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "118",
@@ -2712,10 +2726,11 @@
       "downloadLocation": "https://matsuriba.booth.pm/items/6144723",
       "imageUrl": "https://booth.pximg.net/b027402c-bd51-4af0-8fbc-01c0d148489a/i/6144723/19a914c8-341d-4c37-83ea-f2345be35334_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "6000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "6000"
     },
     {
       "id": "119",
@@ -2734,10 +2749,11 @@
       "downloadLocation": "https://booth.pm/ja/items/5694887",
       "imageUrl": "https://booth.pximg.net/0d2468c0-1ae0-44e4-9281-c6f1646d3f41/i/5694887/701db6bd-e2f5-4830-bc0e-49b10cdde46d_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": "共通素体EFBody"
+      "notes": "共通素体EFBody",
+      "avatarPrice": "5000"
     },
     {
       "id": "120",
@@ -2756,10 +2772,11 @@
       "downloadLocation": "https://sephir.booth.pm/items/3929383",
       "imageUrl": "https://booth.pximg.net/c/620x620/0d2468c0-1ae0-44e4-9281-c6f1646d3f41/i/3929383/1e28ce0d-b962-4473-aed7-24889deb5e67_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": "共通素体EFBody"
+      "notes": "共通素体EFBody",
+      "avatarPrice": "5500"
     },
     {
       "id": "121",
@@ -2778,10 +2795,11 @@
       "downloadLocation": "https://sephir.booth.pm/items/2735913",
       "imageUrl": "https://booth.pximg.net/c/620x620/0d2468c0-1ae0-44e4-9281-c6f1646d3f41/i/2735913/79cb87cb-e42f-4ed2-b04e-5105d2c11fd3_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": "共通素体EFBody"
+      "notes": "共通素体EFBody",
+      "avatarPrice": "5500"
     },
     {
       "id": "122",
@@ -2800,10 +2818,11 @@
       "downloadLocation": "https://sephir.booth.pm/items/1021858",
       "imageUrl": "https://booth.pximg.net/c/620x620/0d2468c0-1ae0-44e4-9281-c6f1646d3f41/i/1021858/c94a79e0-93a0-4bc4-a15c-7b4040c2e049_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "4500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": "共通素体EFBody"
+      "notes": "共通素体EFBody",
+      "avatarPrice": "4500"
     },
     {
       "id": "123",
@@ -2822,10 +2841,11 @@
       "downloadLocation": "",
       "imageUrl": "https://booth.pximg.net/c/620x620/0d2468c0-1ae0-44e4-9281-c6f1646d3f41/i/1812518/a0a6bbca-9001-4902-9566-890ddbc5193a_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "4000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": "共通素体EFBody"
+      "notes": "共通素体EFBody",
+      "avatarPrice": "4000"
     },
     {
       "id": "124",
@@ -2844,10 +2864,11 @@
       "downloadLocation": "https://sephir.booth.pm/items/1145899",
       "imageUrl": "https://booth.pximg.net/c/620x620/0d2468c0-1ae0-44e4-9281-c6f1646d3f41/i/1145899/a61e8321-8a12-4e74-ab6a-cd36efde1051_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "4500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": "共通素体EFBody"
+      "notes": "共通素体EFBody",
+      "avatarPrice": "4500"
     },
     {
       "id": "125",
@@ -2866,10 +2887,11 @@
       "downloadLocation": "https://skymy.booth.pm/items/5967855",
       "imageUrl": "https://booth.pximg.net/c/620x620/485718ed-c70c-4717-853c-0320a79dd784/i/5967855/23e46ce8-4858-41c9-9e06-13889e4e02db_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5500"
     },
     {
       "id": "126",
@@ -2888,10 +2910,11 @@
       "downloadLocation": "https://skymy.booth.pm/items/2992265",
       "imageUrl": "https://booth.pximg.net/c/620x620/485718ed-c70c-4717-853c-0320a79dd784/i/2992265/afcd3823-faa9-437b-b60f-3838caf63931_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5500"
     },
     {
       "id": "127",
@@ -2910,10 +2933,11 @@
       "downloadLocation": "https://skymy.booth.pm/items/4365043",
       "imageUrl": "https://booth.pximg.net/c/620x620/485718ed-c70c-4717-853c-0320a79dd784/i/4365043/4565bf59-72b9-4278-86e6-25036b9a48e3_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "128",
@@ -2932,10 +2956,11 @@
       "downloadLocation": "https://skymy.booth.pm/items/4926689",
       "imageUrl": "https://booth.pximg.net/c/620x620/485718ed-c70c-4717-853c-0320a79dd784/i/4926689/942652e8-07df-4da4-a6e8-f6f89169640c_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5500"
     },
     {
       "id": "129",
@@ -2954,10 +2979,11 @@
       "downloadLocation": "https://skymy.booth.pm/items/3990670",
       "imageUrl": "https://booth.pximg.net/c/620x620/485718ed-c70c-4717-853c-0320a79dd784/i/3990670/fab3ac18-461a-41d9-96d9-75e281949cfe_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "130",
@@ -2976,10 +3002,11 @@
       "downloadLocation": "https://skymy.booth.pm/items/3486694",
       "imageUrl": "https://booth.pximg.net/c/620x620/485718ed-c70c-4717-853c-0320a79dd784/i/3486694/76ba6c41-2744-49a1-b51f-62942ad295b1_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "131",
@@ -2998,10 +3025,11 @@
       "downloadLocation": "https://fukuma.booth.pm/items/7428267",
       "imageUrl": "https://booth.pximg.net/c/620x620/81bcb3d9-ff05-4ec9-8975-dfdf862a66be/i/7428267/818c3184-0d87-4aa3-ad6e-54eb56e29a83_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "4000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "4000"
     },
     {
       "id": "132",
@@ -3074,10 +3102,11 @@
       "downloadLocation": "https://ryu-bt.booth.pm/items/1888396",
       "imageUrl": "https://booth.pximg.net/c/620x620/497a17f3-8b49-4d3f-b0de-666716ecfcf8/i/1888396/941bfad0-dd15-4962-8288-45b66806a2b8_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5500"
     },
     {
       "id": "135",
@@ -3096,7 +3125,7 @@
       "downloadLocation": "https://drive.google.com/drive/folders/1K4HNXRDKUsaJ3GsXUxgY-PRLn_vOZzqW",
       "imageUrl": "https://booth.pximg.net/c/620x620/0dcb072c-99a2-49be-a886-303570d34d3f/i/2186253/745dbd03-612f-4425-ab8e-b81c3a8a66ec_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -3118,7 +3147,7 @@
       "downloadLocation": "https://drive.google.com/drive/folders/1K4HNXRDKUsaJ3GsXUxgY-PRLn_vOZzqW",
       "imageUrl": "https://booth.pximg.net/c/620x620/0dcb072c-99a2-49be-a886-303570d34d3f/i/3445873/a7945a55-ddb0-4c69-953f-4c24c6a9b01a_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -3140,7 +3169,7 @@
       "downloadLocation": "https://drive.google.com/drive/folders/1K4HNXRDKUsaJ3GsXUxgY-PRLn_vOZzqW",
       "imageUrl": "https://booth.pximg.net/c/620x620/0dcb072c-99a2-49be-a886-303570d34d3f/i/6868371/ad0f194d-4d3d-4481-84b2-32fc0882c602_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -3162,7 +3191,7 @@
       "downloadLocation": "https://drive.google.com/drive/folders/1K4HNXRDKUsaJ3GsXUxgY-PRLn_vOZzqW",
       "imageUrl": "https://booth.pximg.net/c/620x620/0dcb072c-99a2-49be-a886-303570d34d3f/i/4926106/8361ce36-85dc-4961-ab0e-8bc595051bfa_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -3184,7 +3213,7 @@
       "downloadLocation": "https://drive.google.com/drive/folders/1K4HNXRDKUsaJ3GsXUxgY-PRLn_vOZzqW",
       "imageUrl": "https://booth.pximg.net/c/620x620/0dcb072c-99a2-49be-a886-303570d34d3f/i/5907176/73a68050-70ae-4760-8f28-1830eca12400_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -3206,7 +3235,7 @@
       "downloadLocation": "https://drive.google.com/drive/folders/1K4HNXRDKUsaJ3GsXUxgY-PRLn_vOZzqW",
       "imageUrl": "https://booth.pximg.net/c/620x620/0dcb072c-99a2-49be-a886-303570d34d3f/i/4054324/64e7d83e-21ce-4de7-a786-e36d54ba3fa8_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -3228,10 +3257,11 @@
       "downloadLocation": "https://shasuka.booth.pm/items/2596382",
       "imageUrl": "https://booth.pximg.net/c/620x620/62a959d5-70ad-4201-b133-d7549bda1d23/i/2596382/1b258fad-5db1-477a-9a1e-07a26ea324df_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "6000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "6000"
     },
     {
       "id": "142",
@@ -3250,10 +3280,11 @@
       "downloadLocation": "https://shasuka.booth.pm/items/3442668",
       "imageUrl": "https://booth.pximg.net/c/620x620/62a959d5-70ad-4201-b133-d7549bda1d23/i/3442668/1f90eed4-1d48-4f21-8027-329137e0ddbf_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "6000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "6000"
     },
     {
       "id": "143",
@@ -3272,10 +3303,11 @@
       "downloadLocation": "https://froginyata.booth.pm/items/2612937",
       "imageUrl": "https://booth.pximg.net/c/620x620/4d3a270f-8b37-47da-84a5-1684898939c3/i/2612937/fce356bb-ac6c-4787-8155-51a6c66ef027_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "144",
@@ -3294,10 +3326,11 @@
       "downloadLocation": "https://froginyata.booth.pm/items/4929153",
       "imageUrl": "https://booth.pximg.net/c/620x620/4d3a270f-8b37-47da-84a5-1684898939c3/i/4929153/32c1dbc7-3e89-47eb-814f-56e64388248f_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5500"
     },
     {
       "id": "145",
@@ -3316,10 +3349,11 @@
       "downloadLocation": "https://froginyata.booth.pm/items/4076075",
       "imageUrl": "https://booth.pximg.net/c/620x620/4d3a270f-8b37-47da-84a5-1684898939c3/i/4076075/35c00601-7afd-4822-a222-817453bba011_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "6000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "6000"
     },
     {
       "id": "146",
@@ -3338,7 +3372,7 @@
       "downloadLocation": "https://yueou.booth.pm/items/3160480",
       "imageUrl": "https://booth.pximg.net/c/620x620/8e4c6e25-746f-4ea7-b9a8-51d10ed80b3b/i/3160480/cda21305-a59b-4410-b7ea-6e634c73823f_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -3360,10 +3394,11 @@
       "downloadLocation": "",
       "imageUrl": "https://booth.pximg.net/c/620x620/497a17f3-8b49-4d3f-b0de-666716ecfcf8/i/3375120/a584bb69-352c-40ad-ae98-898a2e6ba051_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "148",
@@ -3382,10 +3417,11 @@
       "downloadLocation": "\nhttps://ryu-bt.booth.pm/items/5711218",
       "imageUrl": "https://booth.pximg.net/c/620x620/497a17f3-8b49-4d3f-b0de-666716ecfcf8/i/5711218/4c02f495-4a2e-4c4f-82da-17f827118821_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5500"
     },
     {
       "id": "149",
@@ -3426,10 +3462,11 @@
       "downloadLocation": "https://kaerimichi.booth.pm/items/3754944",
       "imageUrl": "https://booth.pximg.net/c/620x620/f1182160-0f08-4dc6-aaa9-a5f6ccc1b78e/i/3754944/287a7ed9-2f1f-47fa-8fc6-bb4fe3f35c74_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "151",
@@ -3470,10 +3507,11 @@
       "downloadLocation": "https://lemegeton.booth.pm/items/3799311",
       "imageUrl": "https://booth.pximg.net/c/620x620/fccb1859-d70b-4276-8c09-0d7971bfab63/i/3799311/484ab54b-cbeb-49a1-aac5-04d4b1c07a60_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "153",
@@ -3492,10 +3530,11 @@
       "downloadLocation": "\nhttps://lemegeton.booth.pm/items/5382794",
       "imageUrl": "https://booth.pximg.net/c/620x620/fccb1859-d70b-4276-8c09-0d7971bfab63/i/5382794/f9f89df9-122a-46ed-a9fb-e980d71721aa_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "154",
@@ -3514,10 +3553,11 @@
       "downloadLocation": "\nhttps://lemegeton.booth.pm/items/5788822",
       "imageUrl": "https://booth.pximg.net/c/620x620/fccb1859-d70b-4276-8c09-0d7971bfab63/i/5788822/9d3c16eb-1769-45d9-a073-ad7e772b086a_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "155",
@@ -3602,7 +3642,7 @@
       "downloadLocation": "https://9u1n0nesworks.booth.pm/items/7663205",
       "imageUrl": "https://booth.pximg.net/a724e93d-5634-41cf-ac1f-8f8985536a5a/i/3659436/975cd340-c669-4298-906d-172b9b5b097a_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -3624,7 +3664,7 @@
       "downloadLocation": "https://9u1n0nesworks.booth.pm/items/7663205",
       "imageUrl": "https://booth.pximg.net/a724e93d-5634-41cf-ac1f-8f8985536a5a/i/4063740/f473a9a7-0942-4a0d-98f8-f4bf1f144d27_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -3646,7 +3686,7 @@
       "downloadLocation": "https://amesake.booth.pm/items/7650143",
       "imageUrl": "https://booth.pximg.net/c/620x620/61a3b2d7-b4b1-4f97-9e48-ffe959b26ae9/i/3470989/a70bc916-21f3-4b06-ae3a-eb302058a0b5_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -3668,10 +3708,11 @@
       "downloadLocation": "https://andromedanemuru.booth.pm/items/6689147",
       "imageUrl": "https://booth.pximg.net/c/620x620/53ceda87-8c75-443d-afce-5b8f7688e1ec/i/6689147/07f5f725-3311-4523-9e04-9a74bdff6df4_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "162",
@@ -3712,10 +3753,11 @@
       "downloadLocation": "https://anomanice.booth.pm/items/4942194",
       "imageUrl": "https://booth.pximg.net/c/620x620/5d2f52b0-3a5e-4930-a874-ad1a7b5c47ad/i/4942194/8490f6b8-5cd0-496e-89cf-61872550634a_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "4500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "4500"
     },
     {
       "id": "164",
@@ -3734,7 +3776,7 @@
       "downloadLocation": "https://applicotsource.booth.pm/items/7660338",
       "imageUrl": "https://booth.pximg.net/ba557560-1aa1-433d-8f43-3eea697b3cb6/i/4690396/ddc2f479-771f-4c0e-9db8-b157225599ef_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -3864,7 +3906,7 @@
       "downloadLocation": "https://azmaria.booth.pm/items/7679312",
       "imageUrl": "https://booth.pximg.net/c/620x620/4dec0316-2e0e-4b51-9645-8abbc059adaa/i/5510830/5d55d90d-a370-417e-8434-d65e4be5803e_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -3886,10 +3928,11 @@
       "downloadLocation": "https://beep-on.booth.pm/items/5872891",
       "imageUrl": "https://booth.pximg.net/c/620x620/44ac2b81-48d8-43d2-ad66-fd98e7dc7fe1/i/5872891/5ddc6de3-5e8d-4459-99c1-bc2b35056a9f_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "171",
@@ -3908,10 +3951,11 @@
       "downloadLocation": "https://beep-on.booth.pm/items/4575136",
       "imageUrl": "https://booth.pximg.net/c/620x620/44ac2b81-48d8-43d2-ad66-fd98e7dc7fe1/i/4575136/fd406f47-e19c-423f-8f5a-b2f0b35b4376_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "172",
@@ -3930,10 +3974,11 @@
       "downloadLocation": "https://beep-on.booth.pm/items/6905661",
       "imageUrl": "https://booth.pximg.net/c/620x620/44ac2b81-48d8-43d2-ad66-fd98e7dc7fe1/i/6905661/b499b508-536b-4312-b89c-45e7fd80d6e1_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5500"
     },
     {
       "id": "173",
@@ -3974,10 +4019,11 @@
       "downloadLocation": "",
       "imageUrl": "https://booth.pximg.net/c/620x620/9b61df37-064d-4484-ab3a-4c3e69ed38ac/i/4897098/4fa9fd84-40c8-4b81-9987-e00cdc24e464_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "4500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": true,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "4500"
     },
     {
       "id": "175",
@@ -3996,10 +4042,11 @@
       "downloadLocation": "https://brcl.booth.pm/items/5674386\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/9b61df37-064d-4484-ab3a-4c3e69ed38ac/i/5674386/a5f504b1-2ff6-449b-8bdd-0e27d8963b72_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "4900",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": true,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "4900"
     },
     {
       "id": "176",
@@ -4045,7 +4092,7 @@
       "downloadLocation": "https://chi-nyavrc.booth.pm/items/7675826",
       "imageUrl": "https://booth.pximg.net/c/620x620/f420c992-4225-4ce0-b751-3a4acdceaab6/i/2780069/8fe30c4c-f572-4158-9295-6203131453b9_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -4094,10 +4141,11 @@
       "downloadLocation": "https://crowatu.booth.pm/items/7463748\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/e7c3d7fa-316c-49b8-8248-83e09f84ebd4/i/7463748/05fa20ee-abb2-4bd6-8bcb-854adf6be445_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "180",
@@ -4116,7 +4164,7 @@
       "downloadLocation": "https://danekolab.booth.pm/items/7671103",
       "imageUrl": "https://booth.pximg.net/c/620x620/12e668b8-38c4-403e-ace7-cc765775e389/i/7304096/254ff162-4c68-4ec5-9d32-1cdbae939feb_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -4138,7 +4186,7 @@
       "downloadLocation": "https://danekolab.booth.pm/items/7683707",
       "imageUrl": "https://booth.pximg.net/c/620x620/802c2f96-7b07-494b-bf9c-9361ff7eca6e/i/1484117/e0e6f259-04e5-4b2a-915e-9903e0397aa3_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -4160,7 +4208,7 @@
       "downloadLocation": "https://danekolab.booth.pm/items/7672937",
       "imageUrl": "https://booth.pximg.net/fae58d22-da5a-4894-a9e1-3fbe3560a4a4/i/2381911/0ebcf3af-b8da-40a2-bb62-f422a323b415_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": "販売中止"
@@ -4204,7 +4252,7 @@
       "downloadLocation": "https://dowaax7.booth.pm/items/7667703",
       "imageUrl": "https://booth.pximg.net/c/620x620/f420c992-4225-4ce0-b751-3a4acdceaab6/i/4667400/1641b18e-eb97-4cbe-85fd-0f04cd53b46a_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": "ベリルに萌→ベリルが含まれる\n投げ銭(200円)に萌→Templateあり"
@@ -4226,7 +4274,7 @@
       "downloadLocation": "https://eggmaru.booth.pm/items/6753865",
       "imageUrl": "https://booth.pximg.net/c/620x620/af517acf-e443-4cf8-b481-69addbd06f88/i/6753865/41a42113-d737-4262-9b56-0b5af54180b9_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -4248,10 +4296,11 @@
       "downloadLocation": "https://ensuiuni.booth.pm/items/6253733",
       "imageUrl": "https://booth.pximg.net/c/620x620/26e33f5c-6969-472a-8ddf-99b2799d976b/i/6253733/78d4835c-5b46-42d7-ac6a-c5422ba0ec44_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "187",
@@ -4270,10 +4319,11 @@
       "downloadLocation": "https://ensuiuni.booth.pm/items/7420249",
       "imageUrl": "https://booth.pximg.net/c/620x620/26e33f5c-6969-472a-8ddf-99b2799d976b/i/7420249/51e55326-09d2-4a38-896f-c149507044f7_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5500"
     },
     {
       "id": "188",
@@ -4292,7 +4342,7 @@
       "downloadLocation": "https://eroha.booth.pm/items/7653844",
       "imageUrl": "https://booth.pximg.net/c/620x620/28147cb3-57dc-4649-a55c-6e586a9bb5bb/i/7653844/2ebedaac-9735-4ba3-83f9-a505cdea38b0_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -4314,10 +4364,11 @@
       "downloadLocation": "https://fluffyscafe.booth.pm/items/7337480",
       "imageUrl": "https://booth.pximg.net/c/620x620/50edde82-bbc5-4044-ae55-ebe4b744db5b/i/7337480/2e4940db-a519-4c0f-a2a7-4bcdfb394b04_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "6000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "6000"
     },
     {
       "id": "190",
@@ -4336,10 +4387,11 @@
       "downloadLocation": "https://fluffyscafe.booth.pm/items/6021086",
       "imageUrl": "https://booth.pximg.net/c/620x620/50edde82-bbc5-4044-ae55-ebe4b744db5b/i/6021086/32f93847-9980-45a5-9120-50415bdea326_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "6000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "6000"
     },
     {
       "id": "191",
@@ -4358,10 +4410,11 @@
       "downloadLocation": "https://fluffyscafe.booth.pm/items/4973055",
       "imageUrl": "https://booth.pximg.net/c/620x620/50edde82-bbc5-4044-ae55-ebe4b744db5b/i/4973055/c49cd399-f1f7-4483-8f66-746341256c79_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "6000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "6000"
     },
     {
       "id": "192",
@@ -4380,7 +4433,7 @@
       "downloadLocation": "https://gason.booth.pm/items/7689946",
       "imageUrl": "https://booth.pximg.net/c/620x620/ffffcf37-7dab-4fae-9f6c-47e7e4842629/i/5587608/7873e6a9-b971-4717-81d9-c31f9b527a81_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -4456,7 +4509,7 @@
       "downloadLocation": "https://goldentakasan.booth.pm/items/4213786",
       "imageUrl": "https://booth.pximg.net/8867f724-9eb3-4336-ab8e-687a91a84ba8/i/4213786/94aeb609-1ee9-41cd-b45f-aba42662cc20_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -4478,7 +4531,7 @@
       "downloadLocation": "https://goldentakasan.booth.pm/items/4213786",
       "imageUrl": "https://booth.pximg.net/8867f724-9eb3-4336-ab8e-687a91a84ba8/i/4213786/08c0168b-29be-4a9b-8557-f75403a263e9_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -4500,7 +4553,7 @@
       "downloadLocation": "https://goldentakasan.booth.pm/items/4213786",
       "imageUrl": "https://booth.pximg.net/8867f724-9eb3-4336-ab8e-687a91a84ba8/i/4213786/a128bbac-2b5f-4ef2-9ddd-4e05fe3189aa_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -4522,7 +4575,7 @@
       "downloadLocation": "https://h0shin0s.booth.pm/items/6773043",
       "imageUrl": "https://booth.pximg.net/c/620x620/0a557fb4-e66e-4570-b3c0-474443b63248/i/6773043/ea61d6e7-2aa1-42de-b781-2991fcc1706d_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -4544,15 +4597,16 @@
       "downloadLocation": "https://h0shin0s.booth.pm/items/6050736",
       "imageUrl": "https://booth.pximg.net/c/620x620/0a557fb4-e66e-4570-b3c0-474443b63248/i/6050736/534d9b1b-01e1-4f5d-b6c8-ce0f3c2df103_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5500"
     },
     {
       "id": "200",
       "registeredDate": "2025-11-27",
-      "updatedDate": "2025-11-27",
+      "updatedDate": "2025-12-01",
       "avatarName": "ガヴ",
       "avatarNameUrl": "https://hatena37.booth.pm/items/2610130",
       "profileVersion": "1.0",
@@ -4566,15 +4620,20 @@
       "downloadLocation": "https://hatena37.booth.pm/items/7663206",
       "imageUrl": "https://booth.pximg.net/c/620x620/c2d54ea8-eb38-4f07-9be0-78b79ba22164/i/2610130/712db820-a4d1-4cf3-9530-62a7e602941a_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "3000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": ""
     },
     {
       "id": "201",
       "registeredDate": "2025-11-27",
-      "updatedDate": "2025-11-27",
+      "updatedDate": "2025-12-01",
       "avatarName": "ネム",
       "avatarNameUrl": "https://hatena37.booth.pm/items/2612857",
       "profileVersion": "1.0",
@@ -4588,15 +4647,20 @@
       "downloadLocation": "https://hatena37.booth.pm/items/7663206",
       "imageUrl": "https://booth.pximg.net/c/620x620/c2d54ea8-eb38-4f07-9be0-78b79ba22164/i/2612857/cb86b316-0d80-4325-b46d-0ce846a318e7_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "3000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": ""
     },
     {
       "id": "202",
       "registeredDate": "2025-11-27",
-      "updatedDate": "2025-11-27",
+      "updatedDate": "2025-12-01",
       "avatarName": "ラウラ",
       "avatarNameUrl": "https://hatena37.booth.pm/items/3166554",
       "profileVersion": "1.0",
@@ -4610,15 +4674,20 @@
       "downloadLocation": "https://hatena37.booth.pm/items/7663206",
       "imageUrl": "https://booth.pximg.net/c/620x620/c2d54ea8-eb38-4f07-9be0-78b79ba22164/i/3166554/af56d2ba-a25b-4a36-85a8-032e5b386d72_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": ""
     },
     {
       "id": "203",
       "registeredDate": "2025-11-27",
-      "updatedDate": "2025-11-27",
+      "updatedDate": "2025-12-01",
       "avatarName": "プティシラ",
       "avatarNameUrl": "https://hatena37.booth.pm/items/3773390",
       "profileVersion": "1.0",
@@ -4632,10 +4701,15 @@
       "downloadLocation": "https://hatena37.booth.pm/items/7663206",
       "imageUrl": "https://booth.pximg.net/c/620x620/c2d54ea8-eb38-4f07-9be0-78b79ba22164/i/3773390/fe54612d-3ae2-4a94-96c9-e6b9ba7d523d_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "4000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": ""
     },
     {
       "id": "204",
@@ -4654,10 +4728,11 @@
       "downloadLocation": "https://hatoshop.booth.pm/items/6693745",
       "imageUrl": "https://booth.pximg.net/c/620x620/2288f95d-0d8e-4577-ab8d-b906f68434fc/i/6693745/22bdd267-bff9-4b68-b1a2-87ac217ec367_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "4500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "4500"
     },
     {
       "id": "205",
@@ -4676,7 +4751,7 @@
       "downloadLocation": "https://hidariue.booth.pm/items/7678274",
       "imageUrl": "https://booth.pximg.net/c/620x620/7a04cace-2ff3-4fea-8f70-85ed7816b6c0/i/7420759/f8b149cc-0770-4a92-815c-4d8a48340d16_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": "公式での対応アナウンスあり"
@@ -4698,7 +4773,7 @@
       "downloadLocation": "https://hidariue.booth.pm/items/7667631",
       "imageUrl": "https://booth.pximg.net/c/620x620/8529a59d-d426-49e8-84e0-f4143ac0dc03/i/6611378/485b4db3-fa03-4e78-87da-5c2124f1168e_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -4720,7 +4795,7 @@
       "downloadLocation": "https://himeso.booth.pm/items/7659135",
       "imageUrl": "https://booth.pximg.net/c/620x620/61a3b2d7-b4b1-4f97-9e48-ffe959b26ae9/i/6405390/6e6332b4-d56c-4d2f-8f23-328f702949c8_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -4742,7 +4817,7 @@
       "downloadLocation": "https://himeso.booth.pm/items/7659135",
       "imageUrl": "https://booth.pximg.net/c/620x620/61a3b2d7-b4b1-4f97-9e48-ffe959b26ae9/i/5354471/c42b543c-a334-4f18-bd26-a5cf23e2a61b_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -4764,7 +4839,7 @@
       "downloadLocation": "https://himeso.booth.pm/items/7659135",
       "imageUrl": "https://booth.pximg.net/c/620x620/61a3b2d7-b4b1-4f97-9e48-ffe959b26ae9/i/4876459/73a1c9e3-825d-4045-bf14-e07392ad7afa_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -4786,7 +4861,7 @@
       "downloadLocation": "https://himeso.booth.pm/items/7659135",
       "imageUrl": "https://booth.pximg.net/c/620x620/61a3b2d7-b4b1-4f97-9e48-ffe959b26ae9/i/3470989/a70bc916-21f3-4b06-ae3a-eb302058a0b5_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -4808,7 +4883,7 @@
       "downloadLocation": "https://himeso.booth.pm/items/7659135",
       "imageUrl": "https://booth.pximg.net/c/620x620/61a3b2d7-b4b1-4f97-9e48-ffe959b26ae9/i/2559783/94e7e34d-c8fa-41e1-b2ea-433f7ebb8b7c_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -4830,7 +4905,7 @@
       "downloadLocation": "https://himeso.booth.pm/items/7659135",
       "imageUrl": "https://booth.pximg.net/c/620x620/61a3b2d7-b4b1-4f97-9e48-ffe959b26ae9/i/2953391/d16328b7-6585-42e3-af84-83bde2f7c2f7_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -4852,7 +4927,7 @@
       "downloadLocation": "https://himeso.booth.pm/items/7659135",
       "imageUrl": "https://booth.pximg.net/c/620x620/61a3b2d7-b4b1-4f97-9e48-ffe959b26ae9/i/2258111/855f59ec-25c5-4a3b-bdc4-d6de695e31be_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -4874,7 +4949,7 @@
       "downloadLocation": "https://himeso.booth.pm/items/5665967",
       "imageUrl": "https://booth.pximg.net/c/620x620/fda1763e-ec8b-4454-9f28-02dbb6a45451/i/5665967/7be87e72-17fa-4c6d-bbd7-db2159b9d723_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -4923,10 +4998,11 @@
       "downloadLocation": "https://hotel-galactica.booth.pm/items/7367958",
       "imageUrl": "https://booth.pximg.net/c/620x620/3ee96f7b-1f3b-41b6-b439-f6f197f6465e/i/7367958/dbb43178-631b-4860-a16d-b99bbf029667_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "217",
@@ -4945,10 +5021,11 @@
       "downloadLocation": "https://inomotokazura.booth.pm/items/7423591\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/eecea784-fd75-4869-8312-96cda3c5f3ef/i/7423591/5a9c2622-2cbd-4bc3-981a-865ba7420b44_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "6000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "6000"
     },
     {
       "id": "218",
@@ -4967,10 +5044,11 @@
       "downloadLocation": "https://isotch0130.booth.pm/items/6310625\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/bbdabf97-f967-4f75-86fa-50b3aca32c35/i/6310625/a3e7c9ad-1646-4f9c-8f86-82e3decf58c8_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "2000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "2000"
     },
     {
       "id": "219",
@@ -5016,7 +5094,7 @@
       "downloadLocation": "https://kanomayo.booth.pm/items/7688472",
       "imageUrl": "https://booth.pximg.net/c/620x620/3837192c-f816-4ea5-891d-5747d4a3470f/i/7028431/1ab0f12b-5705-4700-be77-5d7a3db115bf_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -5038,7 +5116,7 @@
       "downloadLocation": "https://kazu0617shop.booth.pm/items/7682516",
       "imageUrl": "https://booth.pximg.net/c/620x620/14387c17-7baa-40da-a7a0-96b004d72619/i/1255283/ab2bc4be-8b64-4f90-9ddd-52c5453c6450_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -5060,7 +5138,7 @@
       "downloadLocation": "https://kikkaken.booth.pm/items/7682343\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/480ebd53-4a11-4698-ac85-b68049818e2c/i/4358508/4ca3c82a-6bd2-44de-ad0f-1b38d6ba3165_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -5082,10 +5160,11 @@
       "downloadLocation": "https://kinetsuki.booth.pm/items/7621166\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/49afe20a-d249-4442-85b5-fdbabd78895f/i/7621166/58cc88a6-6f0a-4a5c-8984-a7efeb24199a_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "224",
@@ -5104,7 +5183,7 @@
       "downloadLocation": "https://kohirun.booth.pm/items/7660912",
       "imageUrl": "https://booth.pximg.net/c/620x620/7d1d1238-0c5a-4d1b-a4d4-fcbc42bebca8/i/7328764/68d88751-994d-4dd3-8e54-5be5bcb51fdf_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": "ミルフィと同素体"
@@ -5126,7 +5205,7 @@
       "downloadLocation": "https://kohirun.booth.pm/items/7660912",
       "imageUrl": "https://booth.pximg.net/c/620x620/1ae5d9f5-29a4-4574-ab86-a316c22db92a/i/6571299/7bda05bb-f9d5-45a8-811a-b95ac555beb8_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": "エクと同素体"
@@ -5148,7 +5227,7 @@
       "downloadLocation": "https://konomipainter.booth.pm/items/6533313",
       "imageUrl": "https://booth.pximg.net/c/620x620/ffffcf37-7dab-4fae-9f6c-47e7e4842629/i/6533313/e25eaa6d-d158-4842-a73a-a987c5f662b1_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -5170,7 +5249,7 @@
       "downloadLocation": "https://konomipainter.booth.pm/items/7643489",
       "imageUrl": "https://booth.pximg.net/c/620x620/ffffcf37-7dab-4fae-9f6c-47e7e4842629/i/7643489/5ef7765c-cbf2-4f98-9a14-0a8f6075c103_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -5219,7 +5298,7 @@
       "downloadLocation": "https://kumakichishoten.booth.pm/items/7573056",
       "imageUrl": "https://booth.pximg.net/6532652b-e023-4900-b8f3-4ba6c3a29217/i/3689805/a5cd52c6-9926-4a47-bf05-e036f7958877_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -5241,7 +5320,7 @@
       "downloadLocation": "https://kumakichishoten.booth.pm/items/7573056",
       "imageUrl": "https://booth.pximg.net/6532652b-e023-4900-b8f3-4ba6c3a29217/i/3689805/3d69e335-8de7-4f24-af37-6cbcf06bcfbd_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -5263,7 +5342,7 @@
       "downloadLocation": "https://kumakichishoten.booth.pm/items/7687476",
       "imageUrl": "https://booth.pximg.net/c/620x620/58ea32ec-ba52-48e9-8014-360fbbd7a39a/i/1728991/8ec5551a-516f-4cdb-b1f0-207cdb9fca9d_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -5307,7 +5386,7 @@
       "downloadLocation": "https://kurotori.booth.pm/items/4994356",
       "imageUrl": "https://booth.pximg.net/c/620x620/fc6b0a4d-1d17-4d55-a0f6-963e574057a2/i/4994356/f31da3ee-762b-4f6a-a23b-f2799910c6e7_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -5329,10 +5408,11 @@
       "downloadLocation": "https://ladenan.booth.pm/items/5810983",
       "imageUrl": "https://booth.pximg.net/c/620x620/5801b8dc-7a05-4aef-85a2-8a97bf2423f0/i/5810983/af9143b4-a54e-42aa-bc22-88c27367d71d_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "500"
     },
     {
       "id": "235",
@@ -5351,7 +5431,7 @@
       "downloadLocation": "https://limern.booth.pm/items/7664780\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/e6deeb51-72a5-4562-9425-0bdd110b534d/i/4906631/e7c933f7-c3f2-438c-958c-1c1cdc1c0757_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": "公式にてプロファイル作成予定"
@@ -5373,7 +5453,7 @@
       "downloadLocation": "https://limern.booth.pm/items/7672208",
       "imageUrl": "https://booth.pximg.net/c/620x620/96d1d589-6879-4d30-8891-a2c6b8d64186/i/5957830/a4e0ae5b-7797-448b-80b1-e852c861e080_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": "公式にてプロファイル作成予定"
@@ -5395,7 +5475,7 @@
       "downloadLocation": "https://limern.booth.pm/items/7639145",
       "imageUrl": "https://booth.pximg.net/c/620x620/61c300d5-98ba-4a3e-b549-47b21240c089/i/5345398/1ee74ade-12f7-43fd-8728-6955c11b32a2_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -5417,10 +5497,11 @@
       "downloadLocation": "https://mappppppppachi.booth.pm/items/4768809",
       "imageUrl": "https://booth.pximg.net/c/620x620/ac57fb64-d676-43a9-bdd6-795097b4ff43/i/4768809/7fd514c3-eeff-42f2-b7c6-42795b6261f4_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "6000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "6000"
     },
     {
       "id": "239",
@@ -5439,10 +5520,11 @@
       "downloadLocation": "https://mkmkdo.booth.pm/items/5862488",
       "imageUrl": "https://booth.pximg.net/c/620x620/c576046b-73fa-4cd2-824e-5ba009e499b7/i/5862488/b6fe8771-2d20-427e-b92c-84da4fafa542_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "4000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "4000"
     },
     {
       "id": "240",
@@ -5461,10 +5543,11 @@
       "downloadLocation": "https://mkmkdo.booth.pm/items/5035949\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/c576046b-73fa-4cd2-824e-5ba009e499b7/i/5035949/ddc8fd59-6840-420e-a700-d75ac740e106_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "4000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "4000"
     },
     {
       "id": "241",
@@ -5483,10 +5566,11 @@
       "downloadLocation": "",
       "imageUrl": "https://booth.pximg.net/c/620x620/c576046b-73fa-4cd2-824e-5ba009e499b7/i/6785512/d9a26d9c-564a-45dc-b0f9-5f91ccf4bcb3_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "6000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "6000"
     },
     {
       "id": "242",
@@ -5505,7 +5589,7 @@
       "downloadLocation": "https://mochiarmor.booth.pm/items/5900934",
       "imageUrl": "https://booth.pximg.net/c/620x620/c6fceac6-9a40-449d-b9dc-86d07238045b/i/5900934/dcb44b47-bace-4bb5-b431-ebc662ecd39a_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -5608,7 +5692,7 @@
       "downloadLocation": "https://modes-lavande.booth.pm/items/6848538",
       "imageUrl": "https://booth.pximg.net/c/620x620/24c76840-969b-40b0-a0fb-7d674f325113/i/6848538/67885475-3b14-46dc-9434-ff43aa0da2cb_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -5652,7 +5736,7 @@
       "downloadLocation": "https://monostock.booth.pm/items/7633072",
       "imageUrl": "https://booth.pximg.net/c/620x620/9a2758a1-58f4-48a0-9788-9eedc962eaea/i/7475899/a3a875f4-20a2-49f5-8a6d-47fccae3ac3b_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -5674,7 +5758,7 @@
       "downloadLocation": "https://monostock.booth.pm/items/7633072",
       "imageUrl": "https://booth.pximg.net/c/620x620/61a3b2d7-b4b1-4f97-9e48-ffe959b26ae9/i/4876459/73a1c9e3-825d-4045-bf14-e07392ad7afa_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -5696,7 +5780,7 @@
       "downloadLocation": "https://monostock.booth.pm/items/7633072",
       "imageUrl": "https://booth.pximg.net/c/620x620/61a3b2d7-b4b1-4f97-9e48-ffe959b26ae9/i/6405390/6e6332b4-d56c-4d2f-8f23-328f702949c8_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -5718,7 +5802,7 @@
       "downloadLocation": "https://monostock.booth.pm/items/7633072",
       "imageUrl": "https://booth.pximg.net/c/620x620/61a3b2d7-b4b1-4f97-9e48-ffe959b26ae9/i/5354471/c42b543c-a334-4f18-bd26-a5cf23e2a61b_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -5740,7 +5824,7 @@
       "downloadLocation": "https://mtshop.booth.pm/items/5331716",
       "imageUrl": "https://booth.pximg.net/c/620x620/922e944c-e396-411f-bda4-044626cd0730/i/5331716/1d7cca0a-555c-45c9-9f91-4619d723a9f1_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -5762,10 +5846,11 @@
       "downloadLocation": "https://namekuji1337.booth.pm/items/4592568",
       "imageUrl": "https://booth.pximg.net/c/620x620/fe589ff6-2d21-4938-b5d2-e788dde06cc9/i/4592568/2add04e1-e687-4214-b9d5-b13df91c827e_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5180",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": "逆方向対応不明"
+      "notes": "逆方向対応不明",
+      "avatarPrice": "5180"
     },
     {
       "id": "254",
@@ -5784,10 +5869,11 @@
       "downloadLocation": "https://namu-grocery.booth.pm/items/7167540",
       "imageUrl": "https://booth.pximg.net/c/620x620/129624da-2e08-41f7-beae-67797cfa4e2c/i/7167540/ddbc2434-a9a0-4a50-947f-9581f047097a_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "4500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "4500"
     },
     {
       "id": "255",
@@ -5806,10 +5892,11 @@
       "downloadLocation": "https://nejinocraft.booth.pm/items/7251883",
       "imageUrl": "https://booth.pximg.net/c/620x620/4381c8b2-b408-414e-8999-e9b351d362f6/i/7251883/20513dd1-cc62-4d86-93b2-cd9530dbacc6_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "7000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": "逆変換対応予定あり"
+      "notes": "逆変換対応予定あり",
+      "avatarPrice": "7000"
     },
     {
       "id": "256",
@@ -5828,7 +5915,7 @@
       "downloadLocation": "https://nekokaerya.booth.pm/items/7643644",
       "imageUrl": "https://booth.pximg.net/c/620x620/bd26c7a2-0750-4b26-8ed6-dcf85d33716d/i/4925619/75678116-057a-4938-8a29-cbf22b333865_base_resized.jpg",
       "pricing": "無料",
-      "price": "5900",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -5850,7 +5937,7 @@
       "downloadLocation": "https://nekokaerya.booth.pm/items/7643644",
       "imageUrl": "https://booth.pximg.net/c/620x620/bd26c7a2-0750-4b26-8ed6-dcf85d33716d/i/6012840/d231bf0a-2efd-4ac2-b098-16e336a10d16_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -5872,7 +5959,7 @@
       "downloadLocation": "https://nekokaerya.booth.pm/items/7643644",
       "imageUrl": "https://booth.pximg.net/c/620x620/4fef6d30-5a9e-4a4c-a16d-a5bd6897fee1/i/5854397/a9f2afb6-a42c-44e8-b0ed-b64dc5f6a5c7_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -5894,7 +5981,7 @@
       "downloadLocation": "https://nolilon.booth.pm/items/5288261",
       "imageUrl": "https://booth.pximg.net/c/620x620/aacfdd64-af0d-4cd6-a17a-5181f00c6feb/i/5288261/6e4bf0d8-9841-440e-bf32-c11f364a9ba8_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -5916,7 +6003,7 @@
       "downloadLocation": "https://osoby.booth.pm/items/6846527",
       "imageUrl": "https://booth.pximg.net/c/620x620/d188b6e4-0980-4b1d-ab5c-b0985f94c32b/i/5534723/c41beca0-c492-427e-9e58-a0b390da1a38_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -5938,7 +6025,7 @@
       "downloadLocation": "https://otogisiori.booth.pm/items/6354246\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/dc16eb3f-c515-498f-8a3c-f8e7c46beb2d/i/6354246/d39c0537-99c4-4931-9ccd-a02b1271879b_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -5960,7 +6047,7 @@
       "downloadLocation": "https://docs.google.com/spreadsheets/d/1Wx3V_tU3-BWn0vmAygeNJcpDB8jMNJyuRXP_CulvYVs/edit?gid=0#gid=0",
       "imageUrl": "https://booth.pximg.net/c/620x620/bbcf8d8d-e1eb-4154-bac8-0657193e753c/i/6283622/258fe6d8-9162-4a15-a2c6-f04878a71c11_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -5982,7 +6069,7 @@
       "downloadLocation": "https://poppo-shop.booth.pm/items/7690169",
       "imageUrl": "https://booth.pximg.net/c/620x620/1ae5d9f5-29a4-4574-ab86-a316c22db92a/i/4023598/b14584b7-3131-420a-88d4-82f2bee0eb87_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -6004,7 +6091,7 @@
       "downloadLocation": "https://poppo-shop.booth.pm/items/7690169",
       "imageUrl": "https://booth.pximg.net/c/620x620/1ae5d9f5-29a4-4574-ab86-a316c22db92a/i/3950859/d89a5b03-e605-4b88-826e-3b0b8c369013_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -6026,7 +6113,7 @@
       "downloadLocation": "https://poppo-shop.booth.pm/items/7690169",
       "imageUrl": "https://booth.pximg.net/c/620x620/7d1d1238-0c5a-4d1b-a4d4-fcbc42bebca8/i/4578343/788cbe77-d583-496d-8d26-263fba97e907_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -6048,7 +6135,7 @@
       "downloadLocation": "https://rafa-works.booth.pm/items/7664349",
       "imageUrl": "https://booth.pximg.net/c/620x620/63bb113e-c342-4a1d-9041-17363a0b3811/i/6519856/a49f1f66-c6c7-4a55-be31-054386ba85e2_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -6070,7 +6157,7 @@
       "downloadLocation": "https://rakuiro.booth.pm/items/6905649",
       "imageUrl": "https://booth.pximg.net/c/620x620/492029a7-8f19-465e-9ec4-87b368d19b80/i/6905649/3c06b094-8399-4934-8753-d4ac1c7c6261_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -6092,7 +6179,7 @@
       "downloadLocation": "https://rampan.booth.pm/items/5929122",
       "imageUrl": "https://booth.pximg.net/c/620x620/9281c4f0-63af-4baa-b87b-60aa6d57de45/i/5929122/68d8666e-381a-4647-a32a-cb67ade8ecfe_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -6114,10 +6201,11 @@
       "downloadLocation": "https://hiehieck.booth.pm/items/5438970",
       "imageUrl": "https://booth.pximg.net/c/620x620/e1da7fe2-4e87-4ba0-85db-2a5eaedc6c78/i/5438970/66f04fd0-4b91-4013-9171-71feb8599d49_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "4500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": "11/30日まで7000→4500"
+      "notes": "11/30日まで7000→4500",
+      "avatarPrice": "4500"
     },
     {
       "id": "270",
@@ -6136,10 +6224,11 @@
       "downloadLocation": "https://ebell.booth.pm/items/7502523",
       "imageUrl": "https://booth.pximg.net/c/620x620/0e9b9df1-539b-4989-8bff-cc30885b931b/i/7502523/d560fe6a-294a-4be1-a338-95fcf4099bf4_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "4000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": true,
-      "notes": "11月27日くらいまで500円引き"
+      "notes": "11月27日くらいまで500円引き",
+      "avatarPrice": "4000"
     },
     {
       "id": "271",
@@ -6158,7 +6247,7 @@
       "downloadLocation": "https://rarbuncly.booth.pm/items/7692368",
       "imageUrl": "https://booth.pximg.net/c/620x620/63bb113e-c342-4a1d-9041-17363a0b3811/i/4701501/8322febd-a824-4c3f-973b-3de8060ddd44_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -6180,7 +6269,7 @@
       "downloadLocation": "https://reblue.booth.pm/items/7670661",
       "imageUrl": "https://booth.pximg.net/c/620x620/a724e93d-5634-41cf-ac1f-8f8985536a5a/i/3390339/4160eae9-dc30-4f28-9ada-469e3fafcb4a_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -6202,10 +6291,11 @@
       "downloadLocation": "https://rgbhanbaiten.booth.pm/items/7243343",
       "imageUrl": "https://booth.pximg.net/c/620x620/1e7f941d-cb24-4723-97d2-bf8684b199d3/i/7243343/a7781746-13b7-491d-ba12-e08e5f271208_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "274",
@@ -6224,10 +6314,11 @@
       "downloadLocation": "https://rio0405.booth.pm/items/5731436\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/c3b0732e-3637-41f3-8d80-ac330e8e63da/i/5731436/3036a0c3-522b-44b4-b731-2054c054e568_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5500"
     },
     {
       "id": "275",
@@ -6246,10 +6337,11 @@
       "downloadLocation": "https://rurarinringo.booth.pm/items/5980186",
       "imageUrl": "https://booth.pximg.net/c/620x620/f62b6a9d-a89c-4c57-b307-5bfb63c6a997/i/5980186/1e414564-a713-4004-9b5c-7106c7a577b1_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": true,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5500"
     },
     {
       "id": "276",
@@ -6356,10 +6448,11 @@
       "downloadLocation": "https://scramasax.booth.pm/items/6815401",
       "imageUrl": "https://booth.pximg.net/c/620x620/8d169912-4ede-44c5-a10d-fdbc47f8ef08/i/6815401/614b584d-0f0f-4435-a239-dee5c12768d4_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "281",
@@ -6378,10 +6471,11 @@
       "downloadLocation": "https://scramasax.booth.pm/items/4773891",
       "imageUrl": "https://booth.pximg.net/c/620x620/8d169912-4ede-44c5-a10d-fdbc47f8ef08/i/4773891/efb91686-e21e-472c-a5bb-9d2c50df5e1d_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "4500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "4500"
     },
     {
       "id": "282",
@@ -6400,10 +6494,11 @@
       "downloadLocation": "https://seafoods.booth.pm/items/7544937",
       "imageUrl": "https://booth.pximg.net/c/620x620/46092d08-a17b-4f8f-b926-525ed00db4aa/i/7544937/8e1e6544-f275-4c15-9149-5d7a0cc927eb_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "6000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "6000"
     },
     {
       "id": "283",
@@ -6422,10 +6517,11 @@
       "downloadLocation": "https://senna-studio.booth.pm/items/4806925\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/70c03f34-f561-4b7a-af1a-6bec13229237/i/4806925/1609ba48-5bad-4ccd-8fba-f08f7f1baa9b_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "284",
@@ -6444,10 +6540,11 @@
       "downloadLocation": "https://senna-studio.booth.pm/items/7428637\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/70c03f34-f561-4b7a-af1a-6bec13229237/i/7428637/f587bca3-4c3f-4e47-a531-e57045a1bc10_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5600",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5600"
     },
     {
       "id": "285",
@@ -6466,10 +6563,11 @@
       "downloadLocation": "https://senna-studio.booth.pm/items/6213757\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/70c03f34-f561-4b7a-af1a-6bec13229237/i/6213757/b426bab8-c72a-4290-8a27-295fcb63e1dc_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5600",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5600"
     },
     {
       "id": "286",
@@ -6488,10 +6586,11 @@
       "downloadLocation": "https://senna-studio.booth.pm/items/5426070\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/70c03f34-f561-4b7a-af1a-6bec13229237/i/5426070/89e345d1-f5e8-4dd7-8aac-063ea22dbda5_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5200",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5200"
     },
     {
       "id": "287",
@@ -6510,7 +6609,7 @@
       "downloadLocation": "https://sharono.booth.pm/items/6542661\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/d84d54f0-8809-4972-baee-3f190b4e9fd3/i/6542661/162f093c-d0d8-419a-b55b-10a0cc72a566_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -6532,7 +6631,7 @@
       "downloadLocation": "https://sharono.booth.pm/items/6915207\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/d84d54f0-8809-4972-baee-3f190b4e9fd3/i/6915207/d78428a8-4c97-4aaf-bc33-978fef75129d_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -6554,7 +6653,7 @@
       "downloadLocation": "https://sizimityper.booth.pm/items/7667176",
       "imageUrl": "https://booth.pximg.net/c/620x620/1ae5d9f5-29a4-4574-ab86-a316c22db92a/i/3234473/0cf8ca29-86a6-4414-ae3b-87682d4aa915_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": "セフィラ共通素体"
@@ -6576,7 +6675,7 @@
       "downloadLocation": "https://sizimityper.booth.pm/items/7667176",
       "imageUrl": "https://booth.pximg.net/c/620x620/1ae5d9f5-29a4-4574-ab86-a316c22db92a/i/2953001/9022344a-ed3c-4ab4-9cd8-8187848e88ff_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": "アッシュ共通素体"
@@ -6598,7 +6697,7 @@
       "downloadLocation": "https://sora777.booth.pm/items/7641371",
       "imageUrl": "https://booth.pximg.net/c/620x620/cb2647e1-5b84-458b-bf25-6af264fd0fa5/i/5288209/f81f8306-d39f-4726-8a05-6628385b345d_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -6620,7 +6719,7 @@
       "downloadLocation": "https://sora777.booth.pm/items/7641371",
       "imageUrl": "https://booth.pximg.net/c/620x620/cb2647e1-5b84-458b-bf25-6af264fd0fa5/i/7530804/49bdee1e-9a03-485d-a6fb-5c55e967e5e2_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -6642,7 +6741,7 @@
       "downloadLocation": "https://sphere-model.booth.pm/items/5099202\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/f139bca2-eced-4429-81fb-e0d3644f3d78/i/5099202/0e1b8465-e933-495b-b75e-aacc7e013fe6_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -6664,7 +6763,7 @@
       "downloadLocation": "https://studio7tsuki.booth.pm/items/5685692",
       "imageUrl": "https://booth.pximg.net/c/620x620/44083c43-41b8-4ba8-b873-af95d6ff1ad4/i/6227036/d67c5480-0d74-43c7-9303-f30939c4238f_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -6686,7 +6785,7 @@
       "downloadLocation": "https://studio7tsuki.booth.pm/items/5685692",
       "imageUrl": "https://booth.pximg.net/c/620x620/44083c43-41b8-4ba8-b873-af95d6ff1ad4/i/5319407/07183e7d-0022-4aa7-8736-93a06c3d2ba9_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -6708,7 +6807,7 @@
       "downloadLocation": "https://studio7tsuki.booth.pm/items/5685692",
       "imageUrl": "https://booth.pximg.net/c/620x620/44083c43-41b8-4ba8-b873-af95d6ff1ad4/i/6294990/d056cadb-71ca-4258-ba50-6ded98516d1c_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -6730,7 +6829,7 @@
       "downloadLocation": "https://syebun.booth.pm/items/7677249",
       "imageUrl": "https://booth.pximg.net/c/620x620/fb6b1fad-86c2-45e3-89e8-e117c662ecc2/i/4189354/304ee8da-7909-440e-a73b-0e0f2d0d2d1d_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -6752,7 +6851,7 @@
       "downloadLocation": "https://t-industry.booth.pm/items/7669756",
       "imageUrl": "https://booth.pximg.net/c/620x620/986011c0-51d3-443f-826b-c95e439f05c1/i/4929177/4d518959-57d1-45cd-bfd1-7da6bcd53f9b_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -6774,7 +6873,7 @@
       "downloadLocation": "https://t8dbcau.booth.pm/items/5583871",
       "imageUrl": "https://booth.pximg.net/c/620x620/991dc833-2773-4465-8804-43025c56c16b/i/5583871/8ee75350-3abd-445b-acc8-2656727fcb7a_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": false,
       "reverseSupport": false,
       "notes": "対応中?タグのみあり"
@@ -6796,7 +6895,7 @@
       "downloadLocation": "https://t8dbcau.booth.pm/items/5917368",
       "imageUrl": "https://booth.pximg.net/c/620x620/991dc833-2773-4465-8804-43025c56c16b/i/5917368/4ddced7e-6af0-44df-8ebf-840508282f03_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": false,
       "reverseSupport": false,
       "notes": "対応中?タグのみあり"
@@ -6818,7 +6917,7 @@
       "downloadLocation": "https://t8dbcau.booth.pm/items/5109276\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/991dc833-2773-4465-8804-43025c56c16b/i/5109276/e392161a-c38e-4558-90d1-7b3efbec8624_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": false,
       "reverseSupport": false,
       "notes": "対応中?タグのみあり"
@@ -6840,7 +6939,7 @@
       "downloadLocation": "https://tanabataonsen.booth.pm/items/7682147",
       "imageUrl": "https://booth.pximg.net/c/620x620/20109727-bfb4-4893-ac44-cf1ecae7d34f/i/6899847/77967edf-3d1c-4bce-a243-b07fa063f22c_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -6862,10 +6961,11 @@
       "downloadLocation": "https://tarooka.booth.pm/items/5678660",
       "imageUrl": "https://booth.pximg.net/c/620x620/97ecd71e-7cac-4c68-af06-589056b9b010/i/5678660/d0cbfda7-605a-4f44-8f44-9067cfe09084_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "304",
@@ -6884,10 +6984,11 @@
       "downloadLocation": "https://tsugomori-do.booth.pm/items/5993897",
       "imageUrl": "https://booth.pximg.net/c/620x620/40a4e64c-368b-4f7f-96e2-5eee07e063dc/i/5993897/b4a1279a-2953-4e8e-a838-4724a0d80e37_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "305",
@@ -6906,7 +7007,7 @@
       "downloadLocation": "https://uniteilab.booth.pm/items/7642068",
       "imageUrl": "https://booth.pximg.net/c/620x620/986011c0-51d3-443f-826b-c95e439f05c1/i/3480756/f56d8d9f-ae96-435c-b3f6-908565a89c8d_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -6955,10 +7056,11 @@
       "downloadLocation": "https://vinca-major-star.booth.pm/items/7058472",
       "imageUrl": "https://booth.pximg.net/c/620x620/5765fd78-d0fd-4c11-85c3-2c2d10abee52/i/7058472/436a3806-e40c-464a-b042-da22c1d24375_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "308",
@@ -6977,10 +7079,11 @@
       "downloadLocation": "https://vividplum.booth.pm/items/7447697\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/f84cb78e-a4d4-411f-bc71-1944c64613d7/i/7447697/c068085d-3ffa-40ab-a676-bb89db50daad_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "309",
@@ -6999,7 +7102,7 @@
       "downloadLocation": "https://vrchikan.booth.pm/items/7674906",
       "imageUrl": "https://booth.pximg.net/c/620x620/333200ad-bdff-4a91-a6ef-41584752054c/i/5563421/7ba6108e-d861-41f5-84ed-a6c5779571c9_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -7021,7 +7124,7 @@
       "downloadLocation": "https://wakasa-workshop.booth.pm/items/7632682",
       "imageUrl": "https://booth.pximg.net/c/620x620/4c24f404-ae72-4197-9e2e-161d5ced9180/i/5770771/4ae7a39b-d6d7-403d-a48a-9bc53c5ec863_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -7043,7 +7146,7 @@
       "downloadLocation": "https://wakasa-workshop.booth.pm/items/7632682",
       "imageUrl": "https://booth.pximg.net/c/620x620/4c24f404-ae72-4197-9e2e-161d5ced9180/i/5187788/790e8821-5206-4657-bbc6-1c7bfae003d8_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -7131,7 +7234,7 @@
       "downloadLocation": "https://watanoko.booth.pm/items/7672284",
       "imageUrl": "https://booth.pximg.net/c/620x620/1a3d7c54-a290-40a4-b267-0f2e041fef9a/i/3818504/deb62d81-7fc8-41f4-babb-d355d4f67024_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -7263,7 +7366,7 @@
       "downloadLocation": "https://yaratoyakonko.booth.pm/items/4362233",
       "imageUrl": "https://booth.pximg.net/c/620x620/33dfd3a7-1202-459d-8148-2e433bf82c02/i/4362233/e3c3a4f5-c767-4a52-a222-0c1266a6702d_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -7285,7 +7388,7 @@
       "downloadLocation": "https://yaratoyakonko.booth.pm/items/6278885",
       "imageUrl": "https://booth.pximg.net/c/620x620/33dfd3a7-1202-459d-8148-2e433bf82c02/i/6278885/6502f761-3d07-41ab-a9c9-c680e0db6d9e_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -7307,7 +7410,7 @@
       "downloadLocation": "https://ykcg.booth.pm/items/6382745",
       "imageUrl": "https://booth.pximg.net/c/620x620/7a39a294-a42f-4a98-ae6b-5e1bddea1bad/i/6382745/621e1422-ef6f-4540-ba7d-96eff50eda3f_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -7356,10 +7459,11 @@
       "downloadLocation": "https://yosohuta.booth.pm/items/6731806",
       "imageUrl": "https://booth.pximg.net/c/620x620/9e316222-2e53-4586-9471-58ac96f0baec/i/6731806/23bf148a-3cc6-499b-a369-e5b9001c41b4_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "6000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "6000"
     },
     {
       "id": "326",
@@ -7378,7 +7482,7 @@
       "downloadLocation": "https://yuegong-ling.booth.pm/items/7661495",
       "imageUrl": "https://booth.pximg.net/c/620x620/63bb113e-c342-4a1d-9041-17363a0b3811/i/5201759/3780b0ad-85a0-43d3-b683-f4bff07b27e5_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": "頒布許可あり"
@@ -7400,7 +7504,7 @@
       "downloadLocation": "https://yuegong-ling.booth.pm/items/7668505",
       "imageUrl": "https://booth.pximg.net/c/620x620/15018b3f-e143-4dbf-bdbd-76137d5c20ea/i/4580093/f54b21ea-8cc7-449b-9e16-96bbba6ed340_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": "頒布許可あり"
@@ -7449,10 +7553,11 @@
       "downloadLocation": "https://yuufyu.booth.pm/items/5785012",
       "imageUrl": "https://booth.pximg.net/c/620x620/108bd0e4-f65f-4f7e-9a7a-2a2dd3d5c18a/i/5785012/26012247-dda4-403d-884c-8a11154baa9b_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": true,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "330",
@@ -7471,10 +7576,11 @@
       "downloadLocation": "https://yuufyu.booth.pm/items/5361549",
       "imageUrl": "https://booth.pximg.net/c/620x620/108bd0e4-f65f-4f7e-9a7a-2a2dd3d5c18a/i/5361549/c3f86c28-6098-4629-b386-e089421465f8_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "5000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": true,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "5000"
     },
     {
       "id": "331",
@@ -7493,7 +7599,7 @@
       "downloadLocation": "https://danekolab.booth.pm/items/7695568",
       "imageUrl": "https://booth.pximg.net/fae58d22-da5a-4894-a9e1-3fbe3560a4a4/i/5353712/c51c2e5a-eaba-4208-b457-24f2c746dae2_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -7515,7 +7621,7 @@
       "downloadLocation": "https://dowaax7.booth.pm/items/7695844",
       "imageUrl": "https://booth.pximg.net/c/620x620/4720f57f-29f2-4c9f-af38-5b7b81653a21/i/3329958/0024a31e-ed09-482c-a44e-3e4772656ee4_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -7537,7 +7643,7 @@
       "downloadLocation": "https://firsteye.booth.pm/items/7151285",
       "imageUrl": "https://booth.pximg.net/c/620x620/062c8fb4-d31f-44be-9595-3ecef676c510/i/7151285/4856de7d-8ba3-467b-9eb1-0f4286fd4716_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -7559,10 +7665,11 @@
       "downloadLocation": "https://gba.booth.pm/items/7499714",
       "imageUrl": "https://booth.pximg.net/c/620x620/65b0cdf3-f0e5-421f-bffd-a110c05a5f24/i/7499714/02e8c4bc-2600-4ea9-91e4-118dce75afc3_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "7000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "7000"
     },
     {
       "id": "335",
@@ -7581,7 +7688,7 @@
       "downloadLocation": "https://licolgames.booth.pm/items/7695739",
       "imageUrl": "https://booth.pximg.net/c/620x620/750b31d5-3937-49b1-b410-0766437409f0/i/5940169/c71ffbe7-b86a-424f-bf09-f2a33431a318_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -7603,7 +7710,7 @@
       "downloadLocation": "https://anticpear.booth.pm/items/7692446",
       "imageUrl": "https://booth.pximg.net/c/620x620/3b11df2a-d3b5-4462-aaa0-2fe5bfc448b1/i/3910335/145443a8-4564-419d-8b73-bef8fcaad582_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -7625,7 +7732,7 @@
       "downloadLocation": "https://liiiworks.booth.pm/items/7695034",
       "imageUrl": "https://booth.pximg.net/c/620x620/636ad57a-1ece-4d31-92ab-5100368e48ad/i/5236104/766a4a9b-110c-4209-aaec-52161e1f5954_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -7647,7 +7754,7 @@
       "downloadLocation": "https://salsa-tortilla.booth.pm/items/7680010",
       "imageUrl": "https://booth.pximg.net/c/620x620/249807c7-0631-4d2e-a955-f2b72136c35f/i/6691200/e56f745d-f9c8-44bc-9373-a2243a839bfc_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -7669,7 +7776,7 @@
       "downloadLocation": "https://tatsu020.booth.pm/items/7670984",
       "imageUrl": "https://booth.pximg.net/c/620x620/88c6fb07-a6e7-46eb-ab9c-f48aa7427fab/i/5456973/91701514-8aa3-4074-a5f5-5a8b44de312e_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -7691,7 +7798,7 @@
       "downloadLocation": "https://keenooshop.booth.pm/items/4825073",
       "imageUrl": "https://booth.pximg.net/c/620x620/de9ac79a-d2ba-4cc5-a4c4-002da7a40795/i/4825073/46d77d10-f243-47a9-9784-65266da975a9_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
@@ -7767,7 +7874,7 @@
       "downloadLocation": "https://l3ia.booth.pm/items/7694796",
       "imageUrl": "https://booth.pximg.net/e4a23b04-95ae-4e1b-a746-072a48f8a8b1/i/4400771/0ad4b30b-86f8-4c11-8654-08f94ecb64bb_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": "びきたんさん公認"
@@ -7789,10 +7896,11 @@
       "downloadLocation": "https://unyapo.booth.pm/items/4789903",
       "imageUrl": "https://booth.pximg.net/ba662c64-4256-49b8-b6e5-32d5453eeff8/i/4789903/3e065c3f-8f6e-484b-95f4-c81e608245f9_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "6000",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "",
+      "avatarPrice": "6000"
     },
     {
       "id": "345",
@@ -7811,7 +7919,7 @@
       "downloadLocation": "https://murixir.booth.pm/items/7653708",
       "imageUrl": "https://booth.pximg.net/f25a9c13-a5b2-4029-b5a8-42f356c8f0ac/i/6488991/06ca4bf9-b5d4-45a6-ab42-585bd81d53b4_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -7833,7 +7941,7 @@
       "downloadLocation": "https://murixir.booth.pm/items/7672328",
       "imageUrl": "https://booth.pximg.net/f25a9c13-a5b2-4029-b5a8-42f356c8f0ac/i/6130457/79afd6a6-dfec-4a94-b670-8e2c817ea24a_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -7855,7 +7963,7 @@
       "downloadLocation": "https://kurofura.booth.pm/items/7667407",
       "imageUrl": "https://booth.pximg.net/e9daa635-86f5-4a5a-a591-ca38bde00171/i/7667407/afa0803e-67ff-4d25-b773-8049435ffe42_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": "Fanbox限定配布アバター"
@@ -7899,7 +8007,7 @@
       "downloadLocation": "https://poppo-shop.booth.pm/items/7697575",
       "imageUrl": "https://booth.pximg.net/ed52788c-0b3b-4e38-9ded-1e5797daf0ef/i/1256087/31156a98-56b4-4c63-93e5-ea4df9b35ac9_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
@@ -7921,7 +8029,7 @@
       "downloadLocation": "https://ablab.booth.pm/items/4267802",
       "imageUrl": "https://booth.pximg.net/8c0d4185-59d3-428b-ae3e-d1ec51dfef31/i/4267802/c03dbb83-4417-49ae-afdf-a1ef1696fd95_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": "セール50%OFFで\\3000"
@@ -7943,10 +8051,11 @@
       "downloadLocation": "https://akamu3.booth.pm/items/7636824\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/091ec582-37c2-4a12-8db5-c602bae4106e/i/7636824/944074ec-acc5-488c-8cfc-7da775ff8d70_base_resized.jpg",
       "pricing": "アバター同梱",
-      "price": "4500",
+      "price": "-",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": "発売は12/1～"
+      "notes": "発売は12/1～",
+      "avatarPrice": "4500"
     },
     {
       "id": "352",
@@ -7965,7 +8074,7 @@
       "downloadLocation": "https://alua7.booth.pm/items/5826600",
       "imageUrl": "https://booth.pximg.net/c/620x620/060c8062-129d-4eac-b9c4-86a70bf74643/i/5826600/09075b0d-5a8c-4163-ba54-65d3c9868c53_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "avatarPrice": "2500",
       "onSale": true,
       "saleStartDate": "",
@@ -7992,7 +8101,7 @@
       "downloadLocation": "https://alua7.booth.pm/items/3978893\n",
       "imageUrl": "https://booth.pximg.net/c/620x620/060c8062-129d-4eac-b9c4-86a70bf74643/i/3978893/c99e903a-1ca5-44f5-94ef-aea556e13698_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "avatarPrice": "2500",
       "onSale": true,
       "saleStartDate": "",
@@ -12582,7 +12691,7 @@
       "downloadLocation": "https://armoirelepus.booth.pm/items/7687000",
       "imageUrl": "https://booth.pximg.net/d398d5cc-41ab-4a3a-b7fe-eec9a3d94a3b/i/3368697/0e0c702d-150b-4532-8399-0a40e33ec90e_base_resized.jpg",
       "pricing": "無料",
-      "price": "",
+      "price": "0",
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": "",
