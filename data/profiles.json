@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-01 00:21:38 JST",
+  "lastUpdated": "2025-12-01 00:23:41 JST",
   "profiles": [
     {
       "id": "001",
@@ -12650,7 +12650,7 @@
     {
       "id": "9997",
       "registeredDate": "2025-11-26",
-      "updatedDate": "2025-11-30",
+      "updatedDate": "2025-12-01",
       "avatarName": "Ciel - シエル -",
       "avatarNameUrl": "https://armoirelepus.booth.pm/items/3368697",
       "profileVersion": "1",
@@ -12668,7 +12668,7 @@
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": "",
-      "avatarPrice": "",
+      "avatarPrice": "5000",
       "onSale": false,
       "saleStartDate": "",
       "saleEndDate": "",
