@@ -25,8 +25,8 @@ async function loadProfiles() {
             throw new Error('データの読み込みに失敗しました');
         }
         const data = await response.json();
-        // IDでソート
-        allProfiles = data.profiles.sort((a, b) => a.id.localeCompare(b.id));
+        // IDでソート(逆順)
+        allProfiles = data.profiles.sort((a, b) => b.id.localeCompare(a.id));
         filteredProfiles = [...allProfiles];
 
         // 最終更新日時を表示
