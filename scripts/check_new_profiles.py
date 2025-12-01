@@ -97,13 +97,14 @@ def find_unregistered_items(booth_mapping, profiles_file, block_file, avatar_fil
     return url_list
 
 
-def send_discord_notification(webhook_url, unregistered_items):
+def send_discord_notification(webhook_url, unregistered_items, artifact_url=None):
     """
     Discord Webhookで通知を送信
     
     Args:
         webhook_url: Discord WebhookのURL
         unregistered_items: 未登録アイテムの (shop_name, url) のタプルリスト
+        artifact_url: ArtifactのダウンロードページURL（オプション）
         
     Returns:
         bool: 送信が成功したかどうか
@@ -116,16 +117,38 @@ def send_discord_notification(webhook_url, unregistered_items):
     count = len(unregistered_items)
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
-    # 最初の10件のみをメッセージに含める（長すぎる場合の対策）
-    items_to_show = unregistered_items[:10]
+    # 件数に応じて表示件数を調整（Discordのembed descriptionは最大4096文字）
+    if count >= 50:
+        max_display = 10  # 50件以上は10件のみ表示
+    elif count >= 30:
+        max_display = 20  # 30-49件は20件表示
+    else:
+        max_display = 30  # 30件未満は全件表示
+    
+    items_to_show = unregistered_items[:max_display]
     items_text = "\n".join([f"- {url}" for _, url in items_to_show])
     
-    if count > 10:
-        items_text += f"\n\n...他 {count - 10} 件"
+    # Artifactリンクを含める
+    description_parts = [
+        f"Boothで新しい「もちふぃった～」プロファイルが **{count}件** 見つかりました。"
+    ]
+    
+    if count > max_display:
+        description_parts.append(f"\n**最初の{max_display}件（サンプル）:**")
+        description_parts.append(f"\n{items_text}")
+        description_parts.append(f"\n\n**...他 {count - max_display} 件**")
+        if artifact_url:
+            description_parts.append(f"\n\n📦 **全{count}件のリストはArtifactからダウンロードできます:**")
+            description_parts.append(f"[Artifactをダウンロード]({artifact_url})")
+    else:
+        description_parts.append(f"\n{items_text}")
+        if artifact_url:
+            description_parts.append(f"\n\n📦 **Artifactからもダウンロード可能:**")
+            description_parts.append(f"[Artifactをダウンロード]({artifact_url})")
     
     embed = {
         "title": f"🔔 新しいプロファイルが {count} 件見つかりました",
-        "description": f"Boothで新しい「もちふぃった～」プロファイルが見つかりました。\n\n{items_text}",
+        "description": "\n".join(description_parts),
         "color": 3447003,  # 青色
         "timestamp": datetime.utcnow().isoformat(),
         "footer": {
@@ -173,6 +196,9 @@ def main():
     # Discord Webhook URL（環境変数から取得）
     discord_webhook = os.environ.get("DISCORD_WEBHOOK_URL", "")
     
+    # Artifact URL（環境変数から取得）
+    artifact_url = os.environ.get("ARTIFACT_URL", "")
+    
     # 商品URLを収集
     print("\n商品URL収集中...")
     booth_mapping = collect_urls_from_searches(search_urls)
@@ -203,7 +229,7 @@ def main():
         
         # Discord通知
         if discord_webhook:
-            send_discord_notification(discord_webhook, unregistered_items)
+            send_discord_notification(discord_webhook, unregistered_items, artifact_url)
         else:
             print("\n注意: DISCORD_WEBHOOK_URL 環境変数が設定されていないため、通知はスキップされました")
         
