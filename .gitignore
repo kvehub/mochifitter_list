@@ -23,7 +23,3 @@ src/
 
 # Configuration files with sensitive data
 config.json
-
-# Web表示に関係ないファイル
-booth_urls.txt
-data/Block_URLs.txt
