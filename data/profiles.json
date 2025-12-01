@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-01 23:28:11 JST",
+  "lastUpdated": "2025-12-02 01:23:19 JST",
   "profiles": [
     {
       "id": "001",
@@ -13022,6 +13022,33 @@
       "saleEndDate": "",
       "salePrice": "",
       "forwardSupport": false,
+      "reverseSupport": false,
+      "notes": ""
+    },
+    {
+      "id": "536",
+      "registeredDate": "2025-12-02",
+      "updatedDate": "2025-12-02",
+      "avatarName": "竜胆",
+      "avatarNameUrl": "https://jingo1016.booth.pm/items/3443188",
+      "profileVersion": "1.0",
+      "avatarAuthor": "ジンゴ",
+      "avatarAuthorUrl": "https://jingo1016.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "Limernの真空工作室",
+      "profileAuthorUrl": "https://limern.booth.pm/",
+      "official": false,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://limern.booth.pm/items/7718042",
+      "imageUrl": "https://booth.pximg.net/c/620x620/8a7426aa-ba62-4ef0-9e7d-2c8ea96e7c9b/i/3443188/0d655d88-23b0-4e23-a2ab-0e42244abd03_base_resized.jpg",
+      "pricing": "無料",
+      "price": "0",
+      "avatarPrice": "7000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
     },
