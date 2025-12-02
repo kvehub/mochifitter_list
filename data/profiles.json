@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-02 12:58:02 JST",
+  "lastUpdated": "2025-12-02 15:24:30 JST",
   "profiles": [
     {
       "id": "001",
@@ -13076,6 +13076,33 @@
       "saleEndDate": "",
       "salePrice": "",
       "forwardSupport": true,
+      "reverseSupport": false,
+      "notes": ""
+    },
+    {
+      "id": "538",
+      "registeredDate": "2025-12-02",
+      "updatedDate": "2025-12-02",
+      "avatarName": "マドレーヌ",
+      "avatarNameUrl": "https://s0m0ss0m0.booth.pm/items/7688938",
+      "profileVersion": "1.0",
+      "avatarAuthor": "S0M0",
+      "avatarAuthorUrl": "https://s0m0ss0m0.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "かわせ",
+      "profileAuthorUrl": "https://kanomayo.booth.pm/",
+      "official": false,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://kanomayo.booth.pm/items/7708976",
+      "imageUrl": "https://booth.pximg.net/c/620x620/3837192c-f816-4ea5-891d-5747d4a3470f/i/7688938/868598aa-c4b7-4942-b6e2-0bb7b9c1a14a_base_resized.jpg",
+      "pricing": "無料",
+      "price": "0",
+      "avatarPrice": "4500",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": false,
       "reverseSupport": false,
       "notes": ""
     },
