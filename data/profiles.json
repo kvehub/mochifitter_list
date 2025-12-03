@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-03 23:20:55 JST",
+  "lastUpdated": "2025-12-04 01:31:20 JST",
   "profiles": [
     {
       "id": "001",
@@ -13374,6 +13374,33 @@
       "salePrice": "",
       "forwardSupport": true,
       "reverseSupport": true,
+      "notes": ""
+    },
+    {
+      "id": "549",
+      "registeredDate": "2025-12-04",
+      "updatedDate": "2025-12-04",
+      "avatarName": "🍎販売記念セール🍎ポム",
+      "avatarNameUrl": "https://minecollection.booth.pm/items/6620259",
+      "profileVersion": "1.0",
+      "avatarAuthor": "どらちゃん",
+      "avatarAuthorUrl": "https://minecollection.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "どらちゃん",
+      "profileAuthorUrl": "https://minecollection.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://minecollection.booth.pm/items/6620259",
+      "imageUrl": "https://booth.pximg.net/c/620x620/c87841dd-8957-408e-869a-ef63354f1c18/i/6620259/51b48c76-7f09-48a7-b541-92ea67220331_base_resized.jpg",
+      "pricing": "無料",
+      "price": "0",
+      "avatarPrice": "5000",
+      "onSale": true,
+      "saleStartDate": "",
+      "saleEndDate": "2025-12-22",
+      "salePrice": "4000",
+      "forwardSupport": true,
+      "reverseSupport": false,
       "notes": ""
     },
     {
