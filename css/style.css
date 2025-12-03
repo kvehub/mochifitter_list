@@ -91,6 +91,27 @@ header .subtitle {
     display: block;
 }
 
+.btn-discord {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-discord:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.btn-discord svg {
+    display: block;
+}
+
 .btn-lite {
     padding: 8px 16px;
     background: rgba(255, 255, 255, 0.2);
