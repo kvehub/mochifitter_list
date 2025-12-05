@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-05 21:49:15 JST",
+  "lastUpdated": "2025-12-05 23:32:37 JST",
   "profiles": [
     {
       "id": "001",
@@ -13645,6 +13645,33 @@
       "forwardSupport": false,
       "reverseSupport": false,
       "notes": "もちふぃった～対応予定！"
+    },
+    {
+      "id": "559",
+      "registeredDate": "2025-12-05",
+      "updatedDate": "2025-12-05",
+      "avatarName": "猫猫 - ニャオマオ -",
+      "avatarNameUrl": "https://ateliermiyama.booth.pm/items/6651726",
+      "profileVersion": "1.0",
+      "avatarAuthor": "うきはのアトリエ",
+      "avatarAuthorUrl": "https://ateliermiyama.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "ようかんの資材置き場",
+      "profileAuthorUrl": "https://dyoukan.booth.pm/",
+      "official": false,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://dyoukan.booth.pm/items/7731628",
+      "imageUrl": "https://booth.pximg.net/c/620x620/4c1c4198-5a76-4377-9fc2-a849ec58f21a/i/6651726/97e2c94f-9ddf-4835-95e4-741984f676b3_base_resized.jpg",
+      "pricing": "無料",
+      "price": "0",
+      "avatarPrice": "3800",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": true,
+      "reverseSupport": false,
+      "notes": ""
     },
     {
       "id": "9997",
