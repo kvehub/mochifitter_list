@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-08 09:48:42 JST",
+  "lastUpdated": "2025-12-08 10:22:51 JST",
   "profiles": [
     {
       "id": "001",
@@ -14836,6 +14836,33 @@
       "salePrice": "",
       "forwardSupport": true,
       "reverseSupport": true,
+      "notes": ""
+    },
+    {
+      "id": "603",
+      "registeredDate": "2025-12-08",
+      "updatedDate": "2025-12-08",
+      "avatarName": "白ハゲV3",
+      "avatarNameUrl": "https://nicomal.booth.pm/items/6292675",
+      "profileVersion": "1.0",
+      "avatarAuthor": "nkt_にこまる",
+      "avatarAuthorUrl": "https://nicomal.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "nkt_にこまる",
+      "profileAuthorUrl": "https://nicomal.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://nicomal.booth.pm/items/6292675",
+      "imageUrl": "https://booth.pximg.net/24eb65f2-37d3-4196-9faf-183fecc8ea77/i/6292675/2b784a3f-4edb-46a8-a0ba-b9e2f4b269bc_base_resized.jpg",
+      "pricing": "アバター同梱",
+      "price": "-",
+      "avatarPrice": "3000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": true,
+      "reverseSupport": false,
       "notes": ""
     },
     {
