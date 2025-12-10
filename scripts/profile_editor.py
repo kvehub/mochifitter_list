@@ -90,6 +90,7 @@ class ProfileEditor:
 
         # URL調査用
         self.current_investigation_url = ""
+        self.current_investigation_id = ""
         self.block_urls_path = os.path.join(self.app_dir, "data", "Block_URLs.txt")
 
         # 検索用
@@ -492,8 +493,10 @@ class ProfileEditor:
             "profileVersion": "プロファイルバージョン",
             "avatarAuthor": "アバター作者",
             "avatarAuthorUrl": "アバター作者URL",
+            "avatarshopname": "アバターショップ名",
             "profileAuthor": "プロファイル作者",
             "profileAuthorUrl": "プロファイル作者URL",
+            "profileshopname": "プロファイルショップ名",
             "downloadMethod": "配布方法",
             "downloadLocation": "配布場所URL",
             "imageUrl": "画像URL",
@@ -502,11 +505,22 @@ class ProfileEditor:
             "avatarPrice": "アバター価格",
         }
 
+        # downloadLocation/profileshopname は Booth URL のときのみ必須
+        download_url = self.fields.get("downloadLocation").get_value() if self.fields.get("downloadLocation") else ""
+        is_booth_download = "booth.pm" in download_url if download_url else False
+
         missing_fields = []
 
         for field_name, display_name in required_fields.items():
             widget = self.fields.get(field_name)
             if not widget:
+                continue
+
+            # Booth でない配布URLの場合は profileshopname をスキップ必須判定
+            if field_name == "profileshopname" and not is_booth_download:
+                continue
+            # Booth でない配布URLの場合は downloadLocation もスキップ必須判定
+            if field_name == "downloadLocation" and not is_booth_download:
                 continue
 
             has_value = False
@@ -703,6 +717,35 @@ class ProfileEditor:
                 self.load_profile_to_form(profile)
                 self.form_modified = False  # 読み込み後は未編集状態
                 break
+
+    def load_profile_by_id(self, profile_id: str) -> bool:
+        """ID指定でプロファイルをロードし、ツリー選択も合わせる"""
+        if not profile_id:
+            return False
+        profile_id = str(profile_id).zfill(3)
+        target = None
+        for profile in self.data.get("profiles", []):
+            if str(profile.get("id")).zfill(3) == profile_id:
+                target = profile
+                break
+        if not target:
+            return False
+
+        # ツリーの選択を更新
+        for item_id in self.tree.get_children():
+            values = self.tree.item(item_id)["values"]
+            if not values:
+                continue
+            vid = str(values[0]).zfill(3) if isinstance(values[0], int) else str(values[0])
+            if vid == profile_id:
+                self.tree.selection_set(item_id)
+                self.tree.see(item_id)
+                break
+
+        self.current_selection = target
+        self.load_profile_to_form(target)
+        self.form_modified = False
+        return True
 
     def load_profile_to_form(self, profile):
         """プロファイルデータをフォームに読み込み"""
@@ -1154,6 +1197,11 @@ class ProfileEditor:
 
                 self.fields["avatarAuthorUrl"].set_value(data.get("avatarAuthorUrl", ""))
 
+                # 解決後URLがあればアバターURLも更新
+                resolved_url = data.get("resolvedUrl")
+                if resolved_url:
+                    self.fields["avatarNameUrl"].set_value(resolved_url)
+
                 self.fields["imageUrl"].set_value(data.get("imageUrl", ""))
 
                 # アバター価格を設定（取得できた場合のみ）
@@ -1225,10 +1273,59 @@ class ProfileEditor:
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
             }
 
-            response = requests.get(url, headers=headers)
+            resolved_url = url
+            response = requests.get(resolved_url, headers=headers)
             response.raise_for_status()
 
             soup = BeautifulSoup(response.content, 'html.parser')
+
+            # booth.pm (サブドメインなし) の場合、ショップリンクから実URLを再構築して再取得
+            from urllib.parse import urlparse
+            parsed = urlparse(resolved_url)
+            if parsed.netloc == "booth.pm":
+                print(f"[scrape_booth] サブドメインなしURLを検出: {resolved_url}")
+                path_parts = [p for p in parsed.path.split("/") if p]
+                item_id = path_parts[-1] if path_parts else ""
+                shop_base = ""
+
+                # 優先: data-product-list を持つショップリンク
+                shop_anchor = soup.find("a", attrs={"data-product-list": True}, href=True)
+                # フォールバック: .booth.pm を含む href
+                if not shop_anchor:
+                    for a in soup.find_all("a", href=True):
+                        href = a["href"]
+                        if ".booth.pm" in href and "/items/" not in href:
+                            shop_anchor = a
+                            break
+                # さらにフォールバック: 正規表現で .booth.pm ドメインを探索
+                if not shop_anchor:
+                    import re
+                    for a in soup.find_all("a", href=True):
+                        href = a["href"]
+                        if re.search(r"https?://[a-zA-Z0-9-]+\\.booth\\.pm/?", href):
+                            shop_anchor = a
+                            break
+
+                if shop_anchor:
+                    shop_href = shop_anchor.get("href", "")
+                    shop_parsed = urlparse(shop_href)
+                    if shop_parsed.netloc and shop_parsed.netloc != "booth.pm":
+                        shop_base = f"{shop_parsed.scheme}://{shop_parsed.netloc}"
+
+                if shop_base and item_id:
+                    candidate_url = f"{shop_base}/items/{item_id}"
+                    try:
+                        candidate_resp = requests.get(candidate_url, headers=headers)
+                        candidate_resp.raise_for_status()
+                        # 取得成功時に置き換え
+                        resolved_url = candidate_url
+                        response = candidate_resp
+                        soup = BeautifulSoup(response.content, 'html.parser')
+                        print(f"[scrape_booth] サブドメイン付きURLに置換: {resolved_url}")
+                    except Exception as e:
+                        print(f"[scrape_booth] 置換候補への再取得に失敗: {candidate_url} ({e})")
+                else:
+                    print("[scrape_booth] ショップリンクを検出できず、置換をスキップ")
 
             # アバター名を取得（titleタグから）
             title_tag = soup.find('title')
@@ -1250,10 +1347,14 @@ class ProfileEditor:
                 avatar_name = avatar_name.replace("3D", "").strip()
                 avatar_name = avatar_name.replace("3Ｄ", "").strip()
                 avatar_name = avatar_name.replace("３Ｄ", "").strip()
+                avatar_name = avatar_name.replace("３D", "").strip()
                 avatar_name = avatar_name.replace("モデル", "").strip()
                 avatar_name = avatar_name.replace("VRChat", "").strip()
+                avatar_name = avatar_name.replace("VRchat", "").strip()
                 avatar_name = avatar_name.replace("アバター", "").strip()
                 avatar_name = avatar_name.replace("想定", "").strip()
+                avatar_name = avatar_name.replace("向け", "").strip()
+                avatar_name = avatar_name.replace("無料", "").strip()
 
                 # ver~~ を削除（大文字小文字区別なし）
                 avatar_name = re.sub(r'\s*ver\s*[^\s\(\)\[\]【】]*', '', avatar_name, flags=re.IGNORECASE).strip()
@@ -1273,8 +1374,7 @@ class ProfileEditor:
 
             # 入力URLからショップのベースURLを抽出
             # 例: https://alua7.booth.pm/items/3978893 -> https://alua7.booth.pm/
-            from urllib.parse import urlparse
-            parsed = urlparse(url)
+            parsed = urlparse(resolved_url)
             avatar_author_url = f"{parsed.scheme}://{parsed.netloc}/"
 
             # home-link-container__nicknameから作者名を取得
@@ -1341,7 +1441,8 @@ class ProfileEditor:
                 "avatarshopname": avatarshopname,
                 "avatarAuthorUrl": avatar_author_url,
                 "imageUrl": image_url,
-                "avatarPrice": avatar_price
+                "avatarPrice": avatar_price,
+                "resolvedUrl": resolved_url
             }
 
         except requests.RequestException as e:
@@ -1801,18 +1902,35 @@ class ProfileEditor:
                 self.current_url_entry.config(state="readonly")
             return
 
-        # 最初のURLを取得
-        self.current_investigation_url = urls[0]
+        # 最初のエントリを取得
+        first = urls[0]
 
-        # 現在のURLを表示
-        self.current_url_entry.config(state="normal")
-        self.current_url_entry.delete(0, tk.END)
-        self.current_url_entry.insert(0, self.current_investigation_url)
-        self.current_url_entry.config(state="readonly")
+        # 3桁数字ならIDとしてプロファイルを開く
+        if first.isdigit() and len(first) == 3:
+            target_id = first
+            if self.load_profile_by_id(target_id):
+                self.current_investigation_id = target_id
+                self.current_investigation_url = ""
+                self.current_url_entry.config(state="normal")
+                self.current_url_entry.delete(0, tk.END)
+                self.current_url_entry.insert(0, target_id)
+                self.current_url_entry.config(state="readonly")
+            else:
+                messagebox.showwarning("警告", f"ID {target_id} は見つかりません")
+                return
+        else:
+            # URLとして扱う
+            self.current_investigation_url = first
 
-        # デフォルトブラウザで開く
-        import webbrowser
-        webbrowser.open(self.current_investigation_url)
+            # 現在のURLを表示
+            self.current_url_entry.config(state="normal")
+            self.current_url_entry.delete(0, tk.END)
+            self.current_url_entry.insert(0, self.current_investigation_url)
+            self.current_url_entry.config(state="readonly")
+
+            # デフォルトブラウザで開く
+            import webbrowser
+            webbrowser.open(self.current_investigation_url)
 
         # URL一覧から削除
         remaining_urls = urls[1:]
