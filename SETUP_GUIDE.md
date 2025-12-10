@@ -92,25 +92,34 @@ Artifacts (保存期間: 30日)
 
 ### 設定されているURL
 
-現在、以下の2つのURLが設定されています：
+現在、以下の8つのURLが設定されています：
 
 ```
 https://booth.pm/ja/browse/3Dキャラクター?q=もちふぃった
 https://booth.pm/ja/browse/3Dキャラクター?q=mochifitter
+https://booth.pm/ja/browse/3Dモデル（その他）?q=もちふぃった
+https://booth.pm/ja/browse/3Dモデル（その他）?q=mochifitter
+https://booth.pm/ja/browse/3Dツール・システム?q=もちふぃった
+https://booth.pm/ja/browse/3Dツール・システム?q=mochifitter
+https://booth.pm/ja/browse/VRoid?q=もちふぃった
+https://booth.pm/ja/browse/VRoid?q=mochifitter
 ```
 
 ### URLの解説
 
-1. **1つ目**: `もちふぃった` のキーワード検索（3Dキャラクターカテゴリ）
-   - `browse/3Dキャラクター` で3Dキャラクターカテゴリに絞り込み
-   - `?q=もちふぃった` でキーワード検索
+1. **検索キーワード**
+   - `もちふぃった` と `mochifitter` の両方で検索
+   - 日本語表記と英語表記の両方をカバー
 
-2. **2つ目**: `mochifitter` のキーワード検索（3Dキャラクターカテゴリ）
-   - 英語表記での検索
-   - 同じく3Dキャラクターカテゴリ内で検索
+2. **検索対象カテゴリ**
+   - **3Dキャラクター**: メインのアバターカテゴリ
+   - **3Dモデル（その他）**: カテゴリ未分類のアバター
+   - **3Dツール・システム**: プロファイル配布のみの商品
+   - **VRoid**: VRoid用プロファイル
 
 3. **カテゴリ検索のメリット**
    - 3Dアバター関連商品に絞り込まれる
+   - 複数カテゴリをカバーすることで漏れを防止
    - ノイズ（衣装のみ、テクスチャのみ等）が減少
    - より精度の高い検索が可能
 
@@ -132,10 +141,16 @@ https://booth.pm/ja/browse/3Dキャラクター?q=mochifitter
 検索条件を変更したい場合：
 
 ```python
-# scripts/check_new_profiles.py の 185-188行目
+# scripts/check_new_profiles.py の 185-194行目
 search_urls = [
     "https://booth.pm/ja/browse/3Dキャラクター?q=もちふぃった",
-    "https://booth.pm/ja/browse/3Dキャラクター?q=mochifitter"
+    "https://booth.pm/ja/browse/3Dキャラクター?q=mochifitter",
+    "https://booth.pm/ja/browse/3Dモデル（その他）?q=もちふぃった",
+    "https://booth.pm/ja/browse/3Dモデル（その他）?q=mochifitter",
+    "https://booth.pm/ja/browse/3Dツール・システム?q=もちふぃった",
+    "https://booth.pm/ja/browse/3Dツール・システム?q=mochifitter",
+    "https://booth.pm/ja/browse/VRoid?q=もちふぃった",
+    "https://booth.pm/ja/browse/VRoid?q=mochifitter"
 ]
 ```
 

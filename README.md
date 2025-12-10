@@ -44,6 +44,12 @@ GitHub Actionsを使用して、Boothで新しいプロファイルを自動的�
 3. **チェック対象URL**
    - `https://booth.pm/ja/browse/3Dキャラクター?q=もちふぃった`
    - `https://booth.pm/ja/browse/3Dキャラクター?q=mochifitter`
+   - `https://booth.pm/ja/browse/3Dモデル（その他）?q=もちふぃった`
+   - `https://booth.pm/ja/browse/3Dモデル（その他）?q=mochifitter`
+   - `https://booth.pm/ja/browse/3Dツール・システム?q=もちふぃった`
+   - `https://booth.pm/ja/browse/3Dツール・システム?q=mochifitter`
+   - `https://booth.pm/ja/browse/VRoid?q=もちふぃった`
+   - `https://booth.pm/ja/browse/VRoid?q=mochifitter`
 
 ### 動作
 
