@@ -1218,43 +1218,6 @@ class ProfileEditor:
         except Exception as e:
             messagebox.showerror("エラー", f"取得中にエラーが発生しました:\n{str(e)}")
 
-    def fetch_shopname_from_url(self, url):
-        """
-        Booth URLにアクセスしてtitleタグからショップ名を取得
-
-        Args:
-            url: ショップURL
-
-        Returns:
-            str: ショップ名（取得できない場合は空文字）
-        """
-        if not url or "booth.pm" not in url:
-            return ""
-
-        try:
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-            }
-
-            response = requests.get(url, headers=headers)
-            response.raise_for_status()
-
-            soup = BeautifulSoup(response.content, 'html.parser')
-            title_tag = soup.find('title')
-
-            if title_tag:
-                # get_text()を使って確実にテキストを取得
-                title_text = title_tag.get_text(strip=True)
-                if title_text:
-                    # " - BOOTH" を削除
-                    shopname = title_text.replace(" - BOOTH", "").strip()
-                    return shopname
-        except Exception as e:
-            # エラーをログ出力（デバッグ用）
-            print(f"Error fetching shopname from {url}: {e}")
-
-        return ""
-
     def scrape_booth(self, url):
         """BoothページからHTMLをパース"""
         try:
@@ -1323,14 +1286,21 @@ class ProfileEditor:
                 if link:
                     avatar_author = link.get_text(strip=True)
 
+            shopname_from_label = ""
             # 取得できなかった場合はshop-name-labelから取得（後方互換性）
             if not avatar_author:
                 shop_name_span = soup.find('span', class_='shop-name-label')
                 if shop_name_span:
-                    avatar_author = shop_name_span.get_text(strip=True)
+                    shopname_from_label = shop_name_span.get_text(strip=True)
+                    avatar_author = shopname_from_label
+            else:
+                # 作者名は取れていてもショップ名として利用できそうなら保持
+                shop_name_span = soup.find('span', class_='shop-name-label')
+                if shop_name_span:
+                    shopname_from_label = shop_name_span.get_text(strip=True)
 
-            # avatarAuthorUrlにアクセスしてショップ名を取得
-            avatarshopname = self.fetch_shopname_from_url(avatar_author_url)
+            # ショップ名は shop-name-label を優先し、なければ作者名で代替
+            avatarshopname = shopname_from_label or avatar_author
 
             # アバター価格を取得
             # ダウンロード商品が1つだけの場合、その価格を取得
