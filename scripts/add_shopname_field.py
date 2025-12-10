@@ -8,6 +8,11 @@ import json
 import os
 import requests
 from bs4 import BeautifulSoup
+import time
+
+
+# URLごとの取得結果をキャッシュ（同じURLへの複数アクセスを避ける）
+_shopname_cache = {}
 
 
 def fetch_shopname_from_url(url):
@@ -23,12 +28,19 @@ def fetch_shopname_from_url(url):
     if not url or "booth.pm" not in url:
         return ""
 
+    # キャッシュにあればそれを返す
+    if url in _shopname_cache:
+        return _shopname_cache[url]
+
     try:
         headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         }
 
-        response = requests.get(url, headers=headers, timeout=10)
+        # rate limit対策: リクエスト間に1秒待機
+        time.sleep(1)
+
+        response = requests.get(url, headers=headers)
         response.raise_for_status()
 
         soup = BeautifulSoup(response.content, 'html.parser')
@@ -40,10 +52,14 @@ def fetch_shopname_from_url(url):
             if title_text:
                 # " - BOOTH" を削除
                 shopname = title_text.replace(" - BOOTH", "").strip()
+                # キャッシュに保存
+                _shopname_cache[url] = shopname
                 return shopname
     except Exception as e:
         # エラーをログ出力（デバッグ用）
         print(f"Error fetching shopname from {url}: {e}")
+        # エラーの場合も空文字をキャッシュ（同じURLへの再アクセスを避ける）
+        _shopname_cache[url] = ""
 
     return ""
 
