@@ -259,6 +259,13 @@ h2 {
     cursor: pointer;
 }
 
+.filter-separator {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    padding: 0 5px;
+    user-select: none;
+}
+
 /* プロファイル一覧セクション */
 .profiles-header {
     display: flex;
