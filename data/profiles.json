@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-18 01:35:46 JST",
+  "lastUpdated": "2025-12-18 01:41:37 JST",
   "profiles": [
     {
       "id": "001",
@@ -9322,31 +9322,6 @@
       "saleStartDate": "",
       "saleEndDate": "",
       "salePrice": ""
-    },
-    {
-      "id": "334",
-      "registeredDate": "2025-11-27",
-      "updatedDate": "2025-11-27",
-      "avatarName": "AnimaAbstractaCobalta",
-      "avatarNameUrl": "https://gba.booth.pm/items/7499714",
-      "profileVersion": "1.0",
-      "avatarAuthor": "そのた",
-      "avatarAuthorUrl": "https://gba.booth.pm/",
-      "bodyBase": "",
-      "profileAuthor": "そのた",
-      "profileAuthorUrl": "https://gba.booth.pm/",
-      "official": true,
-      "downloadMethod": "Booth",
-      "downloadLocation": "https://gba.booth.pm/items/7499714",
-      "imageUrl": "https://booth.pximg.net/c/620x620/65b0cdf3-f0e5-421f-bffd-a110c05a5f24/i/7499714/02e8c4bc-2600-4ea9-91e4-118dce75afc3_base_resized.jpg",
-      "pricing": "アバター同梱",
-      "price": "-",
-      "forwardSupport": true,
-      "reverseSupport": false,
-      "notes": "",
-      "avatarPrice": "7000",
-      "avatarshopname": "GBA",
-      "profileshopname": "GBA"
     },
     {
       "id": "335",
