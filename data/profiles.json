@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-18 09:53:55 JST",
+  "lastUpdated": "2025-12-18 09:56:13 JST",
   "profiles": [
     {
       "id": "001",
@@ -19211,7 +19211,7 @@
     {
       "id": "677",
       "registeredDate": "2025-12-16",
-      "updatedDate": "2025-12-16",
+      "updatedDate": "2025-12-18",
       "avatarName": "Mei-メイ-",
       "avatarNameUrl": "https://umikuri.booth.pm/items/7264294",
       "profileVersion": "1.0",
@@ -19234,7 +19234,7 @@
       "saleEndDate": "",
       "salePrice": "",
       "forwardSupport": true,
-      "reverseSupport": false,
+      "reverseSupport": true,
       "notes": ""
     },
     {
