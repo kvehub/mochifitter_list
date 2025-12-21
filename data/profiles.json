@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-22 00:59:49 JST",
+  "lastUpdated": "2025-12-22 01:17:14 JST",
   "profiles": [
     {
       "id": "001",
@@ -20918,6 +20918,35 @@
       "forwardSupport": false,
       "reverseSupport": false,
       "notes": "今後もちふぃった～の対応を予定しています。"
+    },
+    {
+      "id": "736",
+      "registeredDate": "2025-12-22",
+      "updatedDate": "2025-12-22",
+      "avatarName": "ここのつさま",
+      "avatarNameUrl": "https://bird-w-cooking.booth.pm/items/5487699",
+      "profileVersion": "1.0",
+      "avatarAuthor": "鳥総帥",
+      "avatarshopname": "AD_bird's Nest",
+      "avatarAuthorUrl": "https://bird-w-cooking.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "鳥総帥",
+      "profileshopname": "AD_bird's Nest",
+      "profileAuthorUrl": "https://bird-w-cooking.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://bird-w-cooking.booth.pm/items/5487699",
+      "imageUrl": "https://booth.pximg.net/c/620x620/315f5d6b-7e0e-4a86-b5dd-a3971458f255/i/5487699/7c55724d-5d6a-458f-b926-82cfbf0ced2e_base_resized.jpg",
+      "pricing": "アバター同梱",
+      "price": "-",
+      "avatarPrice": "5000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": true,
+      "reverseSupport": false,
+      "notes": ""
     },
     {
       "id": "8888",
