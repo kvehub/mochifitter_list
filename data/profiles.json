@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-28 19:59:59 JST",
+  "lastUpdated": "2025-12-28 23:08:31 JST",
   "profiles": [
     {
       "id": "001",
@@ -15665,15 +15665,15 @@
     {
       "id": "554",
       "registeredDate": "2025-12-05",
-      "updatedDate": "2025-12-05",
+      "updatedDate": "2025-12-28",
       "avatarName": "サバラム Savarum",
       "avatarNameUrl": "https://inugoyamart.booth.pm/items/7731139",
       "profileVersion": "1.0",
       "avatarAuthor": "inu5ya",
       "avatarAuthorUrl": "https://inugoyamart.booth.pm/",
       "bodyBase": "",
-      "profileAuthor": "inu5ya",
-      "profileAuthorUrl": "https://inugoyamart.booth.pm/",
+      "profileAuthor": "エカケイソ",
+      "profileAuthorUrl": "https://ekasilicon.booth.pm/",
       "official": true,
       "downloadMethod": "Booth",
       "downloadLocation": "https://inugoyamart.booth.pm/items/7731139",
@@ -15689,7 +15689,7 @@
       "reverseSupport": false,
       "notes": "販売期間：2025年12月17日 18時00分から",
       "avatarshopname": "1058mart",
-      "profileshopname": "1058mart"
+      "profileshopname": "エカシリコン\n"
     },
     {
       "id": "555",
@@ -21434,35 +21434,6 @@
       "notes": ""
     },
     {
-      "id": "753",
-      "registeredDate": "2025-12-25",
-      "updatedDate": "2025-12-25",
-      "avatarName": "黎焔",
-      "avatarNameUrl": "https://spicavr.booth.pm/items/7697824",
-      "profileVersion": "1.0",
-      "avatarAuthor": "SpicaVR",
-      "avatarshopname": "spicavr",
-      "avatarAuthorUrl": "https://spicavr.booth.pm/",
-      "bodyBase": "",
-      "profileAuthor": "外部ショップ様",
-      "profileshopname": "外部ショップ様",
-      "profileAuthorUrl": "",
-      "official": true,
-      "downloadMethod": "Booth",
-      "downloadLocation": "",
-      "imageUrl": "https://booth.pximg.net/c/620x620/f65a8edd-9adf-4a84-9ce6-ab3f099368b0/i/7697824/f7ac5e97-08a4-46fe-b000-257322cca27b_base_resized.jpg",
-      "pricing": "単体有料",
-      "price": "?",
-      "avatarPrice": "6000",
-      "onSale": false,
-      "saleStartDate": "",
-      "saleEndDate": "",
-      "salePrice": "",
-      "forwardSupport": false,
-      "reverseSupport": false,
-      "notes": "対応予定"
-    },
-    {
       "id": "754",
       "registeredDate": "2025-12-25",
       "updatedDate": "2025-12-25",
@@ -21668,7 +21639,7 @@
     {
       "id": "761",
       "registeredDate": "2025-12-27",
-      "updatedDate": "2025-12-27",
+      "updatedDate": "2025-12-28",
       "avatarName": "黎焔",
       "avatarNameUrl": "https://spicavr.booth.pm/items/7697824",
       "profileVersion": "1.0",
@@ -21679,7 +21650,7 @@
       "profileAuthor": "エカケイソ",
       "profileshopname": "エカシリコン",
       "profileAuthorUrl": "https://ekasilicon.booth.pm/",
-      "official": false,
+      "official": true,
       "downloadMethod": "Booth",
       "downloadLocation": "https://ekasilicon.booth.pm/items/7787776",
       "imageUrl": "https://booth.pximg.net/c/620x620/f65a8edd-9adf-4a84-9ce6-ab3f099368b0/i/7697824/40dc9fd1-20cc-468c-b6d8-244928b55bb8_base_resized.jpg",
