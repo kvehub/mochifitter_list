@@ -25,8 +25,7 @@ async function loadProfiles() {
             throw new Error('データの読み込みに失敗しました');
         }
         const data = await response.json();
-        // IDでソート(逆順)
-        allProfiles = data.profiles.sort((a, b) => b.id.localeCompare(a.id));
+        allProfiles = data.profiles;
         filteredProfiles = [...allProfiles];
 
         // 最終更新日時を表示
@@ -34,7 +33,8 @@ async function loadProfiles() {
             updateLastUpdatedDisplay(data.lastUpdated);
         }
 
-        // 初期表示
+        // 初期表示（デフォルトはID順の逆順）
+        sortProfiles();
         renderProfiles();
         updateCount();
     } catch (error) {
@@ -100,6 +100,16 @@ function setupEventListeners() {
             }
         });
     }
+
+    // 並び替えセレクトボックス
+    const sortSelect = document.getElementById('sortSelect');
+    if (sortSelect) {
+        sortSelect.addEventListener('change', () => {
+            sortProfiles();
+            renderProfiles();
+            updateCount();
+        });
+    }
 }
 
 // ツールチップを表示
@@ -131,6 +141,79 @@ function hideNotesTooltip() {
     if (tooltip) {
         tooltip.remove();
     }
+}
+
+// BoothのURLから最後の数字を抽出する関数
+function extractBoothItemId(url) {
+    if (!url || typeof url !== 'string') {
+        return null;
+    }
+    
+    // BoothのURLかチェック
+    if (!url.includes('booth.pm')) {
+        return null;
+    }
+    
+    // /items/の後の数字を抽出
+    const match = url.match(/\/items\/(\d+)/);
+    if (match && match[1]) {
+        return parseInt(match[1], 10);
+    }
+    
+    return null;
+}
+
+// 並び替え処理
+function sortProfiles() {
+    const sortSelect = document.getElementById('sortSelect');
+    if (!sortSelect || filteredProfiles.length === 0) return;
+
+    const sortValue = sortSelect.value;
+    const [field, direction] = sortValue.split('-');
+
+    filteredProfiles.sort((a, b) => {
+        let aVal = a[field];
+        let bVal = b[field];
+
+        // アバターID順：数値として比較
+        if (field === 'id') {
+            aVal = parseInt(aVal) || 0;
+            bVal = parseInt(bVal) || 0;
+        }
+        // アバター公開順（Booth ID順）：avatarNameUrlから抽出
+        else if (field === 'avatarBoothId') {
+            const aBoothId = extractBoothItemId(a.avatarNameUrl);
+            const bBoothId = extractBoothItemId(b.avatarNameUrl);
+            
+            // BoothのURLでない場合は最後に配置（非常に大きな値）
+            aVal = aBoothId !== null ? aBoothId : Number.MAX_SAFE_INTEGER;
+            bVal = bBoothId !== null ? bBoothId : Number.MAX_SAFE_INTEGER;
+        }
+        // プロファイル公開順（Booth ID順）：downloadLocationから抽出
+        else if (field === 'profileBoothId') {
+            const aBoothId = extractBoothItemId(a.downloadLocation);
+            const bBoothId = extractBoothItemId(b.downloadLocation);
+            
+            // BoothのURLでない場合は最後に配置（非常に大きな値）
+            aVal = aBoothId !== null ? aBoothId : Number.MAX_SAFE_INTEGER;
+            bVal = bBoothId !== null ? bBoothId : Number.MAX_SAFE_INTEGER;
+        }
+        // 最終更新日順：日付として比較
+        else if (field === 'updatedDate') {
+            aVal = new Date(aVal || 0);
+            bVal = new Date(bVal || 0);
+        }
+        // 文字列フィールド：文字列として比較（日本語対応）
+        else {
+            aVal = (aVal || '').toString();
+            bVal = (bVal || '').toString();
+        }
+
+        // 比較
+        if (aVal < bVal) return direction === 'asc' ? -1 : 1;
+        if (aVal > bVal) return direction === 'asc' ? 1 : -1;
+        return 0;
+    });
 }
 
 // フィルタリング処理
@@ -182,6 +265,7 @@ function applyFilters() {
         return matchesSearch && matchesOfficialGroup && matchesDirectionGroup && matchesPriceGroup;
     });
 
+    sortProfiles();
     renderProfiles();
     updateCount();
 }

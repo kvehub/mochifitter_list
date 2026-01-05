@@ -207,7 +207,7 @@ class ProfileEditor:
         ttk.Label(id_frame, text="※空欄で自動採番", font=("", 8), foreground="gray").pack(side=tk.LEFT, padx=(5, 0))
         row += 1
 
-        # 登録日（カレンダー付き）
+        # 登録日（カレンダー付き、時間入力可能）
         ttk.Label(scrollable_frame, text="登録日").grid(row=row, column=0, sticky=tk.W, pady=2)
         date_frame_registered = ttk.Frame(scrollable_frame)
         date_frame_registered.grid(row=row, column=1, sticky=(tk.W, tk.E), pady=2, padx=(5, 0))
@@ -217,9 +217,10 @@ class ProfileEditor:
                    command=lambda: self.set_today("registeredDate")).pack(side=tk.LEFT, padx=2)
         ttk.Button(date_frame_registered, text="📅", width=3,
                    command=lambda: self.open_calendar("registeredDate")).pack(side=tk.LEFT)
+        ttk.Label(date_frame_registered, text="※YYYY-MM-DD または YYYY-MM-DD HH:MM:SS", font=("", 8), foreground="gray").pack(side=tk.LEFT, padx=(5, 0))
         row += 1
 
-        # 更新日（カレンダー付き）
+        # 更新日（カレンダー付き、時間入力可能）
         ttk.Label(scrollable_frame, text="更新日").grid(row=row, column=0, sticky=tk.W, pady=2)
         date_frame_updated = ttk.Frame(scrollable_frame)
         date_frame_updated.grid(row=row, column=1, sticky=(tk.W, tk.E), pady=2, padx=(5, 0))
@@ -229,6 +230,7 @@ class ProfileEditor:
                    command=lambda: self.set_today("updatedDate")).pack(side=tk.LEFT, padx=2)
         ttk.Button(date_frame_updated, text="📅", width=3,
                    command=lambda: self.open_calendar("updatedDate")).pack(side=tk.LEFT)
+        ttk.Label(date_frame_updated, text="※YYYY-MM-DD または YYYY-MM-DD HH:MM:SS", font=("", 8), foreground="gray").pack(side=tk.LEFT, padx=(5, 0))
         row += 1
 
         # チェックボックスフィールド
@@ -776,10 +778,10 @@ class ProfileEditor:
         self.preview_image()
 
     def set_today(self, field_name):
-        """今日の日付を設定"""
-        today = datetime.now().strftime("%Y-%m-%d")
+        """今日の日付と時刻を設定"""
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         self.fields[field_name].delete(0, tk.END)
-        self.fields[field_name].insert(0, today)
+        self.fields[field_name].insert(0, now)
 
         # 入力状況を更新
         self.update_validation_status()
@@ -904,14 +906,23 @@ class ProfileEditor:
         """カレンダーダイアログを開く"""
         cal_window = tk.Toplevel(self.root)
         cal_window.title("日付を選択")
-        cal_window.geometry("300x300")
+        cal_window.geometry("300x350")
 
         # 現在の値を取得
         current_value = self.fields[field_name].get()
+        existing_time = None
         try:
             if current_value:
-                year, month, day = map(int, current_value.split("-"))
-                cal = Calendar(cal_window, selectmode="day", year=year, month=month, day=day)
+                # 時間が含まれているかチェック
+                if " " in current_value and len(current_value.split()) == 2:
+                    date_part, time_part = current_value.split()
+                    existing_time = time_part
+                    year, month, day = map(int, date_part.split("-"))
+                    cal = Calendar(cal_window, selectmode="day", year=year, month=month, day=day)
+                else:
+                    # 日付のみの場合
+                    year, month, day = map(int, current_value.split("-"))
+                    cal = Calendar(cal_window, selectmode="day", year=year, month=month, day=day)
             else:
                 cal = Calendar(cal_window, selectmode="day")
         except:
@@ -919,11 +930,36 @@ class ProfileEditor:
 
         cal.pack(pady=20)
 
+        # 時間入力欄を追加
+        time_frame = ttk.Frame(cal_window)
+        time_frame.pack(pady=10)
+        ttk.Label(time_frame, text="時間 (HH:MM:SS):").pack(side=tk.LEFT, padx=5)
+        time_entry = ttk.Entry(time_frame, width=10)
+        if existing_time:
+            time_entry.insert(0, existing_time)
+        else:
+            # 現在時刻をデフォルト値として設定
+            time_entry.insert(0, datetime.now().strftime("%H:%M:%S"))
+        time_entry.pack(side=tk.LEFT, padx=5)
+
         def select_date():
             selected = cal.get_date()
             # カレンダーの日付フォーマットをYYYY-MM-DDに変換
             date_obj = datetime.strptime(selected, "%m/%d/%y")
             formatted_date = date_obj.strftime("%Y-%m-%d")
+            
+            # 時間を取得
+            time_value = time_entry.get().strip()
+            if time_value:
+                # 時間の形式を検証
+                try:
+                    # HH:MM:SS形式を検証
+                    datetime.strptime(time_value, "%H:%M:%S")
+                    formatted_date = f"{formatted_date} {time_value}"
+                except ValueError:
+                    # 形式が正しくない場合は日付のみ
+                    pass
+            
             self.fields[field_name].delete(0, tk.END)
             self.fields[field_name].insert(0, formatted_date)
             cal_window.destroy()
@@ -939,11 +975,11 @@ class ProfileEditor:
             print("警告: プロファイルが選択されていません")
             return
 
-        # 更新日を自動で今日の日付に設定
+        # 更新日を自動で今日の日付と時刻に設定
         from datetime import datetime
-        today = datetime.now().strftime("%Y-%m-%d")
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         self.fields["updatedDate"].delete(0, tk.END)
-        self.fields["updatedDate"].insert(0, today)
+        self.fields["updatedDate"].insert(0, now)
 
         # フォームからデータを取得
         for field_name, widget in self.fields.items():
@@ -992,12 +1028,12 @@ class ProfileEditor:
         """新しいレコードを追加（IDと登録日のみ入力済み）"""
         # IDを自動採番
         new_id = self.find_next_available_id()
-        today = datetime.now().strftime("%Y-%m-%d")
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
         new_profile = {
             "id": new_id,
-            "registeredDate": today,
-            "updatedDate": today,
+            "registeredDate": now,
+            "updatedDate": now,
             "avatarName": "",
             "avatarNameUrl": "",
             "profileVersion": "1.0",
@@ -1040,15 +1076,15 @@ class ProfileEditor:
 
         # IDを自動採番
         new_id = self.find_next_available_id()
-        today = datetime.now().strftime("%Y-%m-%d")
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
         # 現在のプロファイルをコピー
         new_profile = self.current_selection.copy()
 
         # 新しいIDと日付を設定
         new_profile["id"] = new_id
-        new_profile["registeredDate"] = today
-        new_profile["updatedDate"] = today
+        new_profile["registeredDate"] = now
+        new_profile["updatedDate"] = now
 
         # 指定されたフィールドをクリア
         new_profile["imageUrl"] = ""
@@ -1101,16 +1137,17 @@ class ProfileEditor:
                                 # 既存レコードを更新
                                 profile_data = existing_profile
                                 updated_count += 1
-                                # 更新日のみ今日の日付に
-                                profile_data["updatedDate"] = datetime.now().strftime("%Y-%m-%d")
+                                # 更新日のみ今日の日付と時刻に
+                                profile_data["updatedDate"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                             else:
                                 # 指定されたIDで新規追加
                                 profile_data = {"id": csv_id}
                                 self.data["profiles"].append(profile_data)
                                 imported_count += 1
                                 # 新規の場合は登録日・更新日を今日に
-                                profile_data["registeredDate"] = datetime.now().strftime("%Y-%m-%d")
-                                profile_data["updatedDate"] = datetime.now().strftime("%Y-%m-%d")
+                                now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                                profile_data["registeredDate"] = now
+                                profile_data["updatedDate"] = now
                         else:
                             # IDが空の場合、自動採番で新規追加
                             new_id = self.find_next_available_id()
@@ -1118,8 +1155,9 @@ class ProfileEditor:
                             self.data["profiles"].append(profile_data)
                             imported_count += 1
                             # 新規の場合は登録日・更新日を今日に
-                            profile_data["registeredDate"] = datetime.now().strftime("%Y-%m-%d")
-                            profile_data["updatedDate"] = datetime.now().strftime("%Y-%m-%d")
+                            now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                            profile_data["registeredDate"] = now
+                            profile_data["updatedDate"] = now
 
                         # 各フィールドを設定
                         for field_name in ["avatarName", "avatarNameUrl", "profileVersion",

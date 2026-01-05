@@ -91,6 +91,27 @@ header .subtitle {
     display: block;
 }
 
+.btn-terms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-terms:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.btn-terms svg {
+    display: block;
+}
+
 .btn-discord {
     display: flex;
     align-items: center;
@@ -272,6 +293,35 @@ h2 {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sort-select {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--card-bg);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.3s;
+    font-family: inherit;
+}
+
+.sort-select:hover {
+    border-color: var(--primary-color);
+    background: var(--bg-color);
+}
+
+.sort-select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background: var(--bg-color);
 }
 
 .count {
@@ -685,6 +735,17 @@ footer p {
         flex-direction: column;
         align-items: start;
         gap: 15px;
+    }
+
+    .header-controls {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .sort-select {
+        width: 100%;
     }
 
     .search-controls {
