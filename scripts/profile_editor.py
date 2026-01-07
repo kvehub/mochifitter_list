@@ -17,6 +17,7 @@ import subprocess
 import base64
 import requests
 import csv
+import re
 from bs4 import BeautifulSoup
 
 
@@ -1220,8 +1221,15 @@ class ProfileEditor:
             return
 
         try:
-            # スクレイピング実行
-            data = self.scrape_booth(url)
+            # URL調整を実行
+            adjusted_url = self.adjust_booth_url(url)
+            
+            # 調整後のURLをフィールドに反映
+            if adjusted_url != url:
+                self.fields["avatarNameUrl"].set_value(adjusted_url)
+            
+            # スクレイピング実行（調整後のURLで）
+            data = self.scrape_booth(adjusted_url)
 
             if data:
                 # フォームに自動入力
@@ -1284,8 +1292,15 @@ class ProfileEditor:
             return
 
         try:
-            # スクレイピング実行
-            data = self.scrape_booth(url)
+            # URL調整を実行
+            adjusted_url = self.adjust_booth_url(url)
+            
+            # 調整後のURLをフィールドに反映
+            if adjusted_url != url:
+                self.fields["downloadLocation"].set_value(adjusted_url)
+            
+            # スクレイピング実行（調整後のURLで）
+            data = self.scrape_booth(adjusted_url)
 
             if data:
                 # プロファイル作者情報を自動入力
@@ -1304,6 +1319,49 @@ class ProfileEditor:
 
         except Exception as e:
             messagebox.showerror("エラー", f"取得中にエラーが発生しました:\n{str(e)}")
+
+    def adjust_booth_url(self, url):
+        """
+        BoothのURLを正規化（ショップ名付き形式に変換）
+        
+        Args:
+            url: 変換対象のURL
+            
+        Returns:
+            str: 変換後のURL
+        """
+        # 既にショップ名が含まれているかチェック
+        if re.match(r'https://[^/]+\.booth\.pm/items/\d+', url):
+            return url
+        
+        # https://booth.pm/ja/items/123 形式の場合のみ処理
+        match = re.match(r'https://booth\.pm/ja/items/(\d+)', url)
+        if not match:
+            return url
+        
+        item_id = match.group(1)
+        
+        try:
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            }
+            response = requests.get(url, timeout=10, headers=headers)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            # ショップリンクを取得
+            shop_link = soup.find('a', href=re.compile(r'https://[^/]+\.booth\.pm/?$'))
+            
+            if shop_link and shop_link.get('href'):
+                shop_url = shop_link.get('href').rstrip('/')
+                shop_match = re.match(r'https://([^/]+)\.booth\.pm', shop_url)
+                if shop_match:
+                    shop_name = shop_match.group(1)
+                    return f"https://{shop_name}.booth.pm/items/{item_id}"
+            
+            return url
+        except Exception:
+            return url
 
     def scrape_booth(self, url):
         """BoothページからHTMLをパース"""

@@ -8,6 +8,7 @@ VRChat用アバターの「もちふぃったー」対応プロファイル情�
 
 - **index.html** - メインの一覧ページ（検索・フィルター機能付き）
 - **lite.html** - 軽量版一覧ページ
+- **terms.html** - 利用規約ページ
 
 ### 管理ツール
 
@@ -17,11 +18,56 @@ VRChat用アバターの「もちふぃったー」対応プロファイル情�
 - **url_investigation.py** - URL調査ツール
 - **check_new_profiles.py** - 新規プロファイル自動チェック（GitHub Actions用）
 
+### 開発ツール
+
+- **scripts/server.py** - ローカル開発用HTTPサーバー
+- **scripts/start_server.bat** - サーバー起動用バッチファイル（Windows）
+
 ### データ
 
 - **data/profiles.json** - プロファイル情報（アバター名、作者、配布場所など）
 - **data/Block_URLs.txt** - 除外するBooth商品URL（オプション）
 - **data/Avatar_URLs.txt** - 除外するアバターURL（オプション）
+
+## ローカル開発サーバー
+
+Webページをローカル環境で確認するための簡易HTTPサーバーを用意しています。
+
+### 起動方法
+
+#### Windows（バッチファイル）
+
+1. `scripts/start_server.bat` をダブルクリック
+2. 自動的にブラウザが開き、サイトが表示されます
+3. 終了するには、コンソールウィンドウで `Ctrl+C` を押してください
+
+#### コマンドライン（全OS対応）
+
+```bash
+# 基本起動（ポート8000、ブラウザ自動オープン）
+python scripts/server.py
+
+# ポート番号を指定
+python scripts/server.py --port 3000
+
+# ブラウザを開かずに起動
+python scripts/server.py --no-browser
+
+# ヘルプを表示
+python scripts/server.py --help
+```
+
+### アクセスURL
+
+サーバー起動後、以下のURLでアクセスできます：
+
+- メインページ: `http://localhost:8000/`
+- 利用規約: `http://localhost:8000/terms.html`
+- 軽量版: `http://localhost:8000/lite.html`
+
+### 必要な環境
+
+- Python 3.6以上（標準ライブラリのみ使用、追加パッケージ不要）
 
 ## 自動チェック機能
 
