@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-14 14:23:45 JST",
+  "lastUpdated": "2026-01-14 21:48:29 JST",
   "profiles": [
     {
       "id": "001",
@@ -25280,6 +25280,35 @@
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
+    },
+    {
+      "id": "885",
+      "registeredDate": "2026-01-14 21:47:54",
+      "updatedDate": "2026-01-14 21:48:27",
+      "avatarName": "絳乃~あかの~ ）",
+      "avatarNameUrl": "https://imopanchu.booth.pm/items/7877073",
+      "profileVersion": "1.0",
+      "avatarAuthor": "いもぱんちゅう",
+      "avatarshopname": "ＳＨＯＰいもぱんちゅう",
+      "avatarAuthorUrl": "https://imopanchu.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "いもぱんちゅう",
+      "profileshopname": "ＳＨＯＰいもぱんちゅう",
+      "profileAuthorUrl": "https://imopanchu.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "",
+      "imageUrl": "https://booth.pximg.net/c/620x620/4e775002-1af6-4cfa-8f00-9ebae9648cda/i/7877073/374d6d5b-0b9c-4009-b5f4-016829cf4808_base_resized.jpg",
+      "pricing": "未対応",
+      "price": "-",
+      "avatarPrice": "2500",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": false,
+      "reverseSupport": false,
+      "notes": "今後の実装予定項目（時期未定）\n・もちふぃったー対応"
     },
     {
       "id": "9991",
