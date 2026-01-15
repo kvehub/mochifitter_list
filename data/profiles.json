@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-14 21:48:29 JST",
+  "lastUpdated": "2026-01-15 09:06:51 JST",
   "profiles": [
     {
       "id": "001",
@@ -20006,7 +20006,7 @@
     {
       "id": "703",
       "registeredDate": "2025-12-19",
-      "updatedDate": "2025-12-19",
+      "updatedDate": "2026-01-15 08:58:16",
       "avatarName": "りりか-ririka-",
       "avatarNameUrl": "https://paryi.booth.pm/items/6373683",
       "profileVersion": "1.0",
@@ -20022,7 +20022,7 @@
       "downloadLocation": "https://gakushion.booth.pm/items/7771863",
       "imageUrl": "https://booth.pximg.net/c/620x620/96d1d589-6879-4d30-8891-a2c6b8d64186/i/6373683/6006b20f-44a6-42d6-8e5e-52c4ead0c7af_base_resized.jpg",
       "pricing": "単体有料",
-      "price": "100",
+      "price": "200",
       "avatarPrice": "5000",
       "onSale": false,
       "saleStartDate": "",
@@ -20030,7 +20030,7 @@
       "salePrice": "",
       "forwardSupport": true,
       "reverseSupport": false,
-      "notes": ""
+      "notes": "＊公式でプロファイルの作成を公言しているのでそれまでの繋ぎとしてお使いください＊"
     },
     {
       "id": "704",
@@ -25284,8 +25284,8 @@
     {
       "id": "885",
       "registeredDate": "2026-01-14 21:47:54",
-      "updatedDate": "2026-01-14 21:48:27",
-      "avatarName": "絳乃~あかの~ ）",
+      "updatedDate": "2026-01-15 09:06:45",
+      "avatarName": "絳乃~あかの~",
       "avatarNameUrl": "https://imopanchu.booth.pm/items/7877073",
       "profileVersion": "1.0",
       "avatarAuthor": "いもぱんちゅう",
@@ -25309,6 +25309,35 @@
       "forwardSupport": false,
       "reverseSupport": false,
       "notes": "今後の実装予定項目（時期未定）\n・もちふぃったー対応"
+    },
+    {
+      "id": "886",
+      "registeredDate": "2026-01-15 08:57:06",
+      "updatedDate": "2026-01-15 08:57:36",
+      "avatarName": "りりか-ririka-",
+      "avatarNameUrl": "https://paryi.booth.pm/items/6373683",
+      "profileVersion": "1.0",
+      "avatarAuthor": "Paryi",
+      "avatarshopname": "IKUSIA",
+      "avatarAuthorUrl": "https://paryi.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "ハカセ",
+      "profileshopname": "東雲研究所",
+      "profileAuthorUrl": "https://megagorilla.booth.pm/",
+      "official": false,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://megagorilla.booth.pm/items/7772241",
+      "imageUrl": "https://booth.pximg.net/c/620x620/96d1d589-6879-4d30-8891-a2c6b8d64186/i/6373683/3c84e097-81a0-4071-919c-f586997ff1e8_base_resized.jpg",
+      "pricing": "単体有料",
+      "price": "500",
+      "avatarPrice": "5000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": true,
+      "reverseSupport": false,
+      "notes": ""
     },
     {
       "id": "9991",
