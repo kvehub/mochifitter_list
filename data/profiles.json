@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-15 09:06:51 JST",
+  "lastUpdated": "2026-01-15 17:24:32 JST",
   "profiles": [
     {
       "id": "001",
@@ -25336,6 +25336,35 @@
       "saleEndDate": "",
       "salePrice": "",
       "forwardSupport": true,
+      "reverseSupport": false,
+      "notes": ""
+    },
+    {
+      "id": "887",
+      "registeredDate": "2026-01-15 17:23:56",
+      "updatedDate": "2026-01-15 17:24:30",
+      "avatarName": "松梨子(Maturiko/まつりこ)",
+      "avatarNameUrl": "https://siroikumazadan.booth.pm/items/2574244",
+      "profileVersion": "1.0",
+      "avatarAuthor": "まなこ",
+      "avatarshopname": "しろいくま座団",
+      "avatarAuthorUrl": "https://siroikumazadan.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "まなこ",
+      "profileshopname": "しろいくま座団",
+      "profileAuthorUrl": "https://siroikumazadan.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "",
+      "imageUrl": "https://booth.pximg.net/c/620x620/ddd5317e-ec19-44c0-a761-8f11dfdc2913/i/2574244/4ec3a5de-248c-454d-9c75-90432dfe93ab_base_resized.jpg",
+      "pricing": "未対応",
+      "price": "-",
+      "avatarPrice": "3500",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": false,
       "reverseSupport": false,
       "notes": ""
     },
