@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-16 01:28:26 JST",
+  "lastUpdated": "2026-01-16 08:35:41 JST",
   "profiles": [
     {
       "id": "001",
@@ -25453,6 +25453,35 @@
       "salePrice": "",
       "forwardSupport": true,
       "reverseSupport": true,
+      "notes": ""
+    },
+    {
+      "id": "891",
+      "registeredDate": "2026-01-16 08:35:13",
+      "updatedDate": "2026-01-16 08:35:37",
+      "avatarName": "Sommeilソメイユ",
+      "avatarNameUrl": "https://nemuajistore.booth.pm/items/7700021",
+      "profileVersion": "1.0",
+      "avatarAuthor": "ねむみやゆい",
+      "avatarshopname": "ねむあじすとあ",
+      "avatarAuthorUrl": "https://nemuajistore.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "ねむみやゆい",
+      "profileshopname": "ねむあじすとあ",
+      "profileAuthorUrl": "https://nemuajistore.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://nemuajistore.booth.pm/items/7700021",
+      "imageUrl": "https://booth.pximg.net/c/620x620/30732257-13e4-4913-a4b5-9606d3631ecc/i/7700021/21453f63-91ef-454c-a7bf-2fb9709018e7_base_resized.jpg",
+      "pricing": "無料",
+      "price": "0",
+      "avatarPrice": "4000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": true,
+      "reverseSupport": false,
       "notes": ""
     },
     {
