@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-15 19:26:56 JST",
+  "lastUpdated": "2026-01-15 22:16:52 JST",
   "profiles": [
     {
       "id": "001",
@@ -1737,7 +1737,7 @@
     {
       "id": "062",
       "registeredDate": "2025-11-26",
-      "updatedDate": "2025-12-10",
+      "updatedDate": "2026-01-15 21:31:56",
       "avatarName": "プレッツェル",
       "avatarNameUrl": "https://avakin.booth.pm/items/7558678",
       "profileVersion": "1",
@@ -25396,6 +25396,35 @@
       "forwardSupport": false,
       "reverseSupport": false,
       "notes": ""
+    },
+    {
+      "id": "889",
+      "registeredDate": "2026-01-15 21:30:41",
+      "updatedDate": "2026-01-15 21:31:33",
+      "avatarName": "狸晴 -Riharu-",
+      "avatarNameUrl": "https://avakin.booth.pm/items/7880924",
+      "profileVersion": "1.0",
+      "avatarAuthor": "AVAKIN_3D",
+      "avatarshopname": "AVAKIN'",
+      "avatarAuthorUrl": "https://avakin.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "AVAKIN_3D",
+      "profileshopname": "AVAKIN'",
+      "profileAuthorUrl": "https://avakin.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://avakin.booth.pm/items/7880924",
+      "imageUrl": "https://booth.pximg.net/c/620x620/a4301a27-df49-4716-ad56-06de1593e9bd/i/7880924/f93cda48-7384-4473-b1b5-75f879f16e97_base_resized.jpg",
+      "pricing": "無料",
+      "price": "0",
+      "avatarPrice": "5000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": true,
+      "reverseSupport": false,
+      "notes": "販売期間：\n2026/01/25 21:00 から"
     },
     {
       "id": "9991",
