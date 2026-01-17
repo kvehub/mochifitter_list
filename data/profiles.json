@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-17 17:44:15 JST",
+  "lastUpdated": "2026-01-17 17:44:43 JST",
   "profiles": [
     {
       "id": "001",
@@ -25632,7 +25632,7 @@
     {
       "id": "897",
       "registeredDate": "2026-01-17 17:42:25",
-      "updatedDate": "2026-01-17 17:43:06",
+      "updatedDate": "2026-01-17 17:44:37",
       "avatarName": "KAGURA",
       "avatarNameUrl": "https://yoyogi-mori.booth.pm/items/7797764",
       "profileVersion": "1.0",
@@ -25654,7 +25654,7 @@
       "saleStartDate": "",
       "saleEndDate": "",
       "salePrice": "",
-      "forwardSupport": false,
+      "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
     },
