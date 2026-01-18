@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-17 17:44:43 JST",
+  "lastUpdated": "2026-01-18 11:51:29 JST",
   "profiles": [
     {
       "id": "001",
@@ -25686,6 +25686,35 @@
       "forwardSupport": false,
       "reverseSupport": false,
       "notes": "予定：もちふぃったー対応"
+    },
+    {
+      "id": "899",
+      "registeredDate": "2026-01-18 11:50:58",
+      "updatedDate": "2026-01-18 11:51:22",
+      "avatarName": "胴長パグ",
+      "avatarNameUrl": "https://polpolshop.booth.pm/items/6604867",
+      "profileVersion": "1.0",
+      "avatarAuthor": "ぽるふ",
+      "avatarshopname": "ぽるぽる屋",
+      "avatarAuthorUrl": "https://polpolshop.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "ぽるふ",
+      "profileshopname": "ぽるぽる屋",
+      "profileAuthorUrl": "https://polpolshop.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://polpolshop.booth.pm/items/7887615",
+      "imageUrl": "https://booth.pximg.net/c/620x620/97bdda43-c5d4-4030-b301-4af9b4bf4f1e/i/6604867/69020bfd-4ca5-4e3a-928a-64e552d27abe_base_resized.jpg",
+      "pricing": "無料",
+      "price": "0",
+      "avatarPrice": "100",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": true,
+      "reverseSupport": false,
+      "notes": ""
     },
     {
       "id": "9991",
