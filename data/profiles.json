@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-19 09:19:10 JST",
+  "lastUpdated": "2026-01-19 09:22:52 JST",
   "profiles": [
     {
       "id": "001",
@@ -3478,7 +3478,7 @@
     {
       "id": "123",
       "registeredDate": "2025-11-26",
-      "updatedDate": "2025-11-26",
+      "updatedDate": "2026-01-19 09:22:40",
       "avatarName": "ケセド 〈Chesed〉",
       "avatarNameUrl": "https://sephir.booth.pm/items/1812518",
       "profileVersion": "1.0",
@@ -3489,7 +3489,7 @@
       "profileAuthorUrl": "https://sephir.booth.pm/",
       "official": true,
       "downloadMethod": "Booth",
-      "downloadLocation": "",
+      "downloadLocation": "https://sephir.booth.pm/items/1812518",
       "imageUrl": "https://booth.pximg.net/c/620x620/0d2468c0-1ae0-44e4-9281-c6f1646d3f41/i/1812518/a0a6bbca-9001-4902-9566-890ddbc5193a_base_resized.jpg",
       "pricing": "アバター同梱",
       "price": "-",
@@ -3498,7 +3498,11 @@
       "notes": "共通素体EFBody",
       "avatarPrice": "4000",
       "avatarshopname": "エルフの森静岡支部",
-      "profileshopname": ""
+      "profileshopname": "エルフの森静岡支部",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": ""
     },
     {
       "id": "124",
