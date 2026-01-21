@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-21 17:32:32 JST",
+  "lastUpdated": "2026-01-21 23:22:04 JST",
   "profiles": [
     {
       "id": "001",
@@ -26041,6 +26041,35 @@
       "salePrice": "",
       "forwardSupport": true,
       "reverseSupport": true,
+      "notes": ""
+    },
+    {
+      "id": "911",
+      "registeredDate": "2026-01-21 23:20:43",
+      "updatedDate": "2026-01-21 23:22:00",
+      "avatarName": "りはびりちゃん",
+      "avatarNameUrl": "https://usahogoya.booth.pm/items/4241593",
+      "profileVersion": "1.0",
+      "avatarAuthor": "うさほ3号",
+      "avatarshopname": "うさほ小屋",
+      "avatarAuthorUrl": "https://usahogoya.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "うさほ3号",
+      "profileshopname": "うさほ小屋",
+      "profileAuthorUrl": "https://usahogoya.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "",
+      "imageUrl": "https://booth.pximg.net/c/620x620/c159669b-8fc4-4e90-b67d-325b27c237d7/i/4241593/e2c809ab-c034-4e3d-a201-f2c586100875_base_resized.jpg",
+      "pricing": "無料",
+      "price": "0",
+      "avatarPrice": "4000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": true,
+      "reverseSupport": false,
       "notes": ""
     },
     {
