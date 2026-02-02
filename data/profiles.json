@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-01 18:06:44 JST",
+  "lastUpdated": "2026-02-02 23:30:55 JST",
   "profiles": [
     {
       "id": "001",
@@ -27463,6 +27463,35 @@
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
+    },
+    {
+      "id": "960",
+      "registeredDate": "2026-02-02 23:30:14",
+      "updatedDate": "2026-02-02 23:30:53",
+      "avatarName": "ミャルカ -Myalka-",
+      "avatarNameUrl": "https://hernes.booth.pm/items/7896325",
+      "profileVersion": "1.0",
+      "avatarAuthor": "ヘルネス",
+      "avatarshopname": "WILGINIABOX",
+      "avatarAuthorUrl": "https://hernes.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "ヘルネス",
+      "profileshopname": "WILGINIABOX",
+      "profileAuthorUrl": "https://hernes.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://hernes.booth.pm/items/7896325",
+      "imageUrl": "https://booth.pximg.net/c/620x620/af5d6622-f5f8-4893-b549-667626e703cd/i/7896325/49a3ead5-5047-4897-9e87-5ab8a82588d4_base_resized.jpg",
+      "pricing": "アバター同梱",
+      "price": "-",
+      "avatarPrice": "6000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": true,
+      "reverseSupport": false,
+      "notes": "販売期間：\n2026/02/07 15:00 から"
     },
     {
       "id": "9993",
