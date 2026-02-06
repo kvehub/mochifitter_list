@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-06 19:35:36 JST",
+  "lastUpdated": "2026-02-07 03:11:12 JST",
   "profiles": [
     {
       "id": "001",
@@ -27753,6 +27753,35 @@
       "forwardSupport": false,
       "reverseSupport": false,
       "notes": "販売期間：\n2026/02/27 18:00 から"
+    },
+    {
+      "id": "970",
+      "registeredDate": "2026-02-07 03:10:56",
+      "updatedDate": "2026-02-07 03:11:09",
+      "avatarName": "レミーニェ -Reminie-",
+      "avatarNameUrl": "https://sunapua3.booth.pm/items/7392557",
+      "profileVersion": "1.0",
+      "avatarAuthor": "すなぷあ",
+      "avatarshopname": "やのにわりょくちゃ",
+      "avatarAuthorUrl": "https://sunapua3.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "すなぷあ",
+      "profileshopname": "やのにわりょくちゃ",
+      "profileAuthorUrl": "https://sunapua3.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://sunapua3.booth.pm/items/7392557",
+      "imageUrl": "https://booth.pximg.net/c/620x620/f54b3035-cfc4-45d7-860c-2507cba6024e/i/7392557/e452b0bd-19fe-4caa-9d06-4f30a45b9ceb_base_resized.jpg",
+      "pricing": "アバター同梱",
+      "price": "-",
+      "avatarPrice": "4000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": true,
+      "reverseSupport": false,
+      "notes": ""
     },
     {
       "id": "9993",
