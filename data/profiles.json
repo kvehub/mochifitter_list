@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-05 10:52:21 JST",
+  "lastUpdated": "2026-02-06 19:35:36 JST",
   "profiles": [
     {
       "id": "001",
@@ -27724,6 +27724,35 @@
       "forwardSupport": true,
       "reverseSupport": false,
       "notes": ""
+    },
+    {
+      "id": "969",
+      "registeredDate": "2026-02-06 19:34:31",
+      "updatedDate": "2026-02-06 19:35:33",
+      "avatarName": "ダイナ - Dinah -",
+      "avatarNameUrl": "https://yuufyu.booth.pm/items/7954101",
+      "profileVersion": "1.0",
+      "avatarAuthor": "yuufyu",
+      "avatarshopname": "yuufyu.booth.pm",
+      "avatarAuthorUrl": "https://yuufyu.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "yuufyu",
+      "profileshopname": "yuufyu.booth.pm",
+      "profileAuthorUrl": "https://yuufyu.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://yuufyu.booth.pm/items/7954101",
+      "imageUrl": "https://booth.pximg.net/c/620x620/108bd0e4-f65f-4f7e-9a7a-2a2dd3d5c18a/i/7954101/77584387-d4b7-4c25-952c-d4888fb20219_base_resized.jpg",
+      "pricing": "不明",
+      "price": "不明",
+      "avatarPrice": "不明",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": false,
+      "reverseSupport": false,
+      "notes": "販売期間：\n2026/02/27 18:00 から"
     },
     {
       "id": "9993",
