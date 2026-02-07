@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-07 03:11:12 JST",
+  "lastUpdated": "2026-02-07 15:33:31 JST",
   "profiles": [
     {
       "id": "001",
@@ -27781,6 +27781,35 @@
       "salePrice": "",
       "forwardSupport": true,
       "reverseSupport": false,
+      "notes": ""
+    },
+    {
+      "id": "971",
+      "registeredDate": "2026-02-07 15:33:17",
+      "updatedDate": "2026-02-07 15:33:29",
+      "avatarName": "量産型のらきゃっと ぷらす（ますきゃっと ぷらす）",
+      "avatarNameUrl": "https://noracat.booth.pm/items/4360118",
+      "profileVersion": "1.0",
+      "avatarAuthor": "IMR義体工廠",
+      "avatarshopname": "IMR義体工廠",
+      "avatarAuthorUrl": "https://noracat.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "IMR義体工廠",
+      "profileshopname": "IMR義体工廠",
+      "profileAuthorUrl": "https://noracat.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://noracat.booth.pm/items/4360118",
+      "imageUrl": "https://booth.pximg.net/c/620x620/23c5fa38-0255-4c04-8946-6b6e2027b859/i/4360118/9f2ed2d9-eb8d-423f-92b3-5c6766b43235_base_resized.jpg",
+      "pricing": "無料",
+      "price": "0",
+      "avatarPrice": "6500",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": true,
+      "reverseSupport": true,
       "notes": ""
     },
     {
