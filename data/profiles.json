@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-08 05:25:40 JST",
+  "lastUpdated": "2026-02-08 17:26:14 JST",
   "profiles": [
     {
       "id": "001",
@@ -27839,6 +27839,35 @@
       "salePrice": "",
       "forwardSupport": true,
       "reverseSupport": true,
+      "notes": ""
+    },
+    {
+      "id": "973",
+      "registeredDate": "2026-02-08 17:26:00",
+      "updatedDate": "2026-02-08 17:26:10",
+      "avatarName": "リスティ -Liθty-",
+      "avatarNameUrl": "https://logical0010.booth.pm/items/3106278",
+      "profileVersion": "1.0",
+      "avatarAuthor": "ろじかる。",
+      "avatarshopname": "ROZIURA雑貨店",
+      "avatarAuthorUrl": "https://logical0010.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "ろじかる。",
+      "profileshopname": "ROZIURA雑貨店",
+      "profileAuthorUrl": "https://logical0010.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://logical0010.booth.pm/items/3106278",
+      "imageUrl": "https://booth.pximg.net/c/620x620/8914bfbc-da91-4969-988b-cd754afbb6ab/i/3106278/88d44c78-de1f-48db-bfa7-083484edc6e5_base_resized.jpg",
+      "pricing": "アバター同梱",
+      "price": "-",
+      "avatarPrice": "5000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": true,
+      "reverseSupport": false,
       "notes": ""
     },
     {
