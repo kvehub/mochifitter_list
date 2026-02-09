@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-09 10:55:12 JST",
+  "lastUpdated": "2026-02-09 13:22:31 JST",
   "profiles": [
     {
       "id": "001",
@@ -12996,6 +12996,35 @@
       "notes": "",
       "avatarshopname": "zuchicorn",
       "profileshopname": "crom's_wearSHOP"
+    },
+    {
+      "id": "461",
+      "registeredDate": "2026-02-09 13:21:42",
+      "updatedDate": "2026-02-09 13:22:30",
+      "avatarName": "ランティーネ LANTINE",
+      "avatarNameUrl": "https://spk-strm.booth.pm/items/6026975",
+      "profileVersion": "1.0",
+      "avatarAuthor": "AX-7YK",
+      "avatarshopname": "SPEK STROM",
+      "avatarAuthorUrl": "https://spk-strm.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "AX-7YK",
+      "profileshopname": "SPEK STROM",
+      "profileAuthorUrl": "https://spk-strm.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://spk-strm.booth.pm/items/7702172",
+      "imageUrl": "https://booth.pximg.net/c/620x620/db4cd5f7-1dc4-4d39-9459-709029e9f287/i/6026975/9ca77ee8-bd88-4f72-a71c-23ad3acb89b2_base_resized.jpg",
+      "pricing": "無料",
+      "price": "0",
+      "avatarPrice": "5500",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": true,
+      "reverseSupport": false,
+      "notes": ""
     },
     {
       "id": "463",
