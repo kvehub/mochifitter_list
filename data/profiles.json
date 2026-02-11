@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-11 11:13:49 JST",
+  "lastUpdated": "2026-02-11 19:56:27 JST",
   "profiles": [
     {
       "id": "001",
@@ -28104,6 +28104,35 @@
       "salePrice": "",
       "forwardSupport": true,
       "reverseSupport": false,
+      "notes": ""
+    },
+    {
+      "id": "982",
+      "registeredDate": "2026-02-11 19:55:33",
+      "updatedDate": "2026-02-11 19:56:25",
+      "avatarName": "ココちゃん-JuiceCocoBlanc",
+      "avatarNameUrl": "https://pochibykt.booth.pm/items/7143214",
+      "profileVersion": "1.0",
+      "avatarAuthor": "Pochi by KT",
+      "avatarshopname": "Pochi by KT",
+      "avatarAuthorUrl": "https://pochibykt.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "Pochi by KT",
+      "profileshopname": "Pochi by KT",
+      "profileAuthorUrl": "https://pochibykt.booth.pm/",
+      "official": true,
+      "downloadMethod": "GoogleDrive",
+      "downloadLocation": "https://docs.google.com/spreadsheets/d/1Y8Yrfq-VrjLqBuFlCW302zmggl61qlGuFgTZTTNiPTA/",
+      "imageUrl": "https://booth.pximg.net/c/620x620/bbcf8d8d-e1eb-4154-bac8-0657193e753c/i/7143214/fd368f6c-2c72-4b7d-a7da-15f37503be2e_base_resized.jpg",
+      "pricing": "無料",
+      "price": "0",
+      "avatarPrice": "8000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": true,
+      "reverseSupport": true,
       "notes": ""
     },
     {
