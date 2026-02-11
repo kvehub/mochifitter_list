@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-11 19:56:27 JST",
+  "lastUpdated": "2026-02-12 00:05:48 JST",
   "profiles": [
     {
       "id": "001",
@@ -28134,6 +28134,35 @@
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
+    },
+    {
+      "id": "983",
+      "registeredDate": "2026-02-12 00:05:30",
+      "updatedDate": "2026-02-12 00:05:47",
+      "avatarName": "よかぜ",
+      "avatarNameUrl": "https://meyurium.booth.pm/items/7776191",
+      "profileVersion": "1.0",
+      "avatarAuthor": "Me-yu",
+      "avatarshopname": "MEYURIUM工房",
+      "avatarAuthorUrl": "https://meyurium.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "Me-yu",
+      "profileshopname": "MEYURIUM工房",
+      "profileAuthorUrl": "https://meyurium.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://meyurium.booth.pm/items/7776191",
+      "imageUrl": "https://booth.pximg.net/c/620x620/bb096b8b-e44a-45e8-98c1-18c967176c78/i/7776191/262cd1cc-0eae-4492-8fec-35376d7d0e73_base_resized.jpg",
+      "pricing": "アバター同梱",
+      "price": "-",
+      "avatarPrice": "5000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": true,
+      "reverseSupport": false,
+      "notes": "2/14 発売予定"
     },
     {
       "id": "9887",
