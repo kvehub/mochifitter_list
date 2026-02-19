@@ -649,6 +649,13 @@ class ProfileEditor:
         self.search_var.set("")
         # filter_profiles は trace により自動的に呼ばれる
 
+    def _id_sort_key(self, id_val):
+        """IDをソート用キーに変換。数値なら数値順、そうでなければ文字列順（数値の後）"""
+        s = str(id_val).strip()
+        if s.isdigit():
+            return (0, int(s))
+        return (1, s)
+
     def get_sorted_profiles(self):
         """ソート列と順序に基づいてプロファイルをソート"""
         if not self.data or "profiles" not in self.data:
@@ -656,7 +663,7 @@ class ProfileEditor:
 
         # ソートキーのマッピング
         key_map = {
-            "id": lambda p: p.get("id", ""),
+            "id": lambda p: self._id_sort_key(p.get("id", "")),
             "avatar": lambda p: p.get("avatarName", ""),
             "author": lambda p: p.get("avatarAuthor", ""),
             "profileAuthor": lambda p: p.get("profileAuthor", "")
@@ -705,9 +712,10 @@ class ProfileEditor:
                 # キャンセル: イベントを一時的に無効化して元の選択に戻す
                 self.tree.unbind("<<TreeviewSelect>>")
                 if self.current_selection:
+                    current_id_key = self._id_sort_key(self.current_selection.get("id", ""))
                     for item_id in self.tree.get_children():
                         item_values = self.tree.item(item_id)["values"]
-                        if item_values and str(item_values[0]).zfill(3) if isinstance(item_values[0], int) else item_values[0] == self.current_selection.get("id"):
+                        if item_values and self._id_sort_key(item_values[0]) == current_id_key:
                             self.tree.selection_set(item_id)
                             break
                 # イベントを再バインド
@@ -2028,7 +2036,7 @@ class ProfileEditor:
             self.data["lastUpdated"] = jst_time
 
             # プロファイルをID順にソート
-            self.data["profiles"] = sorted(self.data["profiles"], key=lambda p: p.get("id", ""))
+            self.data["profiles"] = sorted(self.data["profiles"], key=lambda p: self._id_sort_key(p.get("id", "")))
 
             with open(self.json_path, 'w', encoding='utf-8') as f:
                 json.dump(self.data, f, ensure_ascii=False, indent=2)
@@ -2064,10 +2072,11 @@ class ProfileEditor:
         ttk.Button(button_row1, text="ブロック", command=self.investigation_block_url).pack(side=tk.LEFT, padx=5)
         ttk.Button(button_row1, text="アバター保存", command=self.investigation_save_avatar_url).pack(side=tk.LEFT, padx=5)
 
-        # 2行目: 登録、アバター読取
+        # 2行目: 登録、プロ登録、アバター読取
         button_row2 = ttk.Frame(button_frame)
         button_row2.pack(fill=tk.X)
         ttk.Button(button_row2, text="登録", command=self.investigation_register_url).pack(side=tk.LEFT, padx=(0, 5))
+        ttk.Button(button_row2, text="プロ登録", command=self.investigation_register_profile_url).pack(side=tk.LEFT, padx=(0, 5))
         ttk.Button(button_row2, text="アバター読取", command=self.investigation_load_avatar_urls).pack(side=tk.LEFT, padx=5)
 
         # URL一覧入力エリア
@@ -2153,6 +2162,15 @@ class ProfileEditor:
 
         # 取得ボタンを自動実行
         self.fetch_from_url()
+
+    def investigation_register_profile_url(self):
+        """現在のURLを配布場所URLとして新規レコードを作成（URL調査パネル）"""
+        if not self.current_investigation_url:
+            return
+
+        self.add_profile()
+        self.fields["downloadLocation"].set_value(self.current_investigation_url)
+        self.fetch_from_download_url()
 
     def investigation_block_url(self):
         """現在のURLをブロックリストに追加して次へ（URL調査パネル）"""
