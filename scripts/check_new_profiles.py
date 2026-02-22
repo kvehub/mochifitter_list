@@ -150,8 +150,9 @@ def send_discord_notification(webhook_url, unregistered_items):
         }
     }
     
+    reply_id = os.environ.get("DISCORD_NOTIFY_USERID", "")
     payload = {
-        "content": "<@403156635301838850>",
+        "content": f"<@{reply_id}>" if reply_id else "",
         "embeds": [embed]
     }
     
