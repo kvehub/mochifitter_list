@@ -450,7 +450,7 @@ function debounce(func, wait) {
 }
 
 // Googleフォームリンクの設定
-const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdxX1ik7rtV8ofXRSED2-jsjJLCAAIkH-unuyGj_TtTVkvMjA/viewform';
+const GOOGLE_FORM_URL = '';
 
 // フォームリンクの設定
 document.addEventListener('DOMContentLoaded', () => {
