@@ -278,8 +278,8 @@ class ProfileEditor:
         pricing_button_frame.pack(side=tk.TOP, fill=tk.X)
         ttk.Button(pricing_button_frame, text="無料", width=10,
                    command=lambda: self.set_pricing("無料")).pack(side=tk.LEFT, padx=2)
-        ttk.Button(pricing_button_frame, text="単体有料", width=10,
-                   command=lambda: self.set_pricing("単体有料")).pack(side=tk.LEFT, padx=2)
+        ttk.Button(pricing_button_frame, text="有料", width=10,
+                   command=lambda: self.set_pricing("有料")).pack(side=tk.LEFT, padx=2)
         ttk.Button(pricing_button_frame, text="アバター同梱", width=12,
                    command=lambda: self.set_pricing("アバター同梱")).pack(side=tk.LEFT, padx=2)
         row += 1
