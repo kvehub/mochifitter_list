@@ -258,7 +258,7 @@ function applyFilters() {
         const priceGroupSelected = showFree || showPaid || showBundled;
         const matchesPriceGroup = !priceGroupSelected ||
             (showFree && profile.pricing === '無料') ||
-            (showPaid && profile.pricing === '単体有料') ||
+            (showPaid && profile.pricing === '有料') ||
             (showBundled && profile.pricing === 'アバター同梱');
 
         // グループ間はAND
@@ -296,7 +296,7 @@ function getPriceBadgeClass(pricing) {
     switch(pricing) {
         case '無料':
             return 'price-free';
-        case '単体有料':
+        case '有料':
             return 'price-paid';
         case 'アバター同梱':
             return 'price-bundled';
