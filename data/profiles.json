@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-24 19:46:13 JST",
+  "lastUpdated": "2026-02-25 03:52:01 JST",
   "profiles": [
     {
       "id": "001",
@@ -29932,6 +29932,35 @@
       "forwardSupport": true,
       "reverseSupport": true,
       "notes": ""
+    },
+    {
+      "id": "1045",
+      "registeredDate": "2026-02-25 03:50:48",
+      "updatedDate": "2026-02-25 03:51:59",
+      "avatarName": "Fluria -フルーリア-",
+      "avatarNameUrl": "https://bbkktn.booth.pm/items/4005540",
+      "profileVersion": "1.0",
+      "avatarAuthor": "びきたん",
+      "avatarshopname": "bikiTadpole",
+      "avatarAuthorUrl": "https://bbkktn.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "びきたん",
+      "profileshopname": "bikiTadpole",
+      "profileAuthorUrl": "https://bbkktn.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://bbkktn.booth.pm/items/4005540",
+      "imageUrl": "https://booth.pximg.net/c/620x620/e4a23b04-95ae-4e1b-a746-072a48f8a8b1/i/4005540/50e315ab-084b-41e6-9f13-b33b4ba5f7c5_base_resized.jpg",
+      "pricing": "アバター同梱",
+      "price": "-",
+      "avatarPrice": "4900",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": false,
+      "reverseSupport": false,
+      "notes": "方向記載なし"
     },
     {
       "id": "9887",
