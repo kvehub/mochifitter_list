@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-24 04:57:38 JST",
+  "lastUpdated": "2026-02-24 19:32:33 JST",
   "profiles": [
     {
       "id": "001",
@@ -29902,6 +29902,35 @@
       "salePrice": "",
       "forwardSupport": true,
       "reverseSupport": false,
+      "notes": ""
+    },
+    {
+      "id": "1044",
+      "registeredDate": "2026-02-24 19:31:37",
+      "updatedDate": "2026-02-24 19:32:28",
+      "avatarName": "メビカ / Mevica V.2ボディアップデート追加",
+      "avatarNameUrl": "https://soyl.booth.pm/items/6301601",
+      "profileVersion": "1.0",
+      "avatarAuthor": "そいる",
+      "avatarshopname": "そいる",
+      "avatarAuthorUrl": "https://soyl.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "灰色工房　BOOTH直販",
+      "profileshopname": "灰色工房　BOOTH直販",
+      "profileAuthorUrl": "https://amanoissui.booth.pm/",
+      "official": false,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://amanoissui.booth.pm/items/8018317",
+      "imageUrl": "https://booth.pximg.net/c/620x620/f6536be4-b295-444d-96c9-cea88dfaffb2/i/6301601/a7f74782-4b33-4e92-abbd-640e9040a5f6_base_resized.jpg",
+      "pricing": "単体有料",
+      "price": "500",
+      "avatarPrice": "4000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": true,
+      "reverseSupport": true,
       "notes": ""
     },
     {
