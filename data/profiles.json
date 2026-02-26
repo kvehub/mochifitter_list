@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-26 18:32:17 JST",
+  "lastUpdated": "2026-02-27 02:06:48 JST",
   "profiles": [
     {
       "id": "001",
@@ -30191,6 +30191,35 @@
       "saleEndDate": "",
       "salePrice": "",
       "forwardSupport": true,
+      "reverseSupport": false,
+      "notes": ""
+    },
+    {
+      "id": "1054",
+      "registeredDate": "2026-02-27 02:05:33",
+      "updatedDate": "2026-02-27 02:06:45",
+      "avatarName": "Nocturna -ノクターナ-",
+      "avatarNameUrl": "https://underno3.booth.pm/items/6643517",
+      "profileVersion": "1.0",
+      "avatarAuthor": "夜弦れい",
+      "avatarshopname": "UnderNo3",
+      "avatarAuthorUrl": "https://underno3.booth.pm/",
+      "bodyBase": "",
+      "profileAuthor": "夜弦れい",
+      "profileshopname": "UnderNo3",
+      "profileAuthorUrl": "https://underno3.booth.pm/",
+      "official": true,
+      "downloadMethod": "Booth",
+      "downloadLocation": "https://underno3.booth.pm/items/6643517",
+      "imageUrl": "https://booth.pximg.net/c/620x620/80d0a5e6-f005-45a8-b548-4e8f76d4e4eb/i/6643517/f87f0010-47b1-4850-9a47-3bb0abaf1a10_base_resized.jpg",
+      "pricing": "アバター同梱",
+      "price": "-",
+      "avatarPrice": "5000",
+      "onSale": false,
+      "saleStartDate": "",
+      "saleEndDate": "",
+      "salePrice": "",
+      "forwardSupport": false,
       "reverseSupport": false,
       "notes": ""
     },
