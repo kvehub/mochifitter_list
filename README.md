@@ -1,3 +1,7 @@
+このリポジトリは最小限のメンテナンスをしています
+
+- メインページ: [https://kvehub.github.io/mochifitter_list/](https://kvehub.github.io/mochifitter_list/)
+
 # もちふぃったープロファイル一覧
 
 VRChat用アバターの「もちふぃったー」対応プロファイル情報をまとめた静的Webサイトと管理ツール群。
